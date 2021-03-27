@@ -22,6 +22,10 @@ mathjax = true
 - [x] [24. 反转链表](./#24-反转链表)
 - [x] [64. 求1+2+…+n](.//#64-求12n)
 
+GitHub 仓库地址 $\to$ [点这里](https://github.com/MatNoble/leetcode/blob/main/%E5%89%91%E6%8C%87offer/README.md)
+
+<hr />
+
 ## 03. 数组中重复的数字
 
 ### 题目描述
