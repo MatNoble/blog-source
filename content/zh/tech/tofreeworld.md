@@ -48,32 +48,20 @@ We hold these truths to be self-evident, that all men are created equal, that th
 
 ## 科学上网软件
 
-- Windows
-  
+- Windows  
   项目地址: [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
-
 - Linux
-  
-  - v2rayL
+  - v2rayL  
     支持 vmess 和 ss 订阅。项目地址：[github.com/jiangxufeng/v2rayL](https://github.com/jiangxufeng/v2rayL)
-  
-  - electron-ssr
-    
+  - electron-ssr  
     [Ubuntu 上使用 ssr 实现科学上网](https://matnoble.me/tech/ubuntu/ubuntu-ssr/)
-
-- MaC
-  
+- MaC  
   项目地址: [clashX](https://github.com/yichengchen/clashX)
-
-- Android
-  
+- Android  
   - v2ray
   - ssr
-  
   谷歌商店或者 GitHub 都可以搜到
-
-- Iphone
-  
+- Iphone  
   大名鼎鼎的“小火箭”，可惜的是中国区没有该软件，需要自行搜寻美区 id 下载
 
 --- 
