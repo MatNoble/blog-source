@@ -33,6 +33,7 @@ related = false
 {{< friend name="Refun" url="https://gears233.github.io" logo="https://gears233.github.io/image/logo.jpg" word="重新找回那份简单的快乐…" >}}
 {{< friend name="一大加贝" url="https://blog.yidajiabei.xyz/" logo="https://blog.yidajiabei.xyz/images/android-chrome-512x512.png" word="学习技术，热爱生活">}}
 {{< friend name="Wulnut’s space" url="https://www.wulnut.top/" logo="https://www.wulnut.top/Home/index/panda.png" word="Nothing but failure" >}}
+{{< friend name="孙云增的博客" url="https://sunyunzeng.com/" logo="https://sunyunzeng.com/img/avatar.jpg" word="极简生活，极致内涵~" >}}
 
 <br />
 
