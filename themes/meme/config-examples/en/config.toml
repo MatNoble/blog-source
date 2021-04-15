@@ -640,6 +640,9 @@ uglyURLs = false
     #       `comments` in post’s Front Matter
     #       has a higher priority than here
 
+    # directly load the comments after pages loaded
+    autoLoadComments = false
+
     ## Disqus
     enableDisqus = false
     disqusShortname = ""
@@ -673,6 +676,23 @@ uglyURLs = false
     utterancesThemeDark = "photon-dark"
     utterancesLabel = ""
     # Note: https://utteranc.es/
+
+    ## Gitalk
+    enableGitalk = false
+    gitalkClientID = "your_client_id"
+    gitalkClientSecret = "your_client_secret"
+    gitalkRepo = "your_repository"
+    gitalkOwner = "your_gitalk_owner"
+    gitalkAdmin = ["your_gitalk_admin"]
+    gitalkLable = ["Gitalk"]
+    gitalkDistractionFreeMode = false
+    gitalkPerPage = 10
+    gitalkLanguage = "en"
+    gitalkPagerDirection = "last"
+    gitalkCreateIssueManually = false
+    gitalkProxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
+    gitalkEnableHotKey = true
+    # Note: https://github.com/gitalk/gitalk
 
 
     ######################################
@@ -709,6 +729,16 @@ uglyURLs = false
     ## Ad Units
     enableGoogleAdUnits = false
     googleAdSlot = ""
+
+
+    ######################################
+    # Yandex.Metrika
+    # https://metrika.yandex.ru/
+
+    # Note: render only in production
+    #       environment
+
+    yandexMetrikaId = ""
 
 
     ######################################
