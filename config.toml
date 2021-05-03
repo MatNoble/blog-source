@@ -665,7 +665,7 @@ uglyURLs = false
 
 
     ## Valine
-    enableValine = true
+    enableValine = false
     valineAppId = "6XSQubR7QUsrMqFc9qplzzAg-gzGzoHsz"
     valineAppKey = "zdYrMQSyRHwRokz9Lp8ft9lv"
     valinePlaceholder = "支持 Markdown 语言, 另外, 填写邮箱后, 会第一时间收到通知邮件呦 🍀"
@@ -686,12 +686,12 @@ uglyURLs = false
     # 说明：https://valine.js.org/
 
     ## Utterances
-    enableUtterances = false
-    utterancesRepo = ""
+    enableUtterances = true
+    utterancesRepo = "MatNoble/matnoble.github.io"
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
-    utterancesLabel = ""
+    utterancesLabel = "comments"
     # 说明：https://utteranc.es/
 
 
