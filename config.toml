@@ -144,9 +144,17 @@ uglyURLs = false
     mediaType = "application/json"
     baseName = "search"
 
+# Algolia 的搜索索引
+[outputFormats.Algolia]
+    mediaType = "application/json"
+    baseName = "algolia"
+    isPlainText = true
+    notAlternative = true
+
 # Hugo 的输出控制
 [outputs]
     page = ["HTML"]
+    # home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
     home = ["HTML", "SectionsAtom", "SectionsRSS"]
     section = ["HTML"]
     # 类别
@@ -639,6 +647,10 @@ uglyURLs = false
     disableMathJaxMenu = false
 
 
+    # https://metrika.yandex.ru/
+    # yandexMetrikaId = ""
+
+
     ######################################
     # Mermaid (https://github.com/mermaid-js/mermaid)
 
@@ -693,6 +705,23 @@ uglyURLs = false
     utterancesThemeDark = "photon-dark"
     utterancesLabel = "comments"
     # 说明：https://utteranc.es/
+
+    ## Gitalk
+    enableGitalk = false
+    gitalkClientID = "your_client_id"
+    gitalkClientSecret = "your_client_secret"
+    gitalkRepo = "your_repository"
+    gitalkOwner = "your_gitalk_owner"
+    gitalkAdmin = ["your_gitalk_admin"]
+    gitalkLable = ["Gitalk"]
+    gitalkDistractionFreeMode = false
+    gitalkPerPage = 10
+    gitalkLanguage = "en"
+    gitalkPagerDirection = "last"
+    gitalkCreateIssueManually = false
+    gitalkProxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
+    gitalkEnableHotKey = true
+    # 说明：https://github.com/gitalk/gitalk
 
 
     ######################################
@@ -1151,12 +1180,12 @@ uglyURLs = false
 
     shareOnTwitter = true
     shareOnFacebook = true
-    shareOnLinkedIn = true
+    shareOnLinkedIn = false
     shareOnTelegram = true
     shareOnWeibo = true
     shareOnDouban = true
     shareOnQQ = true
-    shareOnQzone = true
+    shareOnQzone = false
 
     shareViaQRCode = true
 
@@ -1375,6 +1404,21 @@ uglyURLs = false
 
     enableLunrSearch = false
     # 说明：https://lunrjs.com/
+
+    ######################################
+    # Algolia search
+
+    # 说明：需要开启 `Algolia` 的输出，且需要每
+    #      次将生成的 algolia.json 文件上传到
+    #      Algolia
+
+    enableAlgoliaSearch = false
+
+    algoliaAppId = "Y4QRUNE65Z"
+    algoliaApiKey = ""
+    algoliaIndexName = ""
+    # 说明：https://www.algolia.com/
+
 
     ######################################
     # 404 页面

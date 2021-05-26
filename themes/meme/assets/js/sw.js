@@ -6,41 +6,38 @@
   3. https://googlechrome.github.io/samples/service-worker/
   4. https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
   5. https://serviceworke.rs/
+  6. https://www.youtube.com/watch?v=baSiSIyTGSk
 */
 
-const CACHE_NAME = 'runtime';
+const RUNTIME = 'runtime';
 
 self.skipWaiting();
 
-self.addEventListener('fetch', function (event) {
-  // Do nothing if not from the same origin
-  if (!event.request.url.startsWith(self.location.origin)) return;
+self.addEventListener('fetch', (event) => {
+  // Do nothing if not the same origin
+  if (!event.request.url.startsWith(self.location.origin)) {
+    return;
+  }
 
+  // Network first strategy
   event.respondWith(
-    caches.match(event.request).then(function (response) {
-      // Cache hit - return response
-      if (response) {
-        return response;
-      }
+    (async () => {
+      const cache = await caches.open(RUNTIME);
 
-      return fetch(event.request).then(function (response) {
-        // Check if we received a valid response
-        if (!response || response.status !== 200 || response.type !== 'basic') {
-          return response;
+      try {
+        const networkResponse = await fetch(event.request);
+
+        // Save/Update cache if network response is ok
+        if (networkResponse && networkResponse.status === 200) {
+          cache.put(event.request, networkResponse.clone());
         }
 
-        // IMPORTANT: Clone the response. A response is a stream
-        // and because we want the browser to consume the response
-        // as well as the cache consuming the response, we need
-        // to clone it so we have two streams.
-        var responseToCache = response.clone();
+        return networkResponse;
+      } catch (e) {
+        const cachedResponse = await cache.match(event.request);
 
-        caches.open(CACHE_NAME).then(function (cache) {
-          cache.put(event.request, responseToCache);
-        });
-
-        return response;
-      });
-    })
+        return cachedResponse;
+      }
+    })()
   );
 });
