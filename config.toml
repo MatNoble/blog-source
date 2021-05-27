@@ -11,6 +11,9 @@ copyright = "本博客遵循 [CC 4.0 BY-SA](https://creativecommons.org/licenses
 # 主题选择
 theme = "meme"
 
+# `hugo new` 新建文章自动打开的文本编辑器
+newContentEditor = ""
+
 # i18n
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
@@ -19,7 +22,7 @@ defaultContentLanguageInSubdir = false
 pluralizeListTitles = false
 
 # 摘要的字数限制
-summaryLength = 150
+summaryLength = 42
 
 # 是否开启 GitHub 风格的 Emoji 书写方式
 enableEmoji = false
@@ -49,7 +52,7 @@ uglyURLs = false
 
 # 类别
 [taxonomies]
-    # category = "categories"
+    category = "categories"
     tag = "tags"
     series = "series"
 
@@ -157,11 +160,8 @@ uglyURLs = false
     # home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
     home = ["HTML", "SectionsAtom", "SectionsRSS"]
     section = ["HTML"]
-    # 类别
-    taxonomyTerm = ["HTML"]
-    # 类别项
     taxonomy = ["HTML"]
-    # 说明：https://github.com/gohugoio/hugo/issues/4528#issuecomment-508488859
+    term = ["HTML"]
 
 # RSS & Atom 文章数限制
 [services.rss]
@@ -202,51 +202,51 @@ uglyURLs = false
         name = "文章"
         weight = 1
         pre = "internal"
-	post = "archive"
-	identifier = "archives"
+	    post = "archive"
+	    identifier = "archives"
     [[menu.main]]
         url = "/categories/"
         name = "分类"
         weight = 2
         pre = "internal"
-	post = "th"
-	identifier = "categories"
+	    post = "th"
+	    identifier = "categories"
     [[menu.main]]
         url = "/tags/"
         name = "标签"
         weight = 3
         pre = "internal"
-	post = "tags"
-	identifier = "tags"
+	    post = "tags"
+	    identifier = "tags"
     [[menu.main]]
         url = "/series/"
         name = "专栏"
         weight = 4
         pre = "internal"
-	post = "feather-alt"
-	identifier = "series"
+	    post = "feather-alt"
+	    identifier = "series"
     [[menu.main]]
         url = "/about/"
         name = "关于"
         weight = 5
         pre = "internal"
-	post = "user-circle"
-	identifier = "about"
+	    post = "user-circle"
+	    identifier = "about"
     [[menu.main]]
         url = "/search/"
-	name = "友链"
-	weight = 6
-	pre = "internal"
-	post = "sfriend"
-	identifier = "searchs"
+	    name = "友链"
+	    weight = 6
+	    pre = "internal"
+	    post = "sfriend"
+	    identifier = "searchs"
     [[menu.main]]
         weight = 7
         identifier = "theme-switcher"
-    [[menu.main]]
-        weight = 8
-        identifier = "lang-switcher"
     #[[menu.main]]
-    #    weight = 9
+    #    weight = 8
+    #   identifier = "lang-switcher"
+    #[[menu.main]]
+    #    weight = 8
     #    identifier = "search"
     #    post = "search"
 
@@ -258,8 +258,8 @@ uglyURLs = false
         pre = "external"
    [[menu.socials]]
         url = "https://t.me/HUSTMatNoble"
-	name = "Telegram"
-	weight = 2
+	    name = "Telegram"
+	    weight = 2
         pre = "external"
    [[menu.socials]]
         url = "https://twitter.com/freematnoble"
@@ -309,10 +309,6 @@ uglyURLs = false
 # 主题配置
 
 [params]
-    ######################################
-    # Encryptor
-
-    #hugoEncryptorStorage = "local"#"session"
     ######################################
     # 顶栏
 
@@ -606,7 +602,7 @@ uglyURLs = false
 
     jsonLD = true
     openGraph = true
-    twitterCards = true
+    twitterCards = false
     # 注意：如果你设置 twitterCards 为 `true`，
     #      请务必开启 openGraph。否则，网页的
     #      Twitter Cards 信息将会不完整。
@@ -645,14 +641,6 @@ uglyURLs = false
 
     # 是否禁用 MathJax 的右键菜单
     disableMathJaxMenu = false
-
-
-    # https://metrika.yandex.ru/
-    # yandexMetrikaId = ""
-
-
-    ######################################
-    # Mermaid (https://github.com/mermaid-js/mermaid)
 
     # 是否开启（全局设置）
     enableMermaid = false
@@ -758,6 +746,13 @@ uglyURLs = false
     enableGoogleAdUnits = false
     googleAdSlot = "6616360495"
 
+    ######################################
+    # Yandex.Metrika
+    # https://metrika.yandex.ru/
+
+    # 说明：仅在生产环境（production）下渲染
+
+    yandexMetrikaId = ""
 
     ######################################
     # 文章设置
@@ -1440,70 +1435,70 @@ uglyURLs = false
         contentDir = "content/zh"
         weight = 1
     
-    # 英文
-    [languages.en]
-        languageName = "🇺🇸"
-        contentDir = "content/en"
-        weight = 2
-        languageCode = "en-US"
-        hasCJKLanguage = false
-        copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
-    [languages.en.taxonomies]
-        # category = "categories"
-        # tag = "tags"
-    [languages.en.menu]
-        # [[languages.en.menu.home]]
-        #     url = "/en/about/"
-        #     weight = 3
-        #     pre = "internal"
-        #     post = "user-circle"
-        #     identifier = "about"
-    [[languages.en.menu.main]]
-        url = "/en/about/"
-        name = "about"
-        weight = 1
-        pre = "internal"
-        post = "user-circle"
-        identifier = "about"
-    [[languages.en.menu.main]]
-        weight = 2
-        identifier = "theme-switcher"
-    [[languages.en.menu.main]]
-        weight = 3
-        identifier = "lang-switcher"
+    # # 英文
+    # [languages.en]
+    #     languageName = "🇺🇸"
+    #     contentDir = "content/en"
+    #     weight = 2
+    #     languageCode = "en-US"
+    #     hasCJKLanguage = false
+    #     copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+    # [languages.en.taxonomies]
+    #     # category = "categories"
+    #     # tag = "tags"
+    # [languages.en.menu]
+    #     # [[languages.en.menu.home]]
+    #     #     url = "/en/about/"
+    #     #     weight = 3
+    #     #     pre = "internal"
+    #     #     post = "user-circle"
+    #     #     identifier = "about"
+    # [[languages.en.menu.main]]
+    #     url = "/en/about/"
+    #     name = "about"
+    #     weight = 1
+    #     pre = "internal"
+    #     post = "user-circle"
+    #     identifier = "about"
+    # [[languages.en.menu.main]]
+    #     weight = 2
+    #     identifier = "theme-switcher"
+    # [[languages.en.menu.main]]
+    #     weight = 3
+    #     identifier = "lang-switcher"
 
-    [[languages.en.menu.socials]]
-        url = "https://github.com/MatNoble"
-        name = "GitHub"
-        weight = 1
-        pre = "external"
-   [[languages.en.menu.socials]]
-        url = "https://t.me/HUSTMatNoble"
-	name = "Telegram"
-	weight = 2
-        pre = "external"
-   [[languages.en.menu.socials]]
-        url = "https://twitter.com/freematnoble"
-        name = "Twitter"
-        weight = 3
-        pre = "external"
-    [[languages.en.menu.links]]
-        url = "/en/atom.xml"
-        name = "Feed"
-        weight = 1
-        pre = "external"
-    [languages.en.params]
-        homePoetry = ["In the dark night", "Longing for a light of care", "In the daylight", "Desiring for the swallow of a black hole", "’Cause curiosity — seeks for what’s in the darkness"]
-        siteDescription = "Blog of reuixiy in English."
-        listDateFormat = "January 2"
-        postWidth = 32
-        fontFamilyTitle = "Amstelvar, serif"
-        fontFamilyHeadings = "Amstelvar, serif"
-        fontFamilyBody = "Amstelvar, serif"
-        fontsLink = "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        lineHeight = 1.618
-        enableJustify = false
-        enableSmallCaps = true
-        enableEmphasisPoint = false
-        enableChinesePunctuationGlyphCorrection = false
-        customFooter = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+    # [[languages.en.menu.socials]]
+    #     url = "https://github.com/MatNoble"
+    #     name = "GitHub"
+    #     weight = 1
+    #     pre = "external"
+    # [[languages.en.menu.socials]]
+    #     url = "https://t.me/HUSTMatNoble"
+	#     name = "Telegram"
+	#     weight = 2
+    #     pre = "external"
+    # [[languages.en.menu.socials]]
+    #     url = "https://twitter.com/freematnoble"
+    #     name = "Twitter"
+    #     weight = 3
+    #     pre = "external"
+    # [[languages.en.menu.links]]
+    #     url = "/en/atom.xml"
+    #     name = "Feed"
+    #     weight = 1
+    #     pre = "external"
+    # [languages.en.params]
+    #     homePoetry = ["In the dark night", "Longing for a light of care", "In the daylight", "Desiring for the swallow of a black hole", "’Cause curiosity — seeks for what’s in the darkness"]
+    #     siteDescription = "Blog of reuixiy in English."
+    #     listDateFormat = "January 2"
+    #     postWidth = 32
+    #     fontFamilyTitle = "Amstelvar, serif"
+    #     fontFamilyHeadings = "Amstelvar, serif"
+    #     fontFamilyBody = "Amstelvar, serif"
+    #     fontsLink = "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    #     lineHeight = 1.618
+    #     enableJustify = false
+    #     enableSmallCaps = true
+    #     enableEmphasisPoint = false
+    #     enableChinesePunctuationGlyphCorrection = false
+    #     customFooter = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
