@@ -68,6 +68,10 @@ related = false
   > MatNoble= Matrix + Noble
 - 「Noble」意为「高贵的，贵族的」，所以整体寓意为「数学是高贵的」。灵感来自一个有关笛卡尔的[“浪漫”的爱情故事](https://www.bilibili.com/read/cv166401)
 
+<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/windows/matnoble-bytedance.gif"/>
+
+<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/windows/matnoble-youtube.png"/>
+
 <br />
 
 目前，本站设有两个专栏 
