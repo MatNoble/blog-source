@@ -168,4 +168,8 @@ find -L /usr/local/bin/ -lname /usr/local/texlive/*/bin/* | sudo xargs rm
 
 *以上为 ＴeXLive 2021 为例, 其他版本大同小异*
 
+{{< notice tip >}}
+如果还是有安装问题，可以查看 [一份简短的关于 LATEX 安装的介绍](http://tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf)
+{{< /notice >}}
+
 [^1]: LaTeX 更换字体 <br> https://matnoble.me/tech/latex/latex-support-chinese/#xecjk-%E5%AE%9E%E7%8E%B0%E4%B8%AD%E8%8B%B1%E6%B7%B7%E6%8E%925
