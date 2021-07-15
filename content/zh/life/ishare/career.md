@@ -8,7 +8,7 @@ keywords = ["Memory","爱分享","my best memory","数系家园"]
 toc = false
 +++
 
-{{< music id="002B2EAA3brD5b" type="song" server="tencent" >}}
+{{< music id="0017WG0F4B5EO0" type="song" server="tencent" >}}
 
 ## 博士读不成，那就开启职业生涯吧！
 
