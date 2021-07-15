@@ -24,7 +24,7 @@ related = false
 
 ## About Me
 
-我是生于『[电影奇迹年](https://www.douban.com/note/692120222/)』，HUST 数学系在读研究生（即将毕业），喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
+~~HUST 数学系在读研究生（即将毕业）~~。现就职于某 ICT 大厂，喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/IMG_20180628_164930_mh1530200778808-EFFECTS.jpg" title="本科毕业时" >}}
 
