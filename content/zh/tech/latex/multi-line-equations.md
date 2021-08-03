@@ -36,7 +36,7 @@ toc = true
     p = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
 	+ \sin{x} + \cos{y} + \tan{a} + e^{x+y} \\
     - 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
-\end{multline
+\end{multline}
 ```
 
 <div>
