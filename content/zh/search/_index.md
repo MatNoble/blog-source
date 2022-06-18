@@ -29,8 +29,7 @@ related = false
 {{< friend name="方寸间" url="https://10101.io/" logo="https://cdn.jsdelivr.net/gh/WithdewHua/static@withdewhua-hugo/img/avatar.jpg" word="拖延症患者的瞎折腾, 很精美的博客" >}}
 {{< friend name="Newlearnerの小站" url="https://www.newlearner.site" logo="https://www.newlearner.site/%E2%80%9Cwp-content/uploads%E2%80%9D/2019/01/2018-08-29-19.40.08.png" word="「探索未知，记录点滴」" >}}
 {{< friend name="mathor" url="https://www.wmathor.com/" logo="https://s2.ax1x.com/2020/01/08/l2xtUO.jpg" word="数学与科技" >}}
-{{< friend name="天涯共此时" url="https://ztygcs.github.io/" logo="https://guanqr.com/images/friends/ztygcs.png" word="科技与生活, 华科校友" >}}
-{{< friend name="热爱数学的 hoganbin" url="https://hoganbin.top/" logo="https://hoganbin.top/medias/logo.jpg" word="喜欢数学, 热爱编程. 八一本人" >}}
+{{< friend name="天涯共此时" url="https://ztygcs.github.io/" logo="https://guanqr.com/images/friends/ztygcs.png" word="科技与生活" >}}
 {{< friend name="林深时见璐" url="https://linwhitehat.github.io/" logo="https://linwhitehat.github.io/icons/rabbit512.png" word="Wonderful U - AGA" >}}
 {{< friend name="Refun" url="https://gears233.github.io" logo="https://gears233.github.io/image/logo.jpg" word="重新找回那份简单的快乐…" >}}
 {{< friend name="一大加贝" url="https://www.yidajiabei.xyz/" logo="https://www.yidajiabei.xyz/images/logo.svg" word="学习技术，热爱生活">}}
