@@ -20,8 +20,6 @@ related = false
 
 <hr />
 
-<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/%E4%BB%A5%E7%94%B5%E5%BD%B1%E7%9A%84%E5%90%8D%E4%B9%89%E6%AD%8C%E5%94%B1/1502706428"></iframe>
-
 ## 友链
 
 在不断的学习中, 会发现自己正在做的, 之前早就有人做过了, 在这些丰富的借鉴素材的基础上, 我才得以不断学习进步, 谢谢你们的知识 🍻
