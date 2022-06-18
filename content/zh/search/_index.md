@@ -35,9 +35,10 @@ related = false
 {{< friend name="热爱数学的 hoganbin" url="https://hoganbin.top/" logo="https://hoganbin.top/medias/logo.jpg" word="喜欢数学, 热爱编程. 八一本人" >}}
 {{< friend name="林深时见璐" url="https://linwhitehat.github.io/" logo="https://linwhitehat.github.io/icons/rabbit512.png" word="Wonderful U - AGA" >}}
 {{< friend name="Refun" url="https://gears233.github.io" logo="https://gears233.github.io/image/logo.jpg" word="重新找回那份简单的快乐…" >}}
-{{< friend name="一大加贝" url="https://blog.yidajiabei.xyz/" logo="https://blog.yidajiabei.xyz/images/android-chrome-512x512.png" word="学习技术，热爱生活">}}
+{{< friend name="一大加贝" url="https://www.yidajiabei.xyz/" logo="https://www.yidajiabei.xyz/images/logo.svg" word="学习技术，热爱生活">}}
 {{< friend name="Wulnut’s space" url="https://www.wulnut.top/" logo="https://www.wulnut.top/Home/index/panda.png" word="Nothing but failure" >}}
 {{< friend name="孙云增的博客" url="https://sunyunzeng.com/" logo="https://sunyunzeng.com/img/avatar.jpg" word="极简生活，极致内涵~" >}}
+{{< friend name="自由如疯" url="https://coder-liuu.github.io/" logo="https://avatars.githubusercontent.com/u/46812648" word="纵有疾风起，人生不言弃" >}}
 
 <br />
 
