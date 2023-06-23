@@ -1,4 +1,3 @@
 +++
-title = "文章库"
-aliases = ["/posts/"]
+title = "归档"
 +++
