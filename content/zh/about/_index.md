@@ -12,10 +12,6 @@ meta = false
 related = false
 +++
 
-<!--more-->
-
-<br>
-
 陌生人您好 🤝，欢迎在我的博客留下 👣 
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/hy3AhN.jpg" title=" Friends 💖" >}}
