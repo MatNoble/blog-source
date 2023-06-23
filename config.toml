@@ -743,8 +743,8 @@ uglyURLs = false
     enableGoogleAutoAds = true
 
     ## 广告单元
-    enableGoogleAdUnits = false
-    googleAdSlot = "6616360495"
+    enableGoogleAdUnits =true
+    googleAdSlot = "2320938516"
 
     ######################################
     # Yandex.Metrika
