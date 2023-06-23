@@ -7,4 +7,4 @@ Allow: /about/
 Allow: /series/
 Allow: /search/
 
-Sitemap: https://matnoble.me/sitemap.xml
+Sitemap: https://matnoble.github.io/sitemap.xml
