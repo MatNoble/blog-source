@@ -2,7 +2,7 @@
 title = "「我」是谁"
 date = "2020-01-03T16:29:06+08:00"
 description = "数学＆计算机 我都爱"
-keywords = ["about","关于此博客","MatNoble","数系家园","matnoble.me","Hugo","GitHub"]
+keywords = ["about","关于此博客","MatNoble","数系家园","matnoble.github.io","Hugo","GitHub"]
 images = ["https://imgkr.cn-bj.ufileos.com/cded9ee3-55a8-498b-814a-baa0792a0166.jpg"]
 displayCopyright = false
 mathjax = true
@@ -13,8 +13,6 @@ related = false
 +++
 
 <!--more-->
-
-{{< music id="7440730730" type="playlist" server="tencent" >}}
 
 <br>
 
@@ -56,7 +54,7 @@ related = false
 
 ## About This Site
 
-<p style="display:block;text-align:center;color:gray;font-size:30pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">matnoble.me</p>
+<p style="display:block;text-align:center;color:gray;font-size:30pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">matnoble.github.io</p>
 
 {{< mark text="MatNoble">}}可以拆分为两部分: Mat + Noble
 
@@ -76,27 +74,17 @@ related = false
 
 目前，本站设有两个专栏 
 
-- [线性回忆录](https://matnoble.me/series/mla/)<br>
+- [线性回忆录](https://matnoble.github.io/series/mla/)<br>
   企图完整地介绍「线性代数」，而不采取(大陆)大学课堂里的套路。
-- [LaTeX 排版「冷」知识](https://matnoble.me/series/latex/)<br>
+- [LaTeX 排版「冷」知识](https://matnoble.github.io/series/latex/)<br>
   每篇博文介绍一个实用的 $\LaTeX$ 排版小知识。「不积跬步，无以至千里。不积小流，无以成江海。」
 
-本博客使用基于 Go 语言的 [Hugo](https://gohugo.io/) 生成静态网页，配合 [MemE](https://github.com/reuixiy/hugo-theme-meme) 主题，源码存放在 [GitHub](https://github.com/MatNoble/matnoble.github.io)，通过 [GitHub Actions](https://github.com/MatNoble/matnoble.github.io/actions) 进行持续构建、持续部署。长期拥有 [matnoble.me](https://matnoble.me/) 域名。
+本博客使用基于 Go 语言的 [Hugo](https://gohugo.io/) 生成静态网页，配合 [MemE](https://github.com/reuixiy/hugo-theme-meme) 主题，源码存放在 [GitHub](https://github.com/MatNoble/matnoble.github.io)，通过 [GitHub Actions](https://github.com/MatNoble/matnoble.github.io/actions) 进行持续构建、持续部署。长期拥有 [matnoble.github.io](https://matnoble.github.io/) 域名。
 
 此外，本博客是一个 [PWA](https://developers.google.com/web/progressive-web-apps/?hl=zh_cn) 站点，你可以通过浏览器添加本博客到你的手机主屏或电脑桌面，随时随地查看本博客。如果你想订阅本博客，推荐<a href="/atom.xml" target="_blank" rel="noopener">Atom</a>/<a href="/rss.xml" target="_blank" rel="noopener">RSS</a>。
 
-同时，欢迎兴趣相投者与我友链 $\to$ [点我跳转](https://matnoble.me/search/#友链)
+同时，欢迎兴趣相投者与我友链 $\to$ [点我跳转](https://matnoble.github.io/search/#友链)
 
 <p style="display:block;text-align:center;color:gray;font-size:18pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">记录所思，所想，所为</p>
 
 *本站建议使用 Chrome 或 Safari 浏览器浏览，为防止遗忘本站，可快捷键 `Ctrl + D` 将本站添加至浏览器书签*
-
-<br />
-
-### 评论系统
-
-基于 [Valine](https://valine.js.org/) 实现博客的评论功能，支持「Markdown」语言。还可以换成自己喜欢的[头像](https://valine.js.org/avatar.html)
-
-> Valine 诞生于 2017 年 8 月 7 日，是一款基于 LeanCloud 的快速、简洁且高效的无后端评论系统.
-
-另外，评论系统已支持邮件通知，借鉴于[此](http://www.zhaojun.im/hexo-valine-modify/)，欢迎在下方留言 🗽
