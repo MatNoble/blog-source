@@ -11,10 +11,6 @@ meta = false
 related = false
 +++
 
-{{< music id="7440730730" type="playlist" server="tencent" >}}
-
-{{< imgcap src="https://ttfou.com/images/2020/02/16/27b0abfdb3b2a0b15d5f406f6b8a4828.jpg" title="Friends" >}}
-
 ## About Me	
 
 {{< imgcap src="https://imgkr.cn-bj.ufileos.com/c40ac815-3d0b-4ce4-a648-cdc841020b0c.jpg" title="Enjoy" >}}
