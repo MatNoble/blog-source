@@ -5,22 +5,47 @@ name: build
 on:
   push:
     branches:
-    - master
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: true  # Fetch Hugo themes (true OR recursive)
-        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-    - name: 'Building...'
-      uses: reuixiy/hugo-deploy@v1
-      env:
-        DEPLOY_REPO: MatNoble/matnoble.github.io
-        DEPLOY_BRANCH: build
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-        TZ: Asia/Shanghai
+      - name: 'Clone gohugoio/hugoBasicExample repository'
+        run: |
+          git clone https://github.com/gohugoio/hugoBasicExample.git
+          cd hugoBasicExample
+          mv content/post content/posts
+          sed -i 's/posts/post/g' content/posts/_index.md
+          mkdir content/about && mv content/about.md content/about/_index.md
+          mkdir -p themes/meme
+
+      - name: 'Check out MemE into themes/meme folder'
+        uses: actions/checkout@v3
+        with:
+          path: hugoBasicExample/themes/meme
+
+      - name: 'Setup MemE'
+        run: |
+          cd hugoBasicExample
+          rm -rf config*
+          cp themes/meme/exampleSite/config.toml .
+      
+      - name: 'Install Hugo'
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: 'Build site'
+        run: |
+          cd hugoBasicExample
+          hugo --gc --minify --cleanDestinationDir --baseURL="https://matnoble.github.io/about/"
+
+      - name: 'Deploy to GitHub Pages'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: hugoBasicExample/public
+          force_orphan: true
