@@ -43,7 +43,7 @@ related = false
 
 <p class="note-default" style="text-align:left">
 网站名称：数学小兵儿<br>
-网站地址：<a href="../" target="_blank">https://matnoble.me/</a><br>
-网站标志：<a href="../icons/android-chrome-512x512.png" target="_blank">https://matnoble.me/icons/android-chrome-512x512.png</a><br>
+网站地址：<a href="../" target="_blank">https://matnoble.github.io/</a><br>
+网站标志：<a href="../icons/android-chrome-512x512.png" target="_blank">https://matnoble.github.io/icons/android-chrome-512x512.png</a><br>
 网站描述：数学＆计算机 我都爱
 </p>
