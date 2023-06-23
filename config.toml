@@ -740,7 +740,7 @@ uglyURLs = false
     googleAdClient = "ca-pub-4221480300398103"
 
     ## 自动广告
-    enableGoogleAutoAds = false
+    enableGoogleAutoAds = true
 
     ## 广告单元
     enableGoogleAdUnits = false
