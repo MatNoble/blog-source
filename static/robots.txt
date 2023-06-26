@@ -1,10 +1,2 @@
 User-agent: *
-Allow: /
-Allow: /archives/
-Allow: /categories/
-Allow: /tags/
-Allow: /about/
-Allow: /series/
-Allow: /search/
-
 Sitemap: https://matnoble.github.io/sitemap.xml
