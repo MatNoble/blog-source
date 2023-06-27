@@ -74,7 +74,7 @@ meta = false
 - [LaTeX 排版「冷」知识](https://matnoble.github.io/series/latex/)<br>
   每篇博文介绍一个实用的 $\LaTeX$ 排版小知识。「不积跬步，无以至千里。不积小流，无以成江海。」
 
-本博客使用基于 Go 语言的 [Hugo](https://gohugo.io/) 生成静态网页，配合 [MemE](https://github.com/reuixiy/hugo-theme-meme) 主题，源码存放在 [GitHub](https://github.com/MatNoble/matnoble.github.io)，通过 [GitHub Actions](https://github.com/MatNoble/matnoble.github.io/actions) 进行持续构建、持续部署。长期拥有 [matnoble.github.io](https://matnoble.github.io/) 域名。
+本博客使用基于 Go 语言的 [Hugo](https://gohugo.io/) 生成静态网页，配合 [MemE](https://github.com/reuixiy/hugo-theme-meme) 主题，源码存放在 [GitHub](https://github.com/MatNoble/matnoble.github.io)，通过 [GitHub Actions](https://github.com/MatNoble/matnoble.github.io/actions) 进行持续构建、持续部署。
 
 此外，本博客是一个 [PWA](https://developers.google.com/web/progressive-web-apps/?hl=zh_cn) 站点，你可以通过浏览器添加本博客到你的手机主屏或电脑桌面，随时随地查看本博客。如果你想订阅本博客，推荐<a href="/atom.xml" target="_blank" rel="noopener">Atom</a>/<a href="/rss.xml" target="_blank" rel="noopener">RSS</a>。
 
