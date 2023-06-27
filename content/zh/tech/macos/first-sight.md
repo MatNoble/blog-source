@@ -8,7 +8,7 @@ katex = true
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/截屏2020-08-15 下午7.24.37.png" title="一旦用过, 就回不去了" alt="mac os" >}}
 
-参照 [黑果小兵的部落阁](https://blog.daliansky.net/) 的 [黑苹果教程](https://github.com/daliansky/XiaoXinPro-13-hackintosh) 把我新买的 [联想小新 pro 13](https://matnoble.me/tech/reviews/lenovo-xiaoxin-pro-13/) 装上了苹果系统 --- Mac OS Catalina 10.15.6 
+参照 [黑果小兵的部落阁](https://blog.daliansky.net/) 的 [黑苹果教程](https://github.com/daliansky/XiaoXinPro-13-hackintosh) 把我新买的 [联想小新 pro 13](https://matnoble.github.io/tech/reviews/lenovo-xiaoxin-pro-13/) 装上了苹果系统 --- Mac OS Catalina 10.15.6 
 
 因为操作失误, 不小心删掉了之前心爱的 Ubuntu 20.04, 更重要的是**没有备份**😭, 所以以后一定要  **即时备份** **即时备份** **即时备份** 
 

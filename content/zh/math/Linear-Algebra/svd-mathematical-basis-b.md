@@ -238,15 +238,15 @@ $$
 
 以上所有部分就是奇异值分解(singular value decomposition), 简称 SVD. 实际上, 之前做的几篇都是为这一篇做准备:
 
-1. [秩-零化度定理(Rank-Nullity Theorem)](https://matnoble.me/posts/rank-nullity/)
-2. [矩阵的四个基本空间, 不了解下吗?](https://matnoble.me/posts/matrix4basicth/)
-3. [矩阵的四个基本空间的基底](https://matnoble.me/posts/basicspacebase/)
-4. [Gram 矩阵](https://matnoble.me/posts/gram/)
-5. [正交矩阵之旋转与镜射](https://matnoble.me/posts/rotationandmirroring/)
-6. [奇异值分解初步](https://matnoble.me/posts/svd/)
+1. [秩-零化度定理(Rank-Nullity Theorem)](https://matnoble.github.io/posts/rank-nullity/)
+2. [矩阵的四个基本空间, 不了解下吗?](https://matnoble.github.io/posts/matrix4basicth/)
+3. [矩阵的四个基本空间的基底](https://matnoble.github.io/posts/basicspacebase/)
+4. [Gram 矩阵](https://matnoble.github.io/posts/gram/)
+5. [正交矩阵之旋转与镜射](https://matnoble.github.io/posts/rotationandmirroring/)
+6. [奇异值分解初步](https://matnoble.github.io/posts/svd/)
 
 接下来, 奇异值分解专题并没有结束, 我将以我的思考阐述 SVD 的几何意义以及一些实际应用.
 
 <hr />
 
-更多..奇异值分解..的内容可以戳 [**这里**](https://matnoble.me/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)
+更多..奇异值分解..的内容可以戳 [**这里**](https://matnoble.github.io/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)

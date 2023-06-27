@@ -37,7 +37,7 @@ CTeX 宏基是面向中文排版的通用 $\LaTeX$ 排版框架, 为中文 $\LaT
 CTeX 中文套装是基于 Windows 下的 MiKTeX 系统，集成了编辑器 WinEdt 和 PostScript 处理软件 Ghostscript 和 GSview 等主要工具。 CTeX 中文套装在 MiKTeX 的基础上增加了对中文的完整支持。 CTeX 中文套装支持 CJK, xeCJK, CCT, TY 等多种中文 TeX 处理方式。
 {{< /blockquote >}}
 
-由于 CTeX 中文套装[^1]已停止更新(上一次更新是 2012 年), 所以强烈建议[ Linux 和 Windows 用户安装 TeXLive](https://matnoble.me/posts/install-texlive/), Mac OSX 用户安装 [MacTeX](http://www.tug.org/mactex/).　
+由于 CTeX 中文套装[^1]已停止更新(上一次更新是 2012 年), 所以强烈建议[ Linux 和 Windows 用户安装 TeXLive](https://matnoble.github.io/posts/install-texlive/), Mac OSX 用户安装 [MacTeX](http://www.tug.org/mactex/).　
 
 <br />
 

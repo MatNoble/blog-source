@@ -54,7 +54,7 @@ We hold these truths to be self-evident, that all men are created equal, that th
   - v2rayL  
     支持 vmess 和 ss 订阅。项目地址：[github.com/jiangxufeng/v2rayL](https://github.com/jiangxufeng/v2rayL)
   - electron-ssr  
-    [Ubuntu 上使用 ssr 实现科学上网](https://matnoble.me/tech/ubuntu/ubuntu-ssr/)
+    [Ubuntu 上使用 ssr 实现科学上网](https://matnoble.github.io/tech/ubuntu/ubuntu-ssr/)
 - MaC  
   项目地址: [clashX](https://github.com/yichengchen/clashX)
 - Android  
@@ -72,4 +72,4 @@ We hold these truths to be self-evident, that all men are created equal, that th
 另外，如果您有好用的机场或者稳定的科学上网方式，也欢迎在评论区分享出来！
 {{< /notice >}}
 
-[^1]: [Chrome 浏览器翻墙](https://matnoble.me/tech/ubuntu/scientific-internet/)只能临时迫不得已使用，既不稳定速度又慢
+[^1]: [Chrome 浏览器翻墙](https://matnoble.github.io/tech/ubuntu/scientific-internet/)只能临时迫不得已使用，既不稳定速度又慢

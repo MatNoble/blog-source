@@ -19,7 +19,7 @@ aliases = ["/posts/fem3"]
 
 ## 程序实例(I)
 
-[逼近函数 I](https://matnoble.me/posts/fem2/) 中介绍了逼近函数的数学推导, 这一次用程序实现它.
+[逼近函数 I](https://matnoble.github.io/posts/fem2/) 中介绍了逼近函数的数学推导, 这一次用程序实现它.
 
 ### 例题回顾
 

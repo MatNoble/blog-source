@@ -1,7 +1,7 @@
 +++
 title = "Friends & Search"
 date = "2020-02-12T16:29:06+08:00"
-keywords = ["站内搜索","MatNoble","数学小兵儿","数系家园","matnoble.me","友链"]
+keywords = ["站内搜索","MatNoble","数学小兵儿","数系家园","matnoble.github.io","友链"]
 description = "站内搜寻 & 友链"
 displayCopyright = false
 smallCaps = true
@@ -11,6 +11,7 @@ images =["https://searchengineland.com/figz/wp-content/seloads/2016/03/google-se
 related = false
 +++
 
+<!-->
 ## 站内搜索
 
 借助 Google 家的[Google Custom Search](https://cse.google.com/cse/)实现站内搜索功能(需要梯子) 👇
@@ -19,6 +20,7 @@ related = false
 <div class="gcse-search"></div>
 
 <hr />
+<-->
 
 ## 友链
 

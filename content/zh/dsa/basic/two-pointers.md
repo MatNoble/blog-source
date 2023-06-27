@@ -166,7 +166,7 @@ class Solution:
 ### 快慢指针
 ### 142. 环形链表 II
 
-[链接在这里](https://matnoble.me/dsa/basic/linked-list/#142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-ii)
+[链接在这里](https://matnoble.github.io/dsa/basic/linked-list/#142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8-ii)
 
 ### 287. 寻找重复数
 https://leetcode-cn.com/problems/find-the-duplicate-number/

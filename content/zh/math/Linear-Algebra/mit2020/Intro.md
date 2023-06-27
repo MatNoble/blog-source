@@ -55,12 +55,12 @@ https://ocw.mit.edu/resources/res-18-010-a-2020-vision-of-linear-algebra-spring-
 
 看完 2020 版更新的内容，我甚至感到一些欣慰，最近的几次关于线性代数的更新全部属于本次更新的内容🎉
 
-- [正交矩阵之旋转与镜射](https://matnoble.me/math/linear-algebra/rotationandmirroring/)
-- [奇异值分解初探](https://matnoble.me/math/linear-algebra/svd-mathematical-basis-a/)
-- [奇异值分解再探](https://matnoble.me/math/linear-algebra/svd-mathematical-basis-a/)
-- [线代视角下的最小二乘法](https://matnoble.me/math/linear-algebra/matrixleastsquares/)
-- [矩阵的四个基本空间, 不了解下吗?](https://matnoble.me/math/linear-algebra/matrix4basicth/)
-- [矩阵四个基本空间的基底](https://matnoble.me/math/linear-algebra/basicspacebase/)
+- [正交矩阵之旋转与镜射](https://matnoble.github.io/math/linear-algebra/rotationandmirroring/)
+- [奇异值分解初探](https://matnoble.github.io/math/linear-algebra/svd-mathematical-basis-a/)
+- [奇异值分解再探](https://matnoble.github.io/math/linear-algebra/svd-mathematical-basis-a/)
+- [线代视角下的最小二乘法](https://matnoble.github.io/math/linear-algebra/matrixleastsquares/)
+- [矩阵的四个基本空间, 不了解下吗?](https://matnoble.github.io/math/linear-algebra/matrix4basicth/)
+- [矩阵四个基本空间的基底](https://matnoble.github.io/math/linear-algebra/basicspacebase/)
  
 --- 
 

@@ -116,4 +116,4 @@ $$ S=2P-I$$
 >\end{aligned} 
 >$$
 
-[^1]: https://matnoble.me/posts/matrixleastsquares/#%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1%E7%9F%A9%E9%98%B5
+[^1]: https://matnoble.github.io/posts/matrixleastsquares/#%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1%E7%9F%A9%E9%98%B5

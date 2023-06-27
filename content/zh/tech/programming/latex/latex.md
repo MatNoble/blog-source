@@ -66,7 +66,7 @@ $\LaTeX$ 模板 GitHub 地址: [github.com/MatNoble/LaTeX-Document](https://gith
 
 \begin{document}
 \section{黑体}
-正文是宋体, 博客: matnoble.me
+正文是宋体, 博客: matnoble.github.io
 \vskip 2em
 {\adheiti 这是思源黑体}	
 \end{document}

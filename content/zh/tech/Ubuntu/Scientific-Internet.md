@@ -11,7 +11,7 @@ images = ["https://ttfou.com/images/2020/02/26/aaf9ef21ab9b33b737d44d73c643be88.
 
 <br>
 
-近日，感觉「墙」越来越高，导致目前使用的 [机场](https://matnoble.me/posts/ubuntu-ssr/#%E4%B8%8B%E9%9D%A2%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E6%88%91%E7%94%A8%E7%9A%84%E6%9C%BA%E5%9C%BA) 时不时的抽风，时好时坏，所以在网络不达「墙」外时，临时使用{{< mark text="Chrome 插件" >}}实现科学上网。
+近日，感觉「墙」越来越高，导致目前使用的 [机场](https://matnoble.github.io/posts/ubuntu-ssr/#%E4%B8%8B%E9%9D%A2%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E6%88%91%E7%94%A8%E7%9A%84%E6%9C%BA%E5%9C%BA) 时不时的抽风，时好时坏，所以在网络不达「墙」外时，临时使用{{< mark text="Chrome 插件" >}}实现科学上网。
 
 ## 谷歌访问助手(破解版)
 

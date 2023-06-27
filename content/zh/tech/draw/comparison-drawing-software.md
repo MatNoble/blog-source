@@ -10,7 +10,7 @@ images = ["https://imgkr.cn-bj.ufileos.com/6dd6e180-27d3-4ba1-8dca-1906deda8ae9.
 katex = true
 +++
 
-<img src="https://imgkr.cn-bj.ufileos.com/6dd6e180-27d3-4ba1-8dca-1906deda8ae9.svg" alt="blog matnoble.me Comparison drawing software" width="90%"/>
+<img src="https://imgkr.cn-bj.ufileos.com/6dd6e180-27d3-4ba1-8dca-1906deda8ae9.svg" alt="blog matnoble.github.io Comparison drawing software" width="90%"/>
 
 绘图分好多类型, 本文只涉及非编程类的「科研绘图」
 
@@ -62,7 +62,7 @@ Micsoft Visio 上手简单，可以作出高质量的科研用图。但是，个
 
 ## AxGlyph
 
-这是之前提到过的 [AxMath](https://matnoble.me/tech/latex/typeset-bbt/#axmath-%E6%98%AF%E5%85%AC%E5%BC%8F%E7%BC%96%E8%BE%91%E5%99%A8%E7%A5%9E%E5%99%A8) 的“小兄弟”，支持使用 AxMath 输入公式。
+这是之前提到过的 [AxMath](https://matnoble.github.io/tech/latex/typeset-bbt/#axmath-%E6%98%AF%E5%85%AC%E5%BC%8F%E7%BC%96%E8%BE%91%E5%99%A8%E7%A5%9E%E5%99%A8) 的“小兄弟”，支持使用 AxMath 输入公式。
 
 本科毕业设计中，都是使用 AxGlyph 作的图，没有选择 Visio 是因为前者对公式输入更好些。
 

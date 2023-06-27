@@ -13,7 +13,7 @@ aliases = ["/posts/svd-linear-system"]
 
 ## 释题
 
-奇异值分解(Singular Value Decomposition, 简称:SVD)实际上是一种[矩阵分解](https://matnoble.me/posts/svd1/), 记得数值分析老师说过:
+奇异值分解(Singular Value Decomposition, 简称:SVD)实际上是一种[矩阵分解](https://matnoble.github.io/posts/svd1/), 记得数值分析老师说过:
 
 > 每一种「矩阵分解」都对应一种「解线性方程组」的算法, 例如 LU 分解, QR 分解和 Cholesky 分解等.
 
@@ -283,7 +283,7 @@ $$
 
 <hr />
 
-更多..奇异值分解..的内容可以戳 [**这里**](https://matnoble.me/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)
+更多..奇异值分解..的内容可以戳 [**这里**](https://matnoble.github.io/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)
 
-[^1]: https://matnoble.me/posts/matrixleastsquares/#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E8%A7%A3
-[^2]: https://matnoble.me/posts/matrixleastsquares/#%E5%88%97%E6%BB%A1%E7%A7%A9
+[^1]: https://matnoble.github.io/posts/matrixleastsquares/#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E8%A7%A3
+[^2]: https://matnoble.github.io/posts/matrixleastsquares/#%E5%88%97%E6%BB%A1%E7%A7%A9

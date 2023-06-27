@@ -70,7 +70,7 @@ MemE v4.0.0 breaks Hugo shortcodes
 
 ```html
 <!-- ./layouts/shortcodes/mark.html 
-https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#mark-标记支持
+https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#mark-标记支持
 -->
 
 <mark>{{ .Get "text" }}</mark>
@@ -88,7 +88,7 @@ https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#mark-标记支�
 
 ```html
 <!-- ./layouts/shortcodes/abbr.html 
-https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#abbr-缩写支持
+https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#abbr-缩写支持
 -->
 
 <abbr title="{{ .Get "title" }}">{{ .Get "text" }}</abbr>
@@ -137,7 +137,7 @@ https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#abbr-缩写支�
 ```html
 <!--
 ./layouts/shortcodes/imgcap.html
-https://matnoble.me/posts/shortcodes-practice-tutorial-for-hugo/#image-with-caption
+https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#image-with-caption
 -->
 
 <span class="caption-wrapper">
@@ -234,7 +234,7 @@ other = "小贴示"
 {{< notice warning >}}
 该 shortcodes 存在问题! 会导致 TOC 目录点击失效, 所以, 暂时只能将音乐放到没有目录的页面 👇
 {{< /notice >}}
-<a href="https://matnoble.me/about"><img title="点击跳转" alt="Aplayer 播放器" src="https://ttfou.com/images/2020/02/18/3596ac5359d85bd85bab7f0241a3ab97.png" /></a>
+<a href="https://matnoble.github.io/about"><img title="点击跳转" alt="Aplayer 播放器" src="https://ttfou.com/images/2020/02/18/3596ac5359d85bd85bab7f0241a3ab97.png" /></a>
 
 ### 视频 Video
 #### YouTube
@@ -268,14 +268,14 @@ other = "小贴示"
 {{< gist MatNoble b8d6a9541221fef7c30bf214d3505836 >}}
 
 ### 好友链接 Friend link
-很多博客都支持添加 `友链`, 本博客也不例外, 在[这里](https://matnoble.me/search/#%E5%8F%8B%E9%93%BE)
+很多博客都支持添加 `友链`, 本博客也不例外, 在[这里](https://matnoble.github.io/search/#%E5%8F%8B%E9%93%BE)
 借鉴自 [hugo-friendlinks](https://github.com/kkkgo/hugo-friendlinks), 针对本主题, 稍加修改.
 
 ```markdown
-{{</* friend name="数学小兵儿" url="https://matnoble.me/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" */>}}
+{{</* friend name="数学小兵儿" url="https://matnoble.github.io/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" */>}}
 ```
 
-{{< friend name="数学小兵儿" url="https://matnoble.me/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" >}}
+{{< friend name="数学小兵儿" url="https://matnoble.github.io/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" >}}
 
 ### 提供下载 download
 
