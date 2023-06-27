@@ -1,5 +1,5 @@
 +++
-title = "Friends & Search"
+title = "Friends"
 date = "2020-02-12T16:29:06+08:00"
 keywords = ["站内搜索","MatNoble","数学小兵儿","数系家园","matnoble.github.io","友链"]
 description = "站内搜寻 & 友链"
