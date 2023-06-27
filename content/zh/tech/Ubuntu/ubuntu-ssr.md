@@ -52,6 +52,6 @@ export http_proxy="http://127.0.0.1:12333"
 
 如果不想花钱, 其实有很多电报群里有免费的公共节点, 不嫌麻烦或者对翻墙需求不大时, 可以去找一找.
 
-**但是**, 「天下没有免费的午餐」, 大多数免费的 ssr 并不稳定, 若想长期稳定使用, 花点儿银子还是必须的, 不妨去我写的[**这篇文章**](https://matnoble.me/tech/tofreeworld/#%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90)去找一找适合自己的. 
+**但是**, 「天下没有免费的午餐」, 大多数免费的 ssr 并不稳定, 若想长期稳定使用, 花点儿银子还是必须的, 不妨去我写的[**这篇文章**](https://matnoble.github.io/tech/tofreeworld/#%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90)去找一找适合自己的. 
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132725.png" title="科学上网 不作恶" >}}
