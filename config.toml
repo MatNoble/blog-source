@@ -385,7 +385,7 @@ uglyURLs = false
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = ["花开花谢 白天黑夜","一切自然 又不尽然","春夏秋冬 经过才懂","世间冷暖 无非自然","<i>－－李健《懂得》</i>"]
+    homePoetry = ["花开花谢 白天黑夜","一切自然 又不尽然","春夏秋冬 经过才懂","世间冷暖 无非自然"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
@@ -1138,7 +1138,7 @@ uglyURLs = false
     # 文章版权
 
     # 是否开启
-    enablePostCopyright = true
+    enablePostCopyright = false
 
     # 是否显示（全局设置）
     displayPostCopyright = true
@@ -1150,7 +1150,7 @@ uglyURLs = false
     # 文章更新徽章
 
     # 是否开启
-    enablePostUpdatedBadge = true
+    enablePostUpdatedBadge = false
 
     # 是否显示（全局设置）
     displayUpdatedBadge = true
@@ -1169,7 +1169,7 @@ uglyURLs = false
     enablePostGitInfo = true
 
     # 是否显示（全局设置）
-    displayPostGitInfo = false
+    displayPostGitInfo = true
     # 说明：文章的 Front Matter 中的 `gitinfo`
     #      的优先级高于此处
 
@@ -1196,7 +1196,7 @@ uglyURLs = false
     feedbackText = "Feedback"
 
     # 是否显示编辑链接
-    displayEditLink = false
+    displayEditLink = true
     # 编辑链接的图标
     editIcon = "edit"
     # 编辑链接的文本
@@ -1207,7 +1207,7 @@ uglyURLs = false
     # 文章分享
 
     # 是否开启
-    enablePostShare = true
+    enablePostShare = false
 
     # 是否显示（全局设置）
     displayPostShare = true
@@ -1215,18 +1215,15 @@ uglyURLs = false
     #      的优先级高于此处
 
     displayShareOnText = false
-
     shareOnTwitter = true
-    shareOnFacebook = true
-    shareOnLinkedIn = false
+    shareOnFacebook = false
+    shareOnLinkedIn = true
     shareOnTelegram = true
-    shareOnWeibo = true
-    shareOnDouban = true
-    shareOnQQ = true
+    shareOnWeibo = false
+    shareOnDouban = false
+    shareOnQQ = false
     shareOnQzone = false
-
     shareViaQRCode = true
-
 
     ######################################
     # 相关文章
@@ -1235,7 +1232,7 @@ uglyURLs = false
     enableRelatedPosts = true
 
     # 是否显示（全局设置）
-    displayRelatedPosts = true
+    displayRelatedPosts = false
     # 说明：文章的 Front Matter 中的 `related`
     #      的优先级高于此处
 
@@ -1250,7 +1247,7 @@ uglyURLs = false
     # 文章的标签
 
     # 是否开启
-    enablePostTags = true
+    enablePostTags = false
 
     # 标签的图标
     postTagsIcon = "tag"
@@ -1267,7 +1264,7 @@ uglyURLs = false
     #      的是一篇更旧的文章。
 
     # 是否开启
-    enablePostNav = true
+    enablePostNav = false
 
     # 是否仅限于相同的文章分区
     postNavInSection = true
@@ -1310,27 +1307,30 @@ uglyURLs = false
     # 页脚
 
     # 是否开启
-    enableFooter = true
+    enableFooter = false
 
     # 是否显示
-    displayFooter = true
+    displayFooter = false
 
     # 是否在首页显示
     displayFooterInHome = false
 
     displayCopyleftSymbol = false
     # 是否显示版权符号（©）
-    displayCopyrightSymbol = true
+    displayCopyrightSymbol = false
 
     # 是否显示站点的创建年份
-    displaySiteCreatedYear = true
+    displaySiteCreatedYear = false
 
     # 年份与作者之间的图标，留空（""）则无
     iconBetweenYearAndAuthor = "heart"
     # 图标颜色
     iconColor = "#f06292"
     # 是否开启图标的跳动效果
-    iconAnimation = true
+    iconAnimation = false
+
+    # 是否显示站点的作者名称
+    displaySiteAuthorName = false
 
     # 是否显示 Hugo 和 MemE 的链接
     displayPoweredBy = false
@@ -1341,7 +1341,7 @@ uglyURLs = false
     # 自定义页脚（支持 Markdown）
     customFooter = ""
 
-    displayBusuanziSiteUVAndPV = true
+    displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "本站访客数"
     busuanziSiteUVIcon = "user"
     busuanziSitePVText = "本站访问量"

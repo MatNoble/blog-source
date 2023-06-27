@@ -1113,6 +1113,7 @@ uglyURLs = false
     repoURL = ""
     # 编辑地址
     repoEditURL = ""
+    repoEditURLSuffix = ""
 
     # Git 的图标
     gitIcon = "code-branch"
@@ -1267,6 +1268,9 @@ uglyURLs = false
     iconColor = "#f06292"
     # 是否开启图标的跳动效果
     iconAnimation = true
+
+    # 是否显示站点的作者名称
+    displaySiteAuthorName = true
 
     # 是否显示 Hugo 和 MemE 的链接
     displayPoweredBy = true

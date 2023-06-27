@@ -1169,6 +1169,7 @@ uglyURLs = false
 
     repoURL = ""
     repoEditURL = ""
+    repoEditURLSuffix = ""
 
     gitIcon = "code-branch"
     displayCommitHash = true
@@ -1301,6 +1302,8 @@ uglyURLs = false
     iconColor = "#f06292"
     # Enable heartbeat animation?
     iconAnimation = true
+
+    displaySiteAuthorName = true
 
     # Display links to Hugo and MemE?
     displayPoweredBy = true
