@@ -30,7 +30,7 @@ related = false
 想要加入我的友链就在下方留言或者提交 [Issues](https://github.com/MatNoble/matnoble.github.io/issues/1)! 同时, 也欢迎把我的博客加入你的友链 🤗
 
 <p class="note-default" style="text-align:left">
-网站名称：数学小兵儿<br>
+网站名称：MatNoble<br>
 网站地址：<a href="../" target="_blank">https://matnoble.github.io/</a><br>
 网站标志：<a href="../icons/android-chrome-512x512.png" target="_blank">https://matnoble.github.io/icons/android-chrome-512x512.png</a><br>
 网站描述：数学＆计算机 我都爱
