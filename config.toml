@@ -1207,7 +1207,7 @@ uglyURLs = false
     # 文章分享
 
     # 是否开启
-    enablePostShare = false
+    enablePostShare = true
 
     # 是否显示（全局设置）
     displayPostShare = true
@@ -1219,7 +1219,7 @@ uglyURLs = false
     shareOnFacebook = false
     shareOnLinkedIn = true
     shareOnTelegram = true
-    shareOnWeibo = false
+    shareOnWeibo = true
     shareOnDouban = false
     shareOnQQ = false
     shareOnQzone = false
