@@ -821,14 +821,14 @@ uglyURLs = false
     # 文章描述
 
     # 是否显示
-    displayPostDescription = false
+    displayPostDescription = true
 
 
     ######################################
     # 文章元信息
 
     # 是否开启（全局设置）
-    enablePostMeta = true
+    enablePostMeta = false
     # 说明：文章的 Front Matter 中的 `meta`
     #      的优先级高于此处
 
