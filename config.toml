@@ -821,7 +821,7 @@ uglyURLs = false
     # 文章描述
 
     # 是否显示
-    displayPostDescription = true
+    displayPostDescription = false
 
 
     ######################################
