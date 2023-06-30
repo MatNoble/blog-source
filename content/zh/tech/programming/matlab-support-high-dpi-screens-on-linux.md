@@ -1,8 +1,8 @@
 +++
 title = "在 Linux 上解决 Matlab 适应高分屏问题(字体过小)"
 categories = ["TECH","喜欢编程"]
-tags = ["Matlab","Debug"]
-keywords = ["Matlab","喜欢编程","debug","在 Linux 上解决 Matlab 适应高分屏问题(字体过小)","matlab-support-high-dpi-screens-on-linux"]
+tags = ["Matlab"]
+keywords = ["Matlab","喜欢编程","在 Linux 上解决 Matlab 适应高分屏问题(字体过小)","matlab-support-high-dpi-screens-on-linux"]
 date = "2020-02-19T00:17:00+00:00"
 toc = true
 katex = true

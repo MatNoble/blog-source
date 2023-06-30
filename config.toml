@@ -208,13 +208,13 @@ uglyURLs = false
         pre = "internal"
 	    post = "archive"
 	    identifier = "archives"
-    [[menu.main]]
-        pageref = "/categories/"
-        name = "分类"
-        weight = 2
-        pre = "internal"
-	    post = "th"
-	    identifier = "categories"
+    # [[menu.main]]
+    #     pageref = "/categories/"
+    #     name = "分类"
+    #     weight = 2
+    #     pre = "internal"
+	#     post = "th"
+	#     identifier = "categories"
     [[menu.main]]
         pageref = "/tags/"
         name = "标签"

@@ -2,7 +2,7 @@
 title = "在 Ubuntu 中配置 Python 环境"
 date = "2020-03-17T00:09:10+00:00"
 description = "Configure Python environment in Ubuntu"
-tags = ["安装","Ubuntu 装机与优化","Python"]
+tags = ["Ubuntu 装机与优化","Python"]
 keywords = ["教程","pip","pip3","python2","python3","NumPy","SciPy","Pandas","Matplotlib","在 Ubuntu 中配置 python 环境","Configure python environment in ubuntu"]
 toc = true
 images = ["https://ttfou.com/images/2020/03/08/3558b8170bbc25adfdbd312c5a729944.png"]

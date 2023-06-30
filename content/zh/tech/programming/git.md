@@ -1,7 +1,7 @@
 +++
 title = "Git 实用命令汇总(长期更新)"
 description = "本文并不是 git 教学。只是我现在使用的所有 git 命令，之后学习一点记录一点"
-tags = ["Git"]
+tags = ["开发"]
 keywords = ["git 安装与配置","Git 基础教程","Git 实用命令","单个文件的“增删改查”","多设备间管理代码库","在 Github 上删除已提交的文件夹","SSH GitHub"]
 date = "2019-03-14T00:00:00+00:00"
 toc = true

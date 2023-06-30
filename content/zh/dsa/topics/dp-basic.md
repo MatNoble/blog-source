@@ -1,7 +1,7 @@
 +++
 title = "动态规划 -- 基础问题"
 date = "2021-03-12T00:19:30+00:00"
-tags = ["动态规划","编程刷题","滑动窗口"]
+tags = ["动态规划","编程刷题"]
 keywords = ["leetcode","数据结构","python","数组","栈","队列","MatNoble"]
 toc = true
 mathjax = true

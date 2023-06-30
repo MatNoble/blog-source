@@ -1,7 +1,7 @@
 +++
 title = "滑动窗口"
 date = "2021-03-01T00:19:30+00:00"
-tags = ["双指针","编程刷题","滑动窗口"]
+tags = ["双指针","编程刷题"]
 keywords = ["leetcode","数据结构","python","数组","栈","队列","MatNoble"]
 toc = false
 mathjax = true
