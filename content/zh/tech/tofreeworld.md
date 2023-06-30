@@ -1,7 +1,7 @@
 +++
 title = "科学上网终极版"
 date = "2020-07-07T00:21:30+00:00"
-description = "本文包含科学上网方法、软件及自用机场推荐"
+description = "拥抱自由"
 tags = ["科学上网"]
 keywords = ["科学上网","机场推荐","Chrome 插件","好工具高效率","分享"]
 toc = true
@@ -19,57 +19,22 @@ We hold these truths to be self-evident, that all men are created equal, that th
 
 ## 科学上网方法
 
-目前，我知道的有两大类：..商业软件VPN.. 和..机场.. [^1]
+目前，我知道的有两大类：..商业软件VPN.. 和 ..机场.. 
 
-商业软件 VPN 诸如著名的蓝灯之类的，价格略高，可支持多平台，稳定。
-
-机场包括免费分享机场，付费机场订阅和自建机场。
-
-- 免费分享机场不够稳定，质量也参差不齐，靠运气，时间成本高；
-- 自建机场，需要购买在海外的主机，价格也不便宜，而且 ip 地址被封后，需要另付费解封； 
+1. 商业软件 VPN 诸如著名的蓝灯之类的，价格略高，优点是简单且不折腾。
+2. 机场包括免费分享机场，付费机场和自建机场。
+    - 免费分享机场不够稳定，质量也参差不齐，靠运气，时间成本高；
+    - 自建机场，需要购买在海外的主机，价格也不便宜，而且 ip 地址被封后，需要另付费解封 [^1]； 
 
 目前，我使用的是付费机场，价格可以接受，而且上网也比较稳定。但是，现在付费机场也多种多样，性价比高低不齐，而且害怕机场主“跑路”～
 
 ## 机场推荐
 
-### 海豚湾
+ <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/hitun-230630.png" title="" alt="海豚湾使用历史" data-align="center">
 
-- 主页: [海豚湾](https://hitun.io/)
-
-- 95折优惠码:HEROESNEVERDIE (月付/团队包/企业包不可用)
-
-- 我的邀请链接: [邀请码: 132597](https://hitun.io//auth/register?affid=132597)
+ 自从 2021 年 4 月 26 日至今，我一直在使用海豚湾机场，速度给力，多设备可共用，可以正常看 Netflix。算是很省心了。如果，你也在找稳定的机场，可以使用我的邀请链接：[邀请码: 132597](https://hitun.io//auth/register?affid=132597)，注册后，购买套餐时，还可以使用 95折优惠码: `HEROESNEVERDIE`
   
-  <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/er93dD.png" title="" alt="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/er93dD.png" data-align="center">
+  海豚湾套餐:
+  <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/er93dD.png" title="" alt="海豚湾套餐" data-align="center">
 
-### ~~Anylinks~~
-
-### ~~PieCloud~~
-
-## 科学上网软件
-
-- Windows  
-  项目地址: [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
-- Linux
-  - v2rayL  
-    支持 vmess 和 ss 订阅。项目地址：[github.com/jiangxufeng/v2rayL](https://github.com/jiangxufeng/v2rayL)
-  - electron-ssr  
-    [Ubuntu 上使用 ssr 实现科学上网](https://matnoble.github.io/tech/ubuntu/ubuntu-ssr/)
-- MaC  
-  项目地址: [clashX](https://github.com/yichengchen/clashX)
-- Android  
-  - v2ray
-  - ssr
-  谷歌商店或者 GitHub 都可以搜到
-- Iphone  
-  大名鼎鼎的“小火箭”，可惜的是中国区没有该软件，需要自行搜寻美区 id 下载
-
---- 
-
-{{< notice tip >}}
-以上属于我对翻墙软件的部分了解，如发现有错误，请在评论区告诉我！
-
-另外，如果您有好用的机场或者稳定的科学上网方式，也欢迎在评论区分享出来！
-{{< /notice >}}
-
-[^1]: [Chrome 浏览器翻墙](https://matnoble.github.io/tech/ubuntu/scientific-internet/)只能临时迫不得已使用，既不稳定速度又慢
+[^1]: [我的自建机场折腾记](https://matnoble.github.io/tech/ubuntu/ubuntu-ssr/#下面介绍一下我用的机场)
