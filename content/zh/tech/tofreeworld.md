@@ -32,7 +32,7 @@ We hold these truths to be self-evident, that all men are created equal, that th
 
  <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/hitun-230630.png" title="" alt="海豚湾使用历史" data-align="center">
 
- 自从 2021 年 4 月 26 日至今，我一直在使用海豚湾机场，速度给力，多设备可共用，可以正常看 Netflix。算是很省心了。如果，你也在找稳定的机场，可以使用我的邀请链接：[邀请码: 132597](https://hitun.io//auth/register?affid=132597)，注册后，购买套餐时，还可以使用 95折优惠码: `HEROESNEVERDIE`
+ 自从 2021 年 4 月 26 日至今，我一直在使用海豚湾机场，速度给力，多设备可共用，可以正常看 Netflix。算是很省心了。如果，你也在找稳定的机场，可以使用我的邀请链接：[邀请码: 132597](https://cdn99.manage.hitun.io/auth/register?affid=132597)，注册后，购买套餐时，还可以使用 95折优惠码: `HEROESNEVERDIE`
   
   海豚湾套餐:
   <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/er93dD.png" title="" alt="海豚湾套餐" data-align="center">
