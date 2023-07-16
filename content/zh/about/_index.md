@@ -11,13 +11,15 @@ comments = true
 meta = false
 +++
 
-陌生人您好 🤝，欢迎在我的博客留下 👣 
+{{< music id="8562801276" type="playlist" server="netease" >}}
+
+陌生人您好 🤝，欢迎在我的博客留下 👣
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/hy3AhN.jpg" title=" Friends 💖" >}}
 
 ## About Me
 
-~~HUST 数学系在读研究生（即将毕业）~~。现就职于某 ICT 大厂，喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
+~~HUST 数学系在读研究生（即将毕业）~~。现就职于某 ICT 大厂，喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/IMG_20180628_164930_mh1530200778808-EFFECTS.jpg" title="本科毕业时" >}}
 
@@ -54,11 +56,13 @@ meta = false
 {{< mark text="MatNoble">}}可以拆分为两部分: Mat + Noble
 
 - 「Mat」可以是 「Mathematics」，数学系的我自然对这个单词情有独钟!
-  
+
   > MatNoble= Mathematics + Noble
+
 - 「Mat」也可以是 「Matrix」，有仿照 Matlab 的嫌疑(2333)，矩阵也是一个非常重要的「发明」，对我来说，学习理论知识和编程序都离不开 Matrix
-  
+
   > MatNoble= Matrix + Noble
+
 - 「Noble」意为「高贵的，贵族的」，所以整体寓意为「数学是高贵的」。灵感来自一个有关笛卡尔的[“浪漫”的爱情故事](https://www.bilibili.com/read/cv166401)
 
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/windows/matnoble-bytedance.gif"/>
@@ -67,7 +71,7 @@ meta = false
 
 <br />
 
-目前，本站设有两个专栏 
+目前，本站设有两个专栏
 
 - [线性回忆录](https://matnoble.github.io/series/mla/)<br>
   企图完整地介绍「线性代数」，而不采取(大陆)大学课堂里的套路。
@@ -82,4 +86,4 @@ meta = false
 
 <p style="display:block;text-align:center;color:gray;font-size:18pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">记录所思，所想，所为</p>
 
-*本站建议使用 Chrome 或 Safari 浏览器浏览，为防止遗忘本站，可快捷键 `Ctrl + D` 将本站添加至浏览器书签*
+_本站建议使用 Chrome 或 Safari 浏览器浏览，为防止遗忘本站，可快捷键 `Ctrl + D` 将本站添加至浏览器书签_
