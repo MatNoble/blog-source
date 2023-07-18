@@ -8,11 +8,11 @@ keywords = ["Shortcodes","短代码","Hugo 博客","建站那些事儿","year","
 toc = true
 katex = true
 gitinfo = true
-images = ["https://ttfou.com/images/2020/02/21/d424e596ff76c8bcb4806ad185552783.jpg"]
+images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images/win/art-202307182258302.png"]
 aliases = ["/posts/shortcodes-practice-tutorial-for-hugo"]
 +++
 
-{{< imgcap src="https://ttfou.com/images/2020/02/21/d424e596ff76c8bcb4806ad185552783.jpg" title="动手玩创意" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/art-202307182258302.png" title="动手玩创意" >}}
 
 操练起来!
 
@@ -126,10 +126,10 @@ https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#abbr-缩
 ### image with caption
 
 ```markdown
-{{</* imgcap src="https://ttfou.com/images/2020/02/20/75294917c54568d991f5e2e0581dafb8.jpg" title="陪安东尼度过漫长岁月" */>}}
+{{</* imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/lebron-202307182307397.png" title="无比想念最好的骑士" */>}}
 ```
 
-{{< imgcap src="https://ttfou.com/images/2020/02/20/75294917c54568d991f5e2e0581dafb8.jpg" title="陪安东尼度过漫长岁月" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/lebron-202307182307397.png" title="无比想念最好的骑士" >}}
 
 <br />
 实现稍复杂一些, 依旧建立 `imgcap.html`
@@ -234,7 +234,8 @@ other = "小贴示"
 {{< notice warning >}}
 该 shortcodes 存在问题! 会导致 TOC 目录点击失效, 所以, 暂时只能将音乐放到没有目录的页面 👇
 {{< /notice >}}
-<a href="https://matnoble.github.io/about"><img title="点击跳转" alt="Aplayer 播放器" src="https://ttfou.com/images/2020/02/18/3596ac5359d85bd85bab7f0241a3ab97.png" /></a>
+
+{{<imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/music-202307182314524.png" title="爱音乐">}}
 
 ### 视频 Video
 #### YouTube
