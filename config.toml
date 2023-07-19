@@ -268,17 +268,17 @@ uglyURLs = false
 	
     # 链接栏
     [[menu.links]]
-        pageref = "/series/"
+        url = "/series"
         name = "专栏"
         weight = 1
         pre = "internal"
     [[menu.links]]
-       pageref = "/search/#友链"
+       url = "/search"
        name = "友链"
        weight = 2
        pre = "internal"
     [[menu.links]]
-        pageref = "/atom.xml"
+        url = "/atom.xml"
         name = "订阅"
         weight = 3
         pre = "internal"
