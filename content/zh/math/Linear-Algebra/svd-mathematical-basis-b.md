@@ -3,7 +3,7 @@ title = "奇异值分解再探"
 date = "2020-02-25T00:19:44+00:00"
 description = "奇异值分解是现代线性代数的核心？"
 categories = ["MATH","线代拾遗"]
-tags = ["矩阵分解","奇异值分解"]
+tags = ["奇异值分解"]
 keywords = ["线代拾遗","矩阵","线性代数","svd","奇异值分解","matrix","linear algebra","Space base","MatNoble","奇异值分解是现代线性代数的核心"]
 toc = true
 mathjax = true
@@ -15,11 +15,11 @@ aliases = ["/posts/svd1"]
 
 ## 知识回顾
 
-假设有 $m\times n$ 阶实矩阵 $\boldsymbol{A}$, 
+假设有 $m\times n$ 阶实矩阵 $\boldsymbol{A}$,
 
 $$
 {\rm rank}(\boldsymbol{A}) = r \leq \max\\{m, n \\}
-$$ 
+$$
 
 则
 
@@ -29,7 +29,7 @@ $$
 \boldsymbol{A}^{\mathsf T}\boldsymbol{A} = V^{\mathsf T}\begin{bmatrix} \sigma\_1^2 & 0 & \cdots & 0 \\\\
 0 & \sigma\_2^2 & \cdots & 0 \\\\
 \vdots & \vdots & \ddots & \vdots \\\\
-0 & 0 & \vdots & \sigma_n^2 
+0 & 0 & \vdots & \sigma_n^2
 \end{bmatrix}V
 $$
 
@@ -39,7 +39,7 @@ $$
 \boldsymbol{A}\boldsymbol{A}^{\mathsf T}= U^{\mathsf T}\begin{bmatrix} \sigma\_1^2 & 0 & \cdots & 0 \\\\
 0 & \sigma\_2^2 & \cdots & 0 \\\\
 \vdots & \vdots & \ddots & \vdots \\\\
-0 & 0 & \vdots & \sigma_m^2 
+0 & 0 & \vdots & \sigma_m^2
 \end{bmatrix}U
 $$
 
@@ -47,7 +47,7 @@ $$
 
 $$\sigma\_1 \geq \sigma\_2 \geq \cdots \sigma_r > 0$$
 
-并且, 
+并且,
 
 $$\sigma\_{r+1} = \cdots = \sigma_k = 0  $$
 
@@ -82,7 +82,7 @@ $$
 \boldsymbol{A} = U\Sigma V^{\mathsf T}
 $$
 
-其中, $U$ 和 $V$ 分别是 $m$ 阶和 $n$ 阶的`正交矩阵`, $\Sigma$ 是 $m\times n$ 阶的`对角矩阵`. 
+其中, $U$ 和 $V$ 分别是 $m$ 阶和 $n$ 阶的`正交矩阵`, $\Sigma$ 是 $m\times n$ 阶的`对角矩阵`.
 
 {{< imgcap src="https://imgkr.cn-bj.ufileos.com/56a744fd-42a5-4b93-a264-a96729d6c73f.png" title="正交基底" >}}
 
@@ -95,10 +95,10 @@ $$
 $$
 	\Sigma = \left[
 	\begin{array}{ccc|c}
-\sigma_1&&  &\\\\ 
-&\ddots&& Z_{r, n-r}\\\\ 
+\sigma_1&&  &\\\\
+&\ddots&& Z_{r, n-r}\\\\
 &&\sigma_r &\\\\
-\hline &Z_{m-r, r}& & Z_{m-r, n-r} 
+\hline &Z_{m-r, r}& & Z_{m-r, n-r}
 	\end{array}
 	\right]
 $$
@@ -114,10 +114,10 @@ $$
 & = [\sigma\_1\mathbf{u}\_1, \cdots, \sigma\_r\mathbf{u}\_r, 0, \cdots, 0] \\\\[3pt]
 & = [\mathbf{u}\_1, \cdots, \mathbf{u}\_m] \left[
 	\begin{array}{ccc|c}
-\sigma\_1&&  &\\\\ 
-&\ddots&& Z_{r, n-r}\\\\ 
+\sigma\_1&&  &\\\\
+&\ddots&& Z_{r, n-r}\\\\
 &&\sigma\_r &\\\\
-\hline &Z\_{m-r, r}& & Z_{m-r, n-r} 
+\hline &Z\_{m-r, r}& & Z_{m-r, n-r}
 	\end{array}
 	\right] \\\\[3pt]
   & = U \Sigma
@@ -164,11 +164,11 @@ $$
 \\\\[3pt]
 & \quad \left[
 	\begin{array}{ccc|c}
-\sigma\_1&&  &\\\\ 
-&\ddots&& Z\_{r, n-r}\\\\ 
+\sigma\_1&&  &\\\\
+&\ddots&& Z\_{r, n-r}\\\\
 &&\sigma\_r &\\\\
-\hline &Z\_{m-r, r}& & Z\_{m-r, n-r} 
-	\end{array} \right] 
+\hline &Z\_{m-r, r}& & Z\_{m-r, n-r}
+	\end{array} \right]
   \begin{bmatrix}
   v\_1^{\mathsf T} \\\\
   \vdots \\\\
@@ -204,7 +204,6 @@ $$
 
 {{< imgcap src="https://imgkr.cn-bj.ufileos.com/47030408-b51a-4190-8b43-6182f041ddef.jpeg" title="SVD" >}}
 
-
 ## 复盘
 
 上面所能进行下去的关键在于:
@@ -222,7 +221,6 @@ $$
 这个 [知乎回答](https://zhuanlan.zhihu.com/p/57803955) 给出了如下解释, 我也比较满意
 
 ![](https://imgkr.cn-bj.ufileos.com/f3070f87-ddd7-430b-bbb5-83172534d3f0.png)
-
 
 ## 应用
 
