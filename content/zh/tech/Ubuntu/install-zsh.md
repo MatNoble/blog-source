@@ -6,7 +6,7 @@ keywords = ["Ubuntu","zsh","oh-my-zsh","linux","Z shell","zsh-autosuggestions","
 +++
 
 {{< blockquote link="https://zh.wikipedia.org/wiki/Z_shell" >}}
-Z shell（Zsh）是一款可用作交互式登录的shell及脚本编写的命令解释器。Zsh对Bourne shell做出了大量改进，同时加入了Bash、ksh及tcsh的某些功能。
+Z shell（Zsh）是一款可用作交互式登录的 shell 及脚本编写的命令解释器。Zsh 对 Bourne shell 做出了大量改进，同时加入了 Bash、ksh 及 tcsh 的某些功能。
 {{< /blockquote >}}
 
 ## 安装 Zsh
@@ -50,13 +50,9 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 ZSH_THEME="theme name"
 ```
 
-{{< imgcap src="https://ttfou.com/images/2020/03/30/ec33f690e38708ce841c001fc59c4878.png" title="ys" >}}
-
 ### 配置插件
 
-在这里，我介绍我使用的 3 个插件，安装都很简单，打开 Terminal 依次输入 
-
-<img src="https://imgkr.cn-bj.ufileos.com/8131805f-4f17-45da-9a04-0897dcc9ece7.gif" width="95%" />
+在这里，我介绍我使用的 3 个插件，安装都很简单，打开 Terminal 依次输入
 
 1. 自动补全 {{< mark text="zsh-autosuggestions" >}}
 
@@ -71,9 +67,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 3. 快速打开 GitHub 仓库 {{< mark text="git-open" >}}
-  ```shell
-  git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open`
-  ```
+
+```shell
+git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open`
+```
 
 最后需要配置 `plugins`
 
