@@ -2,7 +2,7 @@
 title = "在 Ubuntu 中配置 Python 环境"
 date = "2020-03-17T00:09:10+00:00"
 description = "Configure Python environment in Ubuntu"
-tags = ["Ubuntu 装机与优化","Python"]
+tags = ["Ubuntu 装机与优化"]
 keywords = ["教程","pip","pip3","python2","python3","NumPy","SciPy","Pandas","Matplotlib","在 Ubuntu 中配置 python 环境","Configure python environment in ubuntu"]
 toc = true
 images = ["https://ttfou.com/images/2020/03/08/3558b8170bbc25adfdbd312c5a729944.png"]
@@ -38,22 +38,27 @@ $ ls /usr/bin/python*
 /usr/bin/python2.7  /usr/bin/python3.6m         /usr/bin/python3-config
 /usr/bin/python3    /usr/bin/python3.6m-config  /usr/bin/python-mkdebian
 ```
-*因为我是由 18.04 升级到 20.04，所以还有 Python 3.6 版本*
+
+_因为我是由 18.04 升级到 20.04，所以还有 Python 3.6 版本_
 
 2. 检测是否已存在 Python 的配置方案
+
 ```shell
 $ sudo update-alternatives --list python
 update-alternatives: error: no alternatives for python
 ```
+
 此时，显示没有配置方案
 
 3. 为 Python2 和 Python3 分别配置
+
 ```shell
 $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1
 $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
 ```
 
 4. 确认是否配置成功
+
 ```shell
 $ sudo update-alternatives --list python
 /usr/bin/python2
@@ -61,6 +66,7 @@ $ sudo update-alternatives --list python
 ```
 
 5. 更改默认 Python 版本
+
 ```shell
 $ sudo update-alternatives --config python
 有 2 个候选项可用于替换 python (提供 /usr/bin/python)。
@@ -73,9 +79,11 @@ $ sudo update-alternatives --config python
 
 要维持当前值[*]请按<回车键>，或者键入选择的编号：1
 ```
+
 如果想默认 Python 2 选 `1`，想默认 Python 3 选`2`
 
 6. 检查当前 Python 默认版本
+
 ```
 $ python -V
 ```
@@ -87,6 +95,7 @@ pip is the package installer for Python. You can use pip to install packages fro
 {{< /blockquote >}}
 
 1. 分别为 Python 2 和 Python 3 安装
+
 ```shell
 % Python 2:
 $ sudo apt install python-pip
@@ -95,6 +104,7 @@ $ sudo apt install python3-pip
 ```
 
 2. 检测是否安装成功
+
 ```shell
 $ pip --version
 $ pip3 --version
@@ -107,6 +117,7 @@ $ pip3 --version
 更新为国内的源，更新更快
 
 1. 打开 Terminal
+
 ```shell
 % 进入 .config
 $ cd .config
@@ -121,7 +132,9 @@ $ sudo emacs pip.conf
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host = pypi.tuna.tsinghua.edu.cn
 ```
+
 也可以填入其他源:
+
 - 阿里云 http://mirrors.aliyun.com/pypi/simple/
 - 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
 
@@ -141,6 +154,7 @@ $ python3 -m pip install --upgrade pip
 > NumPy SciPy Pandas Matplotlib
 
 1. 安装，打开 Terminal
+
 ```shell
 % Python 2:
 $ pip install numpy scipy pandas matplotlib
@@ -151,6 +165,7 @@ $ pip3 install numpy scipy pandas matplotlib
 {{< imgcap src="https://ttfou.com/images/2020/03/17/c76f11595ad3eb03f3309062fd855a67.png" title="NumPy SciPy Pandas Matplotlib" >}}
 
 2. 检查安装版本(以 NumPy 为例)
+
 ```shell
 $ python -c "import numpy; print(numpy.__version__)"
 1.16.6
@@ -159,6 +174,7 @@ $ python3 -c "import numpy; print(numpy.__version__)"
 ```
 
 3. 更新(以 NumPy 为例)
+
 ```shell
 % Python 2:
 $ pip install --upgrade numpy
@@ -172,12 +188,13 @@ $ pip3 install --upgrade numpy
 
 {{< blockquote link="http://ipython.org/" >}}
 **IPython provides a rich architecture for interactive computing with:**
+
 - A powerful interactive shell.
 - A kernel for Jupyter.
 - Support for interactive data visualization and use of GUI toolkits.
 - Flexible, embeddable interpreters to load into your own projects.
 - Easy to use, high performance tools for parallel computing.
-{{< /blockquote >}}
+  {{< /blockquote >}}
 
 ```shell
 % python 3
