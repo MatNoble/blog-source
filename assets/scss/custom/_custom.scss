@@ -1,18 +1,11 @@
+// 字体设定
+@import "font";
+
+// 正文设定
+@import "post";
+
 .list-title, .term-title, .list-year, .list-month {
     font-family: 'glyph-correction', 'Cinzel Decorative', 'Noto Serif SC', serif;
-}
-
-// 主页底部图标
-.home {
-    .mla {
-        color: 	hsl(136, 53%, 43%);
-    }
-    .latex {
-        color: hsl(5, 81%, 56%);
-    }
-    .series {
-        color: hsl(217, 89%, 61%);
-    }
 }
 
 // 弹性布局调整
@@ -81,17 +74,6 @@
 
 .nav-toggle {
     transform: translateY(0.4em);
-}
-
-
-// katex
-
-.katex {
-    font: normal 1em Amstelvar, KaTeX_Main, Times New Roman, serif !important;
-    .mathdefault {
-        font-family: Amstelvar, KaTeX_Math !important;
-        font-style: italic;
-    }
 }
 
 // 自定义引用边框
@@ -258,25 +240,6 @@ p#div-default {
     background-position-y: 0;	
 }
 
-// 段落样式
-.post-body {
-    h2 {
-        border-bottom: 1px solid var(--color-contrast-lower);
-        transition: all .5s;
-    }
-    h3 {
-        border-bottom: 1px dotted var(--color-contrast-lower);
-        transition: all .5s;
-    }
-}
-
-// 相关文章
-
-.related-list {
-    padding-left: 2em;
-    list-style: circle;
-}
-
 // 颜色渐变
 //文件位置：\themes\meme\assets\scss\_custom\custom.scss
 .colorfulfont {
@@ -363,51 +326,4 @@ color: transparent;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-}
-
-// https://github.com/TypeNetwork/Amstelvar
-
-@font-face {
-    font-family: 'Amstelvar';
-    font-display: swap;
-    src: url('/fonts/Amstelvar-Roman-VF.woff2') format('woff2-variations'),
-         url('/fonts/Amstelvar-Roman-VF.woff2') format('woff2');
-    font-weight: 100 900;
-    font-stretch: 50% 125%;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Amstelvar';
-    font-display: swap;
-    src: url('/fonts/Amstelvar-Italic-VF.woff2') format('woff2-variations'),
-         url('/fonts/Amstelvar-Italic-VF.woff2') format("woff2");
-    font-weight: 100 900;
-    font-stretch: 50% 125%;
-    font-style: italic;
-}
-
-:root {
-    --text-wdth: 90;
-    --text-opsz: 40;
-    --text-YTLC: 460;
-}
-
-body {
-    font-variation-settings:
-        'wdth' var(--text-wdth),
-        'opsz' var(--text-opsz),
-        'YTLC' var(--text-YTLC);
-}
-
-.post-title {
-    font-family: 'glyph-correction', 'Amstelvar', 'Noto Serif SC', serif;
-    font-variation-settings:
-        'wght' 550,
-        'opsz' 60,
-        'YOPQ' 90;
-}
-
-.list-item-time {
-    font-feature-settings: 'tnum';
 }

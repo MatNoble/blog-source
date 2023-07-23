@@ -1,0 +1,66 @@
+// 文中超链接
+
+.post-body a {
+    text-decoration-color: var(--color-contrast-medium);
+}
+
+// mermaid
+
+.mermaid {
+    margin: 4em 0;
+    text-align: center;
+    overflow: auto hidden;
+    font-size: .75em;
+    svg{
+        width: 100%;
+        height: 100%;
+    } 
+}
+
+// katex
+
+.katex {
+    font: normal 1em Amstelvar, KaTeX_Main, Times New Roman, serif !important;
+    .mathdefault {
+        font-family: Amstelvar, KaTeX_Math !important;
+        font-style: italic;
+    }
+}
+
+// 代码高亮
+
+:root {
+    --chroma-deleted-color: #aa0000;
+    --chroma-inserted-color: #00aa00;
+}
+:root[data-theme="dark"] {
+    --chroma-deleted-color: #f92672;
+    --chroma-inserted-color: #a6e22e;
+}
+.chroma .gi {
+    color: var(--chroma-inserted-color);
+    font-weight: normal;
+}
+.chroma-dark .gi {
+    color: var(--chroma-inserted-color);
+    font-weight: normal;
+}
+
+// 段落样式
+.post-body {
+    h2 {
+        border-bottom: 1px solid var(--color-contrast-lower);
+        transition: all .5s;
+    }
+    h3 {
+        border-bottom: 1px dotted var(--color-contrast-lower);
+        transition: all .5s;
+    }
+}
+
+// 相关文章
+
+.related-list {
+    padding-left: 2em;
+    list-style: circle;
+}
