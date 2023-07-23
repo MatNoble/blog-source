@@ -7,7 +7,6 @@ date = "2020-02-19T00:17:00+00:00"
 toc = true
 katex = true
 displayCopyright = false
-images = ["https://ttfou.com/images/2020/02/19/16a5ce6f87ea9ef47f47e12740e1808f.png"]
 aliases = ["/posts/matlab-support-high-dpi-screens-on-linux"]
 +++
 

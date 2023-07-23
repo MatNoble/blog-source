@@ -4,7 +4,6 @@ tags = ["Matlab"]
 keywords = ["Matlab","喜欢编程","矢量图片","Matlab 保存高质量矢量图片","matlab-support-high-dpi-screens-on-linux"]
 date = "2020-03-05T00:21:32+00:00"
 katex = true
-images = ["https://imgkr.cn-bj.ufileos.com/023cb316-772e-46ed-a8bb-260875968fe2.svg"]
 +++
 
 以下代码生成一个不含白边的三维图示
