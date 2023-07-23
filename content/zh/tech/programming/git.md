@@ -105,6 +105,31 @@ sudo apt install git
   git rebase --abort
   ```
 
+## 分支操作
+
+```shell
+# 显示本地所有分支
+git branch
+
+# 显示远程所有分支
+git branch -a
+
+# 重命名当前分支
+git branch -m new_branch_name
+
+# 切换分支
+git checkout other_branch_name
+
+# 删除本地分支
+git branch -d branch_name
+
+# 强制删除本地分支
+git branch -D branch_name
+
+# 根据当前分支创建新分支
+git checkout -b new_branch
+```
+
 ## 项目协同
 
 当我们要往其他人的仓库里贡献代码时，需要
