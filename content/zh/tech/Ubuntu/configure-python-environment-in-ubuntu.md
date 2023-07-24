@@ -5,7 +5,7 @@ description = "Configure Python environment in Ubuntu"
 tags = ["Ubuntu 装机与优化"]
 keywords = ["教程","pip","pip3","python2","python3","NumPy","SciPy","Pandas","Matplotlib","在 Ubuntu 中配置 python 环境","Configure python environment in ubuntu"]
 toc = true
-images = ["https://ttfou.com/images/2020/03/08/3558b8170bbc25adfdbd312c5a729944.png"]
+images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images/win/python202307250017754.png"]
 aliases = ["/posts/ubuntu/python/configure-python-environment-in-ubuntu"]
 +++
 
@@ -25,21 +25,19 @@ $ sudo apt install python2
 $ python2 -V
 ```
 
-{{< imgcap src="https://ttfou.com/images/2020/03/17/f444145dd9da89e57ff3903845871cac.png" title="Python 2 version" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/python2-202307250004441.png" title="Python 2 version" >}}
 
 ## 切换不同的 Python 版本
 
 1. 检查系统已安装的 Python 版本，打开 Terminal 输入
 
 ```shell
-$ ls /usr/bin/python*
-/usr/bin/python     /usr/bin/python3.6          /usr/bin/python3.8
-/usr/bin/python2    /usr/bin/python3.6-config   /usr/bin/python3.8-config
-/usr/bin/python2.7  /usr/bin/python3.6m         /usr/bin/python3-config
-/usr/bin/python3    /usr/bin/python3.6m-config  /usr/bin/python-mkdebian
+$ ll /usr/bin/python*
+lrwxrwxrwx 1 root root       9 Mar 13  2020 /usr/bin/python2 -> python2.7*
+-rwxr-xr-x 1 root root 3662032 Jul  1  2022 /usr/bin/python2.7*
+lrwxrwxrwx 1 root root       9 Mar 13  2020 /usr/bin/python3 -> python3.8*
+-rwxr-xr-x 1 root root 5494584 May 26 22:05 /usr/bin/python3.8*
 ```
-
-_因为我是由 18.04 升级到 20.04，所以还有 Python 3.6 版本_
 
 2. 检测是否已存在 Python 的配置方案
 
@@ -110,8 +108,6 @@ $ pip --version
 $ pip3 --version
 ```
 
-{{< imgcap src="https://ttfou.com/images/2020/03/17/5f4fa5a26ab2b361dc640ece3134b5e6.png" title="PIP Version" >}}
-
 ### 更换源
 
 更新为国内的源，更新更快
@@ -162,8 +158,6 @@ $ pip install numpy scipy pandas matplotlib
 $ pip3 install numpy scipy pandas matplotlib
 ```
 
-{{< imgcap src="https://ttfou.com/images/2020/03/17/c76f11595ad3eb03f3309062fd855a67.png" title="NumPy SciPy Pandas Matplotlib" >}}
-
 2. 检查安装版本(以 NumPy 为例)
 
 ```shell
@@ -184,8 +178,6 @@ $ pip3 install --upgrade numpy
 
 #### IPython
 
-<img src="https://ttfou.com/images/2020/03/17/ff2a2704bc153b05dd7532c6b30a7e3c.png" width="60%" />
-
 {{< blockquote link="http://ipython.org/" >}}
 **IPython provides a rich architecture for interactive computing with:**
 
@@ -202,8 +194,6 @@ $ pip3 install ipython
 % or
 $ sudo apt install ipython3
 ```
-
-{{< imgcap src="https://ttfou.com/images/2020/03/17/5f8320ded08b503d4375064da04f23d4.png" title="IPython3 in my desktop" >}}
 
 #### Debugs
 
