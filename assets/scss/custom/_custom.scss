@@ -4,6 +4,9 @@
 // 正文设定
 @import "post";
 
+// 友链
+@import "friend";
+
 .list-title, .term-title, .list-year, .list-month {
     font-family: 'glyph-correction', 'Cinzel Decorative', 'Noto Serif SC', serif;
 }
@@ -246,84 +249,4 @@ p#div-default {
 background: linear-gradient(to right, red,#45ed63);
 -webkit-background-clip: text;
 color: transparent;
-}
-
-// friendslink
-.myfriends {
-	text-align: center;
-	background-color: #fff;
-	opacity: 0.9;
-}
-
-.myfriends a {
-	color: black;
-}
-
-.myfriends p {
-	display: none;
-}
-
-.friendurl {
-	text-decoration: none !important;
-	color: black;
-}
-
-.myfriend {
-	width: 56px !important;
-	height: 56px !important;
-	border-radius: 50%;
-	border: 1px solid #ddd;
-	padding: 2px;
-	box-shadow: 1px 1px 1px rgba(0,0,0, .15);
-	margin-top: -12px !important;
-	margin-left: 10px !important;
-	background-color: #fff;
-}
-
-.frienddiv {
-   position: relative;
-   left: 0; right: 0;
-   width: 100%;
-   height: 70px;
-   line-height: 1.38;
-   margin-top: -5px;
-   margin-bottom: -5px;
-   border-radius: 5px;
-   background: rgba(255, 255, 255, .2);
-   box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
-   overflow: hidden;
-}
-
-.frienddiv:hover {
-	background: rgba(87, 142, 224, 0.15);
-}
-
-.frienddiv:hover .frienddivleft img {
-	transition: .9s!important;
-	-webkit-transition: .9s!important;
-	-moz-transition: .9s!important;
-	-o-transition: .9s!important;
-	-ms-transition: .9s!important;
-	transform: rotate(360deg)!important;
-	-webkit-transform: rotate(360deg)!important;
-	-moz-transform: rotate(360deg)!important;
-	-o-transform: rotate(360deg)!important;
-	-ms-transform: rotate(360deg)!important;
-}
-
-.frienddivleft {
-	width: 92px;
-	float: left;
-}
-
-.frienddivleft {
-    margin-top: 15px;
-    margin-right: 2px;
-}
-
-.frienddivright {
-	margin-top: 15px;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
 }
