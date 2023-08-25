@@ -1,10 +1,10 @@
 +++
 title = "MapReduce 模型"
 description = "分而治之, 将大困难分解成小困难"
-date = "2023-08-25T21:50:30+00:00"
+date = "2023-08-26T00:50:30+08:00"
 tags = ["Spark"]
 keywords = ["Spark","Map","Reduce"]
-toc = true
+images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images/win/map-reduce202308252336979.png"]
 +++
 
 {{< blockquote link="https://en.wikipedia.org/wiki/MapReduce" title="MapReduce" >}}
@@ -69,3 +69,4 @@ reduce_rdd = map_rdd \
 | map(func)                           | 映射，接收一个函数                                           |
 | reduce(func)                        | 聚合，接收一个函数                                           |
 | aggregate(zeroValue, seqOp, combOp) | zeroValue：初始值<br>seqOp：分区内聚合<br>combOp: 分区间聚合 |
+
