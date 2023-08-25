@@ -4,6 +4,7 @@ description = "分而治之, 将大困难分解成小困难"
 date = "2023-08-25T21:50:30+00:00"
 tags = ["Spark"]
 keywords = ["Spark","Map","Reduce"]
+toc = true
 +++
 
 {{< blockquote link="https://en.wikipedia.org/wiki/MapReduce" title="MapReduce" >}}
