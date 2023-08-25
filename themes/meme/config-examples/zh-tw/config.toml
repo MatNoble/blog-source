@@ -348,7 +348,7 @@ uglyURLs = false
     #      Open Graph、Atom、RSS
 
     # 站點的建立時間
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "1969-07-20T20:17:43+08:00"
     # 注意：請保持此格式，更改數字
 
     # 站點的推特帳號

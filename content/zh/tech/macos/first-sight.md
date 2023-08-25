@@ -1,6 +1,6 @@
 +++
 title = "初见 Mac OS"
-date = "2020-08-15T00:20:33+00:00"
+date = "2020-08-15T00:20:33+08:00"
 tags = ["Mac os"]
 keywords = ["黑苹果","Hackintosh"]
 katex = true

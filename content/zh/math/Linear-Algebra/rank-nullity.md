@@ -1,6 +1,6 @@
 +++
 title = "秩-零化度定理(Rank-Nullity Theorem)"
-date = "2020-01-11T00:00:00+00:00"
+date = "2020-01-11T00:00:00+08:00"
 categories = ["MATH","线代拾遗"]
 tags = ["线代基本定理"]
 keywords = ["matrix","linear algebra","Rank-Nullity Theorem","MatNoble"]

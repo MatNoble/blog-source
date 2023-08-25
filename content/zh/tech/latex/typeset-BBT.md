@@ -1,6 +1,6 @@
 +++
 title = "科技文档排版漫谈"
-date = "2020-03-12T00:15:30+00:00"
+date = "2020-03-12T00:15:30+08:00"
 description = "从 Word 写到 LaTeX"
 categories = ["TECH","LaTeX 科技排版"]
 tags = ["latex"]

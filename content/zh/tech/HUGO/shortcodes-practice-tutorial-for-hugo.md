@@ -1,6 +1,6 @@
 +++
 title = "在 Hugo 博客上实践 Shortcodes 短代码, 太强大了"
-date = "2020-02-16T00:22:42+00:00"
+date = "2020-02-16T00:22:42+08:00"
 description = "Hugo 这个「高度自定义」功能太喜欢了"
 categories = ["TECH","建站那些事儿"]
 tags = ["Hugo"]

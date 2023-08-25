@@ -1,7 +1,7 @@
 +++
 title = "在 LaTeX 中添加图片"
 categories = ["TECH","LaTeX 科技排版"]
-date = "2020-04-07T00:18:32+00:00"
+date = "2020-04-07T00:18:32+08:00"
 keywords = ["在 LaTeX 里更改字体大小","Changing the font size in LaTeX","font size","经验分享","技术总结","LaTeX","matnoble","数系家园","数学小兵儿"]
 tags = [""]
 katex = true

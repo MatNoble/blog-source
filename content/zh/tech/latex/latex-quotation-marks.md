@@ -1,7 +1,7 @@
 +++
 title = "LaTeX 引号你用对了吗？"
 categories = ["TECH","LaTeX 科技排版"]
-date = "2019-12-30T00:23:25+00:00"
+date = "2019-12-30T00:23:25+08:00"
 keywords = ["引号","经验分享","技术总结","LaTeX","matnoble","数系家园","数学小兵儿"]
 tags = [""]
 katex = true

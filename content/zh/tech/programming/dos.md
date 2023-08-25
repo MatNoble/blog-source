@@ -1,7 +1,7 @@
 +++
 title = "Window 快捷键及 DOS 命令"
 categories = ["JAVA","LaTeX 科技排版"]
-date = "2021-10-18T00:18:32+00:00"
+date = "2021-10-18T00:18:32+08:00"
 keywords = ["JAVA","matnoble","数系家园","数学小兵儿"]
 toc = true
 +++

@@ -1,6 +1,6 @@
 +++
 title = "剑指 Offer"
-date = "2021-01-27T00:20:30+00:00"
+date = "2021-01-27T00:20:30+08:00"
 description = "Python 版"
 tags = ["剑指Offer题解","编程刷题"]
 keywords = ["leetcode","剑指offer","数据结构","python","数组","栈","队列","德摩根定律","MatNoble"]

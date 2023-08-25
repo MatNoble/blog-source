@@ -1,7 +1,7 @@
 +++
 title = "「手撕」奇异值分解 SVD"
 description = "线性相关有强弱之分吗？"
-date = "2020-03-16T00:14:37+00:00"
+date = "2020-03-16T00:14:37+08:00"
 categories = ["MATH","线代拾遗"]
 tags = ["奇异值分解"]
 keywords = ["「手撕」奇异值分解 SVD","奇异度","线性相关","SVD","线性代数","matrix","linear algebra","MatNoble"]

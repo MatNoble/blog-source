@@ -2,7 +2,7 @@
 title = "LaTeX 给普通文本和数学环境加粗"
 description = "你知道如何给矩阵和向量正确加粗吗？"
 categories = ["TECH","LaTeX 科技排版"]
-date = "2020-03-04T00:10:25+00:00"
+date = "2020-03-04T00:10:25+08:00"
 keywords = ["文字加粗","矩阵加粗","向量加粗","LaTeX","matnoble","数系家园","数学小兵儿"]
 mathjax = true
 series = ["latex"]

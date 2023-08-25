@@ -1,7 +1,7 @@
 +++
 title = "高等代数习题集及资料分享"
 description = ""
-date = "2020-03-06T00:17:38+00:00"
+date = "2020-03-06T00:17:38+08:00"
 categories = ["MATH","线代拾遗"]
 tags = ["考研"]
 keywords = ["高等代数习题集及资料分享","线性方程组","奇异值分解","system of linear equations","线性代数","最小二乘法","matrix","linear algebra","leastsquares","MatNoble"]

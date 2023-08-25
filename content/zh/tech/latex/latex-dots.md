@@ -1,7 +1,7 @@
 +++
 title = "LaTeX 省略号 dots"
 categories = ["TECH","LaTeX 科技排版"]
-date = "2020-02-24T00:13:54+00:00"
+date = "2020-02-24T00:13:54+08:00"
 keywords = ["LaTeX 省略号 dots","经验分享","技术总结","LaTeX","matnoble","数系家园","数学小兵儿"]
 tags = [""]
 mathjax = true

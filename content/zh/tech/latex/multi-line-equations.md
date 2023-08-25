@@ -1,7 +1,7 @@
 +++
 title = "LaTeX 排版多行公式"
 categories = ["TECH","LaTeX 科技排版"]
-date = "2020-03-23T00:22:50+00:00"
+date = "2020-03-23T00:22:50+08:00"
 keywords = ["multline","amsmath","align","aligned","gather","gathered","cases","empheq","对齐公式","LaTeX 排版多行公式","多行公式并排","经验分享","技术总结","LaTeX","matnoble","数系家园","数学小兵儿"]
 tags = [""]
 mathjax = true

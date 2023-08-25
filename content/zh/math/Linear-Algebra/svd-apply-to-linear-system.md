@@ -1,7 +1,7 @@
 +++
 title = "SVD 于解线性方程组之应用"
 description = "The Application of SVD in Solving Linear Equations"
-date = "2020-03-03T06:21:00+00:00"
+date = "2020-03-03T06:21:00+08:00"
 categories = ["MATH","线代拾遗"]
 tags = ["最小二乘法","奇异值分解"]
 keywords = ["线性方程组","奇异值分解","system of linear equations","SVD","线性代数","最小二乘法","matrix","linear algebra","leastsquares","MatNoble"]

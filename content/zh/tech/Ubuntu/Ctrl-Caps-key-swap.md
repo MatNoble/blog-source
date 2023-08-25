@@ -1,6 +1,6 @@
 +++
 title = "Ubuntu 修改键位 — Ctrl 和 Caps Lock 互换"
-date = "2020-03-15T00:12:58+00:00"
+date = "2020-03-15T00:12:58+08:00"
 tags = ["Ubuntu 装机与优化","Emacs"]
 keywords = ["Ubuntu 修改键位","ctrl 和 caps lock 互换"]
 katex = true

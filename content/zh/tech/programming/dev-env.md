@@ -2,7 +2,7 @@
 title = "开发环境配置大全"
 tags = ["开发"]
 keywords = ["linux","zsh","oh my zsh","git","java","maven","scala","Python","开发环境"]
-date = "2023-07-23T00:17:00+00:00"
+date = "2023-07-23T00:17:00+08:00"
 toc = true
 +++
 

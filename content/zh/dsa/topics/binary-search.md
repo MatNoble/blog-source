@@ -1,6 +1,6 @@
 +++
 title = "二分法"
-date = "2021-03-01T00:20:30+00:00"
+date = "2021-03-01T00:20:30+08:00"
 tags = ["编程刷题"]
 keywords = ["leetcode","数据结构","python","数组","binary-search","二分法","MatNoble"]
 toc = false

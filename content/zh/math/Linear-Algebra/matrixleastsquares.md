@@ -1,6 +1,6 @@
 +++
 title = "线代视角下的最小二乘法"
-date = "2020-01-19T06:21:00+00:00"
+date = "2020-01-19T06:21:00+08:00"
 categories = ["MATH","线代拾遗"]
 tags = ["最小二乘法"]
 keywords = ["矩阵","线性代数","最小二乘法","matrix","linear algebra","leastsquares","MatNoble"]

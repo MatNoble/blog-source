@@ -1,6 +1,6 @@
 +++
 title = "Ubuntu 安装 Zsh ，配置最强终端"
-date = "2020-03-30T00:12:58+00:00"
+date = "2020-03-30T00:12:58+08:00"
 tags = ["Ubuntu 装机与优化"]
 keywords = ["Ubuntu","zsh","oh-my-zsh","linux","Z shell","zsh-autosuggestions","zsh-syntax-highlighting","alias 命令别名","source ~/.zshrc","git-open"]
 +++

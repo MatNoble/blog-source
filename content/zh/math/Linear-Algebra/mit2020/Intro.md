@@ -1,6 +1,6 @@
 +++
 title = "MIT 2020 版线性代数 --- 前言"
-date = "2020-05-23T00:00:00+00:00"
+date = "2020-05-23T00:00:00+08:00"
 categories = ["MATH","线代拾遗"]
 tags = ["MIT 2020"]
 keywords = ["MIT 线性代数","Pro. Gilbert Strang","线代拾遗","矩阵","线性代数","基底","matrix","linear algebra","Space base","MatNoble"]

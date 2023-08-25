@@ -2,7 +2,7 @@
 title = "Python collections 类"
 tags = ["编程之道"]
 keywords = ["python"]
-date = "2021-03-13T00:10:00+00:00"
+date = "2021-03-13T00:10:00+08:00"
 toc = true
 +++
 

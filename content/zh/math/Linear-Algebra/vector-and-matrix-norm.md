@@ -1,7 +1,7 @@
 +++
 title = "向量范数与矩阵范数"
 description = "Vector Norm and Matrix Norm"
-date = "2020-03-19T00:13:23+00:00"
+date = "2020-03-19T00:13:23+08:00"
 categories = ["MATH","线代拾遗"]
 tags = [""]
 keywords = ["向量范数","矩阵范数","线性代数","matrix","linear algebra","vector norm","matrix norm","MatNoble"]

@@ -1,7 +1,7 @@
 +++
 title = "LaTeX 矩阵转置符"
 categories = ["TECH","LaTeX 科技排版"]
-date = "2020-01-10T00:23:25+00:00"
+date = "2020-01-10T00:23:25+08:00"
 keywords = ["矩阵转置符","经验分享","技术总结","LaTeX","matnoble","数系家园","数学小兵儿"]
 mathjax = true
 series = ["latex"]

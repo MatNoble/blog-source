@@ -1,6 +1,6 @@
 +++
 title = "Ubuntu 上使用 ssr 实现科学上网 "
-date = "2020-02-26T00:21:00+00:00"
+date = "2020-02-26T00:21:00+08:00"
 description = "墙外很危险, 注意保护好自己"
 tags = ["科学上网","Ubuntu 装机与优化"]
 keywords = ["科学上网","Ubuntu"]

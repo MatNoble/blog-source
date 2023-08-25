@@ -1,6 +1,6 @@
 +++
 title = "Gram 矩阵"
-date = "2020-02-05T00:00:00+00:00"
+date = "2020-02-05T00:00:00+08:00"
 description = "本文介绍 Gram 矩阵及其重要性质"
 categories = ["MATH","线代拾遗"]
 tags = ["矩阵","特殊矩阵"]
