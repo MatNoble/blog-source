@@ -52,11 +52,11 @@ if __name__ == '__main__':
 30
 ```
 
-以上计算过程中, `map` 阶段..分布式..地将所有数据都乘以 2，然后 `reduce` 阶段将所有结果相加. 但似乎还可以继续优化, 将每个工作节点上的数据先相加起来, 再丢给 `reduce` 做相加计算, 会更充分..分布式..的特性
+以上计算过程中, `map` 阶段..分布式..地将所有数据都乘以 2，然后 `reduce` 阶段将所有结果相加. 但似乎还可以继续优化, 将每个工作节点上的数据先相加起来, 再丢给 `reduce` 做相加计算, 会更充分地利用..分布式..的特性
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/win/map-reduce202308260025378.png" title=" 预聚合" >}}
 
-实现时, 将 `reduce` 替换为 `aggregate` 即可
+具体实现时, 将 `reduce` 替换为 `aggregate` 即可
 ```python
 reduce_rdd = map_rdd \
     .aggregate(0, lambda x, y: x + y, lambda x, y: x + y)
