@@ -98,11 +98,11 @@ uglyURLs = false
 # 作者信息
 [author]
     # 名字
-    name = "数学小兵儿"
+    name = "MatNoble"
     # 邮箱
     email = "hustmatnoble@gmail.com"
     # 座右铭或简介
-    motto = "自由"
+    motto = "为生活而工作"
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
