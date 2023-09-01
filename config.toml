@@ -414,7 +414,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "分享数学, 计算机和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．<br />Sharing knowledge about mathematics, computer and LaTeX typesetting, sharing learning experience, sharing life experience"
+    siteDescription = "分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．<br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
@@ -1265,7 +1265,7 @@ uglyURLs = false
     #      的是一篇更旧的文章。
 
     # 是否开启
-    enablePostNav = false
+    enablePostNav = true
 
     # 是否仅限于相同的文章分区
     postNavInSection = true
