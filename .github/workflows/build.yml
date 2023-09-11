@@ -19,3 +19,12 @@ jobs:
         DEPLOY_BRANCH: build
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         TZ: Asia/Shanghai
+
+    - name: 'Upload Algolia'
+      uses: iChochy/Algolia-Upload-Records@main
+      # 设置环境变量利用secrets
+      env:
+        APPLICATION_ID: ${{secrets.APPLICATION_ID}}
+        ADMIN_API_KEY: ${{secrets.ADMIN_API_KEY}}
+        INDEX_NAME: ${{secrets.INDEX_NAME}}
+        FILE_PATH: ${{secrets.FILE_PATH}}  # ./public/algolia.json
