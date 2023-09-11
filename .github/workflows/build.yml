@@ -5,7 +5,7 @@ name: Deploy Hugo Site to Github Pages
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-deploy:
