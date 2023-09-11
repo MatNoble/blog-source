@@ -1,30 +1,46 @@
 # .github/workflows/build.yml
 
-name: build
+name: Deploy Hugo Site to Github Pages
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
-
+  build-deploy:
+    runs-on: ubuntu-latest
     steps:
-    - name: 'Building...'
-      uses: reuixiy/hugo-deploy@v1
-      env:
-        DEPLOY_REPO: MatNoble/matnoble.github.io
-        DEPLOY_BRANCH: build
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        TZ: Asia/Shanghai
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: true
 
-    - name: 'Upload Algolia'
-      uses: iChochy/Algolia-Upload-Records@main
-      # 设置环境变量利用secrets
-      env:
-        APPLICATION_ID: ${{secrets.APPLICATION_ID}}
-        ADMIN_API_KEY: ${{secrets.ADMIN_API_KEY}}
-        INDEX_NAME: ${{secrets.INDEX_NAME}}
-        FILE_PATH: ./algolia.json
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是secrets中设置Private Key的变量名
+          external_repository: MatNoble/matnoble.github.io # Pages 远程仓库 
+          publish_dir: ./public
+          keep_files: false # remove existing files
+          publish_branch: build  # deploying branch
+          commit_message: ${{ github.event.head_commit.message }}
+      
+      - name: Upload Algolia
+        uses: iChochy/Algolia-Upload-Records@main
+        # 设置环境变量利用secrets
+        env:
+          APPLICATION_ID: ${{secrets.APPLICATION_ID}}
+          ADMIN_API_KEY: ${{secrets.ADMIN_API_KEY}}
+          INDEX_NAME: ${{secrets.INDEX_NAME}}
+          FILE_PATH: ${{secrets.FILE_PATH}}  # ./public/algolia.json
+
