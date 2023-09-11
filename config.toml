@@ -249,10 +249,10 @@ uglyURLs = false
     #[[menu.main]]
     #    weight = 8
     #   identifier = "lang-switcher"
-    #[[menu.main]]
-    #    weight = 8
-    #    identifier = "search"
-    #    post = "search"
+    [[menu.main]]
+       weight = 8
+       identifier = "search"
+       post = "search"
 
     ## 社交栏
     [[menu.socials]]
@@ -1457,11 +1457,11 @@ uglyURLs = false
     #      次将生成的 algolia.json 文件上传到
     #      Algolia
 
-    enableAlgoliaSearch = false
+    enableAlgoliaSearch = true
 
-    algoliaAppId = "Y4QRUNE65Z"
-    algoliaApiKey = ""
-    algoliaIndexName = ""
+    algoliaAppId = "VTXF1FB6AG"
+    algoliaApiKey = "322e517316e12baeed3e69e2b093dc3b"
+    algoliaIndexName = "blog"
     # 说明：https://www.algolia.com/
 
 
