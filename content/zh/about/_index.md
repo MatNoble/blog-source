@@ -2,8 +2,8 @@
 title = "「我」是谁"
 date = "2020-01-03T16:29:06+08:00"
 description = "数学＆计算机 我都爱"
-keywords = ["about","关于此博客","MatNoble","数系家园","matnoble.github.io","Hugo","GitHub"]
-images = ["https://imgkr.cn-bj.ufileos.com/cded9ee3-55a8-498b-814a-baa0792a0166.jpg"]
+keywords = ["MatNoble","matnoble.github.io"]
+images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/IMG_20180628_164930_mh1530200778808-EFFECTS.jpg"]
 gitinfo = false
 mathjax = true
 smallCaps = false
@@ -41,7 +41,6 @@ meta = false
 {{< blockquote author="MatNoble" link="https://github.com/MatNoble" >}}
 
 - [中英文 $\LaTeX$ 文档模板](https://github.com/MatNoble/LaTeX-Document)
-- [Using FEM and FDM to solve PDE](https://github.com/MatNoble/PDE_coding)
 - [HUST $\LaTeX$ Beamer](https://github.com/MatNoble/HUSTMatNobleBeamer)
 - [Hugo shortcodes](https://github.com/MatNoble/hugo-shortcodes-sets)
 - [My Emacs Private Configuration](https://github.com/MatNoble/.emacs.d)
