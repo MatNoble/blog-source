@@ -8,6 +8,8 @@ toc = true
 
 RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构，它是一个..不可变的分布式..数据集合，可以在集群中进行..并行处理..。
 
+<!--more-->
+
 在 Spark 的源码中，RDD 被描述为：
 ```scala
  * Internally, each RDD is characterized by five main properties:

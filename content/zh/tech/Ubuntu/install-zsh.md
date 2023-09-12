@@ -9,6 +9,8 @@ keywords = ["Ubuntu","zsh","oh-my-zsh","linux","Z shell","zsh-autosuggestions","
 Z shell（Zsh）是一款可用作交互式登录的 shell 及脚本编写的命令解释器。Zsh 对 Bourne shell 做出了大量改进，同时加入了 Bash、ksh 及 tcsh 的某些功能。
 {{< /blockquote >}}
 
+<!--more-->
+
 ## 安装 Zsh
 
 ```shell

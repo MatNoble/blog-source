@@ -13,6 +13,8 @@ toc = true
 We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness.
 {{< /blockquote  >}}
 
+<!--more-->
+
 {{< blockquote  >}}
 生活在局域网的世界里，一旦窥探过外面的世界，就很难再回去了...
 {{< /blockquote >}}
