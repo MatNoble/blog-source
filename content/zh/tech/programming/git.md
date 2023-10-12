@@ -37,7 +37,7 @@ sudo apt install git
    - 打开 Terminal，输入以下命令生成秘钥和公钥，并一路回车
 
    ```shell
-   sh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
 
    - 获取公钥，并复制到 GitHub
