@@ -12,7 +12,7 @@ images = ["https://imgkr.cn-bj.ufileos.com/72cfb590-7916-4f3f-a1a5-37756bcce23c.
 
 $\LaTeX$ 输出表格一般情况是不容易的, 但在 **Emacs** 中, 利用 **快捷键** 实现 **快捷操作**, 创建 $\LaTeX$ 表格就容易多了.
 
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=88928743&cid=151902070&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 90%; left: 0; top: 0;"> </iframe></div>
+{{< bili aid="88928743" cid="151902070" >}}
 
 ## 步骤解析
 
