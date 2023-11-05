@@ -248,11 +248,15 @@ other = "小贴示"
 {{< youtube MHsiF9avPww >}}
 
 #### B 站
+创建 `./layouts/shortcodes/bili.html` 使其支持 B 站
+```markdown
+{{</* ili aid="AID" cid="CID" */>}}
+```
 
 {{< bili aid="12440781" cid="20478809" >}}
 
 #### 优酷 YOUKU
-还可以创建`./layouts/shortcodes/youku.html` 使其支持 `YOUKU`
+创建 `./layouts/shortcodes/youku.html` 使其支持 YOUKU
 
 ```markdown
 {{</* youku id="ID" */>}}
