@@ -31,8 +31,7 @@ meta = false
 
 ### 社交媒体 🖇
 
-- 微信公众号: [数系家园](https://mp.weixin.qq.com/s?__biz=MzI0NDcwMzE0NQ==&mid=100000467&idx=1&sn=bdb37d8e5b8b38e862fe3ce5261fa797&chksm=695888155e2f0103c6a2b96c2e85a6ff875a42c09f55d3d6cf23e7c54fef9ac51e7d1c911935#rd)(ID:MatNoble)
-- 知乎账号: [MatNoble](https://www.zhihu.com/people/matnoble)
+- 微信公众号: 数学思维探究设
 - [YouTube](https://www.youtube.com/c/RossMatNoble?sub_confirmation=1)
 - 邮箱: [hustmatnoble@gmail.com](mailto:hustmatnoble@gmail.com)
 
