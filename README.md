@@ -58,7 +58,7 @@
 
 <hr />
 
-### 关注我吧 公众号: 「数系家园」
+### 关注我吧 公众号: 「数学思维探究社」
 
 <p align="center">
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/uXiJsM.jpg"
