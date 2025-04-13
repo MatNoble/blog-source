@@ -14,15 +14,12 @@ related = false
 
 在不断的学习中, 会发现自己正在做的, 之前早就有人做过了, 在这些丰富的借鉴素材的基础上, 我才得以不断学习进步, 谢谢你们的知识 🍻
 
-{{< friend name="reuixiy" url="https://io-oi.me/" logo="https://io-oi.me/icons/android-chrome-512x512.png" word="生活与技术博客, MemE 主题的作者" >}}
+{{< friend name="reuixiy" url="https://io-oi.me/" logo="https://io-oi.me/icons/web-app-manifest-512x512.png" word="生活与技术博客, MemE 主题的作者" >}}
 {{< friend name="荷戟独彷徨" url="https://guanqr.com" logo="https://guanqr.com/icons/android-chrome-512x512.png" word="The Sound of Silence" >}}
 {{< friend name="方寸间" url="https://10101.io/" logo="https://cdn.jsdelivr.net/gh/WithdewHua/static@withdewhua-hugo/img/avatar.jpg" word="拖延症患者的瞎折腾, 很精美的博客" >}}
 {{< friend name="Newlearnerの小站" url="https://www.newlearner.site" logo="https://www.newlearner.site/%E2%80%9Cwp-content/uploads%E2%80%9D/2019/01/2018-08-29-19.40.08.png" word="「探索未知，记录点滴」" >}}
 {{< friend name="mathor" url="https://www.wmathor.com/" logo="https://s2.ax1x.com/2020/01/08/l2xtUO.jpg" word="数学与科技" >}}
 {{< friend name="天涯共此时" url="https://ztygcs.github.io/" logo="https://guanqr.com/images/friends/ztygcs.png" word="科技与生活" >}}
-{{< friend name="Refun" url="https://gears233.github.io" logo="https://gears233.github.io/image/logo.jpg" word="重新找回那份简单的快乐…" >}}
-{{< friend name="Wulnut’s space" url="https://www.wulnut.top/" logo="https://www.wulnut.top/Home/index/panda.png" word="Nothing but failure" >}}
-{{< friend name="孙云增的博客" url="https://sunyunzeng.com/" logo="https://sunyunzeng.com/img/avatar.jpg" word="极简生活，极致内涵~" >}}
 {{< friend name="自由如疯" url="https://coder-liuu.github.io/" logo="https://avatars.githubusercontent.com/u/46812648" word="纵有疾风起，人生不言弃" >}}
 
 <br />
