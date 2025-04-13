@@ -1,6 +1,6 @@
 # .github/workflows/build.yml
 
-name: Deploy Hugo Site to Github Pages
+name: build
 
 on:
   push:
