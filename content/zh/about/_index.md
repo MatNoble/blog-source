@@ -11,17 +11,13 @@ comments = true
 meta = false
 +++
 
-{{< music id="8562801276" type="playlist" server="netease" >}}
-
-陌生人您好 🤝，欢迎在我的博客留下 👣
-
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/hy3AhN.jpg" title=" Friends 💖" >}}
 
 ## About Me
 
 ~~HUST 数学系在读研究生（即将毕业）~~。现就职于某 ICT 大厂，喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
 
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/IMG_20180628_164930_mh1530200778808-EFFECTS.jpg" title="本科毕业时" >}}
+{{< youtube 0ChC9h6Jf_k >}}
 
 ### 足迹
 
