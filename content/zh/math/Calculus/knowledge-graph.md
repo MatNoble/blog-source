@@ -7,7 +7,7 @@ tags = ["微积分"]
 keywords = ["微积分","MatNoble"]
 toc = false
 mathjax = true
-images = ["images/sddefault.jpg"]
+images = ["https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"]
 +++
 
 **第一部分：函数、极限与连续性 (第1章)**
