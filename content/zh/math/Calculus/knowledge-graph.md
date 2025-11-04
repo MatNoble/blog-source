@@ -3,10 +3,11 @@ title = "高等数学知识图谱"
 description = "Advanced Mathematics Knowledge Graph"
 date = "2025-11-4T00:00:00+08:00"
 categories = ["MATH","微积分"]
-tags = ["MIT 2020"]
+tags = ["微积分"]
 keywords = ["微积分","MatNoble"]
-toc = true
+toc = false
 mathjax = true
+images = ["images/sddefault.jpg"]
 +++
 
 **第一部分：函数、极限与连续性 (第1章)**
