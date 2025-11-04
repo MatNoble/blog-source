@@ -1,7 +1,7 @@
 +++
 title = "高等数学知识图谱"
 description = "Advanced Mathematics Knowledge Graph"
-date = "2025-11-4T00:00:00+08:00"
+date = "2025-11-03T00:00:00+08:00"
 categories = ["MATH","微积分"]
 tags = ["微积分"]
 keywords = ["微积分","MatNoble"]
