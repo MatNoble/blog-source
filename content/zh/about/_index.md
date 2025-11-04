@@ -15,7 +15,7 @@ meta = false
 
 ## About Me
 
-~~HUST 数学系在读研究生（即将毕业）~~。现就职于某 ICT 大厂，喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
+~~HUST 数学系在读研究生（即将毕业）~~。~~现就职于某 ICT 大厂~~，喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
 
 {{< youtube 0ChC9h6Jf_k >}}
 
@@ -27,7 +27,7 @@ meta = false
 
 ### 社交媒体 🖇
 
-- 微信公众号: 数学思维探究设
+- 微信公众号: [数学思维探究社](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0NDcwMzE0NQ==#wechat_redirect)
 - [YouTube](https://www.youtube.com/c/RossMatNoble?sub_confirmation=1)
 - 邮箱: [hustmatnoble@gmail.com](mailto:hustmatnoble@gmail.com)
 
