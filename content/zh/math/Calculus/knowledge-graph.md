@@ -77,7 +77,7 @@ images = ["https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images
         *   **可导必连续，连续不一定可导** (例如 `f(x)=|x|` 在x=0处)。
         *   **充要条件**: 左导数与右导数存在且相等。
     *   **求导法则**:
-        *   **基本导数公式**: 常见函数 (幂、指、对、三、反三) 的导数。
+        *   **基本导数公式**: [常见函数 (幂、指、对、三、反三) 的导数](https://matnoble.github.io/math/calculus/calculus-formula-hack/)。
         *   **四则运算法则**: `(u±v)'`, `(uv)'`, `(u/v)'`。
         *   **复合函数求导 (链式法则)**: `[f(g(x))]' = f'(g(x))·g'(x)`，即“剥洋葱法”。
         *   **反函数求导**: `dx/dy = 1 / (dy/dx)`。
