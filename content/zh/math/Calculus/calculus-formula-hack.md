@@ -87,22 +87,18 @@ $$\mathrm{d}y = f'(x) \mathrm{d}x$$
 
 **示例：**
 
-1.  **求 $d(x^a)$：**
+1.  **求 $\mathrm{d}(x^a)$：**
     * 因为 $(x^a)' = a x^{a-1}$
-    * 所以 $d(x^a) = (a x^{a-1}) \mathrm{d}x$
+    * 所以 $\mathrm{d}(x^a) = (a x^{a-1}) \mathrm{d}x$
 
-2.  **求 $d(a^x)$：**
+2.  **求 $\mathrm{d}(a^x)$：**
     * 因为 $(a^x)' = a^x \ln a$
-    * 所以 $d(a^x) = (a^x \ln a) \mathrm{d}x$
+    * 所以 $\mathrm{d}(a^x) = (a^x \ln a) \mathrm{d}x$
 
-3.  **求 $d(\cos x)$：**
+3.  **求 $\mathrm{d}(\cos x)$：**
     * 因为 $(\cos x)' = -\sin x$
-    * 所以 $d(\cos x) = -\sin x \mathrm{d}x$
+    * 所以 $\mathrm{d}(\cos x) = -\sin x \mathrm{d}x$
 
-4.  **求 $d(\arctan x)$：**
+4.  **求 $\mathrm{d}(\arctan x)$：**
     * 因为 $(\arctan x)' = \frac{1}{1+x^2}$
-    * 所以 $d(\arctan x) = \frac{1}{1+x^2} \mathrm{d}x$ (或 $\frac{\mathrm{d}x}{1+x^2}$)
-
-## 结论
-
-通过引导学生发现 $\mathrm{d}y = f'(x) \mathrm{d}x$ 这一核心联系，可以将两套公式的记忆简化为一套。这不仅减轻了学生的学习负担，更重要的是培养了他们从联系中发现规律、理解数学本质的能力，践行了“有的放矢”和“启发式”的教学理念。
+    * 所以 $\mathrm{d}(\arctan x) = \frac{1}{1+x^2} \mathrm{d}x$ (或 $\frac{\mathrm{d}x}{1+x^2}$)
