@@ -779,10 +779,10 @@ uglyURLs = false
     googleAdClient = "ca-pub-4221480300398103"
 
     ## 自动广告
-    enableGoogleAutoAds = false
+    enableGoogleAutoAds = true
 
     ## 广告单元
-    enableGoogleAdUnits = false
+    enableGoogleAdUnits = true
     googleAdSlot = "6956337380"
     googleAdSlotInArticle = "3378279980"
     googleAdSlotAutoRelaxed = "2825520680"
