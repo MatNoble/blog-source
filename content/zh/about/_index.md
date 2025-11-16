@@ -2,7 +2,7 @@
 title = "「我」是谁"
 date = "2020-01-03T16:29:06+08:00"
 description = "数学＆计算机 我都爱"
-keywords = ["MatNoble","matnoble.github.io"]
+keywords = ["MatNoble","blog.matnoble.top"]
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/IMG_20180628_164930_mh1530200778808-EFFECTS.jpg"]
 gitinfo = false
 mathjax = true
@@ -45,7 +45,7 @@ meta = false
 
 ## About This Site
 
-<p style="display:block;text-align:center;color:gray;font-size:30pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">matnoble.github.io</p>
+<p style="display:block;text-align:center;color:gray;font-size:30pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">blog.matnoble.top</p>
 
 {{< mark text="MatNoble">}}可以拆分为两部分: Mat + Noble
 
@@ -67,16 +67,16 @@ meta = false
 
 目前，本站设有两个专栏
 
-- [线性回忆录](https://matnoble.github.io/series/mla/)<br>
+- [线性回忆录](https://blog.matnoble.top/series/mla/)<br>
   企图完整地介绍「线性代数」，而不采取(大陆)大学课堂里的套路。
-- [LaTeX 排版「冷」知识](https://matnoble.github.io/series/latex/)<br>
+- [LaTeX 排版「冷」知识](https://blog.matnoble.top/series/latex/)<br>
   每篇博文介绍一个实用的 $\LaTeX$ 排版小知识。「不积跬步，无以至千里。不积小流，无以成江海。」
 
 本博客使用基于 Go 语言的 [Hugo](https://gohugo.io/) 生成静态网页，配合 [MemE](https://github.com/reuixiy/hugo-theme-meme) 主题，源码存放在 [GitHub](https://github.com/MatNoble/matnoble.github.io)，通过 [GitHub Actions](https://github.com/MatNoble/matnoble.github.io/actions) 进行持续构建、持续部署。
 
 此外，本博客是一个 [PWA](https://developers.google.com/web/progressive-web-apps/?hl=zh_cn) 站点，你可以通过浏览器添加本博客到你的手机主屏或电脑桌面，随时随地查看本博客。如果你想订阅本博客，推荐<a href="/atom.xml" target="_blank" rel="noopener">Atom</a>/<a href="/rss.xml" target="_blank" rel="noopener">RSS</a>。
 
-同时，欢迎兴趣相投者与我友链 $\to$ [点我跳转](https://matnoble.github.io/search/#友链)
+同时，欢迎兴趣相投者与我友链 $\to$ [点我跳转](https://blog.matnoble.top/search/#友链)
 
 <p style="display:block;text-align:center;color:gray;font-size:18pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">记录所思，所想，所为</p>
 

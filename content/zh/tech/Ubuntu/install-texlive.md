@@ -147,7 +147,7 @@ sudo tlmgr update --list
 
 在 Ubuntu 上同样可以选择适合大多数人的 TeXstudio, 同样可在官网[TeXstudio](https://texstudio.org/)下载. 
 
-本人使用自由软件 `Emacs` 编辑 .tex 文件, Emacs 在众多好用的快捷键的基础上, 编辑 .tex 文件有很多优势, 比如我之前做的:[使用 Emacs 制作 LaTeX 表格](https://matnoble.github.io/posts/using-emacs-to-make-latex-table/)
+本人使用自由软件 `Emacs` 编辑 .tex 文件, Emacs 在众多好用的快捷键的基础上, 编辑 .tex 文件有很多优势, 比如我之前做的:[使用 Emacs 制作 LaTeX 表格](https://blog.matnoble.top/posts/using-emacs-to-make-latex-table/)
 
 ### 卸载
 
@@ -172,4 +172,4 @@ find -L /usr/local/bin/ -lname /usr/local/texlive/*/bin/* | sudo xargs rm
 如果还是有安装问题，可以查看 [一份简短的关于 LATEX 安装的介绍](http://tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf)
 {{< /notice >}}
 
-[^1]: LaTeX 更换字体 <br> https://matnoble.github.io/tech/latex/latex-support-chinese/#xecjk-%E5%AE%9E%E7%8E%B0%E4%B8%AD%E8%8B%B1%E6%B7%B7%E6%8E%925
+[^1]: LaTeX 更换字体 <br> https://blog.matnoble.top/tech/latex/latex-support-chinese/#xecjk-%E5%AE%9E%E7%8E%B0%E4%B8%AD%E8%8B%B1%E6%B7%B7%E6%8E%925

@@ -7,10 +7,10 @@ toc = true
 +++
 
 ## zsh & oh my zsh
-[Ubuntu 安装 Zsh ，配置最强终端](https://matnoble.github.io/tech/ubuntu/install-zsh/)
+[Ubuntu 安装 Zsh ，配置最强终端](https://blog.matnoble.top/tech/ubuntu/install-zsh/)
 
 ## Git
-[Git 实用命令汇总](https://matnoble.github.io/tech/programming/git/)
+[Git 实用命令汇总](https://blog.matnoble.top/tech/programming/git/)
 
 ## Java
 下载地址：[华为云👍](https://repo.huaweicloud.com/java/jdk/)，..环境变量..配置： 
@@ -36,4 +36,4 @@ export PATH=${M2_HOME}/bin:$PATH
 ```
 
 ## Python
-[在 Ubuntu 中配置 Python 环境](https://matnoble.github.io/tech/ubuntu/configure-python-environment-in-ubuntu/)
+[在 Ubuntu 中配置 Python 环境](https://blog.matnoble.top/tech/ubuntu/configure-python-environment-in-ubuntu/)

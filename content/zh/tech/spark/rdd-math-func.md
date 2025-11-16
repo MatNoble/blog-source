@@ -9,7 +9,7 @@ mathjax = true
 toc = false
 +++
 
-[RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构](https://matnoble.github.io/tech/spark/rdd/)，是适合做..分布式..计算的。那如何在分布式系统中，对数据{{< mark text="求和，计数，求均值" >}}呢？
+[RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构](https://blog.matnoble.top/tech/spark/rdd/)，是适合做..分布式..计算的。那如何在分布式系统中，对数据{{< mark text="求和，计数，求均值" >}}呢？
 
 <!--more-->
 

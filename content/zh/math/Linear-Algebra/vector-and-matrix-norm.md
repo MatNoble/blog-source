@@ -134,7 +134,7 @@ $$
 \min_{\mathrm{x}} \lVert \boldsymbol{A}\mathrm{x} - \mathrm{b} \rVert_p
 $$
 
-不同的 $p$ 值, 对应不同的最小逼近问题. 当 $p=2$ 时, 是熟悉的[最小二乘问题](https://matnoble.github.io/math/linear-algebra/matrixleastsquares/#%E7%90%86%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84).[^2]
+不同的 $p$ 值, 对应不同的最小逼近问题. 当 $p=2$ 时, 是熟悉的[最小二乘问题](https://blog.matnoble.top/math/linear-algebra/matrixleastsquares/#%E7%90%86%E8%A7%A3%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84).[^2]
 
 二维情况下, 设 $\boldsymbol{A}=[2, 3], \mathrm{x} = [x, y]^{\mathsf{T}}, b=2$. 则
 
@@ -219,7 +219,7 @@ $$
 $$
 </div>
 
-利用 [Cauchy 不等式](https://matnoble.github.io/math/fem/inequality/#cauchy-inequality-for-scalar-product), 可得
+利用 [Cauchy 不等式](https://blog.matnoble.top/math/fem/inequality/#cauchy-inequality-for-scalar-product), 可得
 
 <div>
 $$
@@ -384,4 +384,4 @@ $$
 \end{aligned}
 $$
 当 $p<1$ 时, 不满足三角不等式.
-[^2]: 简述有限元中逼近向量用的也是 $L^2$ norm. <br> https://matnoble.github.io/math/fem/fem1/#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95-1
+[^2]: 简述有限元中逼近向量用的也是 $L^2$ norm. <br> https://blog.matnoble.top/math/fem/fem1/#%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95-1

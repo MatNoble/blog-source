@@ -39,4 +39,4 @@ We hold these truths to be self-evident, that all men are created equal, that th
   海豚湾套餐:
   <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/er93dD.png" title="" alt="海豚湾套餐" data-align="center">
 
-[^1]: [我的自建机场折腾记](https://matnoble.github.io/tech/ubuntu/ubuntu-ssr/#下面介绍一下我用的机场)
+[^1]: [我的自建机场折腾记](https://blog.matnoble.top/tech/ubuntu/ubuntu-ssr/#下面介绍一下我用的机场)

@@ -178,4 +178,4 @@ git push -u origin master
 
 ## 其他
 
-推荐配合 [alias 命令别名](https://matnoble.github.io/tech/ubuntu/install-zsh/#alias-%E5%91%BD%E4%BB%A4%E5%88%AB%E5%90%8D)，实现快捷操作
+推荐配合 [alias 命令别名](https://blog.matnoble.top/tech/ubuntu/install-zsh/#alias-%E5%91%BD%E4%BB%A4%E5%88%AB%E5%90%8D)，实现快捷操作

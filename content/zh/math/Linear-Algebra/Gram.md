@@ -62,7 +62,7 @@ $$
 
 同解即可. 
 
-证明过程详见[经典例题(第３小问)](https://matnoble.github.io/posts/matrix4basicth/#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98)
+证明过程详见[经典例题(第３小问)](https://blog.matnoble.top/posts/matrix4basicth/#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98)
 
 <br />
 

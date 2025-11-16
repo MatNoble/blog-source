@@ -152,7 +152,7 @@ images = ["https://ttfou.com/images/2020/03/12/9aa2a22b65d587a51d2e275fc57b00d7.
 
 Emacs 做编辑器的好处是：{{< mark text="结合 Emacs 的各种..快捷键..实现快速输入、查找替换、整理 $\TeX$ 代码" >}}。比如我之前演示的👇
 
-{{< blockquote author="数学小兵儿" link="https://matnoble.github.io/posts/using-emacs-to-make-latex-table/" >}}
+{{< blockquote author="数学小兵儿" link="https://blog.matnoble.top/posts/using-emacs-to-make-latex-table/" >}}
 使用 Emacs 制作 $\LaTeX$ 表格
 {{< /blockquote >}}
 
@@ -171,7 +171,7 @@ Emacs 对 $\TeX$ 代码有补全功能，如此输入公式会快很多.
 
 虽然有了一定的排版基础，但依旧有许多排版知识是不知道的，或者之前用的一些代码是不正确的，比如微分算子的使用[^5]。
 
-因此，我就想把已有的知识和新获得的知识集中记录下来。于是我在[{{< abbr title="数系家园" text="微信公众号" >}}](https://matnoble.github.io/images/wechat.svg)和本博客都设立了专栏 --- [$\LaTeX$ 排版「冷」知识](https://matnoble.github.io/series/latex/)。
+因此，我就想把已有的知识和新获得的知识集中记录下来。于是我在[{{< abbr title="数系家园" text="微信公众号" >}}](https://blog.matnoble.top/images/wechat.svg)和本博客都设立了专栏 --- [$\LaTeX$ 排版「冷」知识](https://blog.matnoble.top/series/latex/)。
 
 希望能方便自己查阅遇到过却又忘记的知识，能够帮助到他人就更好了。
 
@@ -184,9 +184,9 @@ Emacs 对 $\TeX$ 代码有补全功能，如此输入公式会快很多.
 从 18 年 4 月份正式开始学习 $\LaTeX{}$ 排版至今马上两年了，算是有了一些排版知识和经验，以此文来纪念我学习 $\LaTeX$ 的两年吧🤘
 
 [^1]: 当时，就想着在对论文内容没有太大压力的前提下，用 $\LaTeX{}$ 排版论文应该可以提升我的 $\LaTeX{}$ 排版技能，为之后所谓的科研生活作准备。
-[^2]: TeXLive 安装教程 <br> https://matnoble.github.io/posts/install-texlive/#windows-%E7%B3%BB%E7%BB%9F
+[^2]: TeXLive 安装教程 <br> https://blog.matnoble.top/posts/install-texlive/#windows-%E7%B3%BB%E7%BB%9F
 [^3]: 原谅我没有毕设的 tex 截图了
 [^4]: 现在想想当时这个决定还真是有些大胆，万一不能搞定不久 gg 了
-[^5]: `\mathop{}\!\mathrm{d}` 比 `\mathrm{d}` 要更“地道”一些 <br> https://matnoble.github.io/posts/latex-differential-operator/
+[^5]: `\mathop{}\!\mathrm{d}` 比 `\mathrm{d}` 要更“地道”一些 <br> https://blog.matnoble.top/posts/latex-differential-operator/
 [^6]: 实际上 Word 比 $\TeX$ 产生的要晚，用户群也更大一些
 [^7]: 据我了解，官方和非官方都没有

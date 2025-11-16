@@ -70,7 +70,7 @@ MemE v4.0.0 breaks Hugo shortcodes
 
 ```html
 <!-- ./layouts/shortcodes/mark.html 
-https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#mark-标记支持
+https://blog.matnoble.top/posts/shortcodes-practice-tutorial-for-hugo/#mark-标记支持
 -->
 
 <mark>{{ .Get "text" }}</mark>
@@ -88,7 +88,7 @@ https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#mark-标
 
 ```html
 <!-- ./layouts/shortcodes/abbr.html 
-https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#abbr-缩写支持
+https://blog.matnoble.top/posts/shortcodes-practice-tutorial-for-hugo/#abbr-缩写支持
 -->
 
 <abbr title="{{ .Get "title" }}">{{ .Get "text" }}</abbr>
@@ -137,7 +137,7 @@ https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#abbr-缩
 ```html
 <!--
 ./layouts/shortcodes/imgcap.html
-https://matnoble.github.io/posts/shortcodes-practice-tutorial-for-hugo/#image-with-caption
+https://blog.matnoble.top/posts/shortcodes-practice-tutorial-for-hugo/#image-with-caption
 -->
 
 <span class="caption-wrapper">
@@ -273,14 +273,14 @@ other = "小贴示"
 {{< gist MatNoble b8d6a9541221fef7c30bf214d3505836 >}}
 
 ### 好友链接 Friend link
-很多博客都支持添加 `友链`, 本博客也不例外, 在[这里](https://matnoble.github.io/search/#%E5%8F%8B%E9%93%BE)
+很多博客都支持添加 `友链`, 本博客也不例外, 在[这里](https://blog.matnoble.top/search/#%E5%8F%8B%E9%93%BE)
 借鉴自 [hugo-friendlinks](https://github.com/kkkgo/hugo-friendlinks), 针对本主题, 稍加修改.
 
 ```markdown
-{{</* friend name="数学小兵儿" url="https://matnoble.github.io/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" */>}}
+{{</* friend name="数学小兵儿" url="https://blog.matnoble.top/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" */>}}
 ```
 
-{{< friend name="数学小兵儿" url="https://matnoble.github.io/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" >}}
+{{< friend name="数学小兵儿" url="https://blog.matnoble.top/" logo="/icons/android-chrome-512x512.png" word="数学＆计算机 我都爱" >}}
 
 ### 提供下载 download
 

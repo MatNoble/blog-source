@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://matnoble.github.io/sitemap.xml
+Sitemap: https://blog.matnoble.top/sitemap.xml

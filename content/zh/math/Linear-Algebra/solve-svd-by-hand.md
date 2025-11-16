@@ -95,7 +95,7 @@ $$
 2/\sqrt{6} & 0 & u\_{33}
 \end{bmatrix}
 $$
-从 [奇异值分解初探](https://matnoble.github.io/posts/svd/#%E6%AD%A3%E4%BA%A4%E5%9F%BA%E5%BA%95) 中可知, $[u\_{13}, u\_{23}, u\_{33}]^\mathsf{T} \in N(\boldsymbol{A^\mathsf{T}})$ 即
+从 [奇异值分解初探](https://blog.matnoble.top/posts/svd/#%E6%AD%A3%E4%BA%A4%E5%9F%BA%E5%BA%95) 中可知, $[u\_{13}, u\_{23}, u\_{33}]^\mathsf{T} \in N(\boldsymbol{A^\mathsf{T}})$ 即
 $$
 \boldsymbol{A}^\mathsf{T} \begin{bmatrix} u\_{13} \\\\\\ u\_{23} \\\\\\ u\_{33} \end{bmatrix} = \begin{bmatrix} 
 1 & 0 & 1
@@ -227,8 +227,8 @@ B 的奇异值
 
 <hr />
 
-更多..奇异值分解..的内容可以戳 [**这里**](https://matnoble.github.io/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)
+更多..奇异值分解..的内容可以戳 [**这里**](https://blog.matnoble.top/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)
 
 
 [^1]: 矩阵 $\boldsymbol{A}$ 的前两行和前两列都是完全相同的; 而矩阵 $\boldsymbol{B}$ 的任意两列都是线性无关的
-[^2]: 因为矩阵 $\boldsymbol{V}$ 是 $2\times 2$ 的, 所以可以立即确定. 也就是说 $N(\boldsymbol{A})$ 是空集<br> https://matnoble.github.io/posts/svd/#%E6%AD%A3%E4%BA%A4%E5%9F%BA%E5%BA%95
+[^2]: 因为矩阵 $\boldsymbol{V}$ 是 $2\times 2$ 的, 所以可以立即确定. 也就是说 $N(\boldsymbol{A})$ 是空集<br> https://blog.matnoble.top/posts/svd/#%E6%AD%A3%E4%BA%A4%E5%9F%BA%E5%BA%95

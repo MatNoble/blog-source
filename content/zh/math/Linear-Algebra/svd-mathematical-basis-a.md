@@ -13,7 +13,7 @@ aliases = ["/posts/svd"]
 
 ## 知识回顾
 
-在 [矩阵的四个基本空间, 不了解下吗?](https://matnoble.github.io/posts/matrix4basicth/) 中, 介绍了实矩阵的四个基本空间的`正交关系`
+在 [矩阵的四个基本空间, 不了解下吗?](https://blog.matnoble.top/posts/matrix4basicth/) 中, 介绍了实矩阵的四个基本空间的`正交关系`
 
 $$
 \begin{cases}
@@ -181,4 +181,4 @@ $$
 
 <hr />
 
-更多..奇异值分解..的内容可以戳 [**这里**](https://matnoble.github.io/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)
+更多..奇异值分解..的内容可以戳 [**这里**](https://blog.matnoble.top/tags/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/)

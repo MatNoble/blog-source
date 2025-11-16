@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://matnoble.github.io/"
+baseURL = "https://blog.matnoble.top/"
 title = "MatNoble"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -106,7 +106,7 @@ uglyURLs = false
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://matnoble.github.io/"
+    website = "https://blog.matnoble.top/"
     # 推特
     twitter = ""
 

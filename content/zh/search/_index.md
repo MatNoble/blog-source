@@ -1,7 +1,7 @@
 +++
 title = "Friends"
 date = "2020-02-12T16:29:06+08:00"
-keywords = ["站内搜索","MatNoble","数学小兵儿","数系家园","matnoble.github.io","友链"]
+keywords = ["站内搜索","MatNoble","数学小兵儿","数系家园","blog.matnoble.top","友链"]
 description = "海内存知己，天涯若比邻"
 displayCopyright = false
 gitinfo = false
@@ -28,7 +28,7 @@ related = false
 
 <p class="note-default" style="text-align:left">
 网站名称：MatNoble<br>
-网站地址：<a href="../" target="_blank">https://matnoble.github.io/</a><br>
-网站标志：<a href="../icons/android-chrome-512x512.png" target="_blank">https://matnoble.github.io/icons/android-chrome-512x512.png</a><br>
+网站地址：<a href="../" target="_blank">https://blog.matnoble.top/</a><br>
+网站标志：<a href="../icons/android-chrome-512x512.png" target="_blank">https://blog.matnoble.top/icons/android-chrome-512x512.png</a><br>
 网站描述：数学＆计算机 我都爱
 </p>
