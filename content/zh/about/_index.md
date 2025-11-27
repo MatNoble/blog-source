@@ -15,7 +15,7 @@ meta = false
 
 ## About Me
 
-~~HUST 数学系在读研究生（即将毕业）~~。~~现就职于某 ICT 大厂~~，喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
+~~HUST 数学系在读研究生（即将毕业）~~。~~现就职于某 ICT 大厂~~。HUST 数学系毕业生，现从事计算机相关工作。喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待以后可以和她去更多好玩儿的地方。
 
 {{< youtube 0ChC9h6Jf_k >}}
 
@@ -35,6 +35,8 @@ meta = false
 
 {{< blockquote author="MatNoble" link="https://github.com/MatNoble" >}}
 
+- [MatEditor](https://editor.matnoble.top)
+  <br>一款将 Markdown 文档携带精美主题转化为 HTML 的在线工具
 - [中英文 $\LaTeX$ 文档模板](https://github.com/MatNoble/LaTeX-Document)
 - [HUST $\LaTeX$ Beamer](https://github.com/MatNoble/HUSTMatNobleBeamer)
 - [Hugo shortcodes](https://github.com/MatNoble/hugo-shortcodes-sets)
