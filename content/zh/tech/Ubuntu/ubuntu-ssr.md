@@ -1,7 +1,7 @@
 +++
 title = "Ubuntu 上使用 ssr 实现科学上网 "
 date = "2020-02-26T00:21:00+08:00"
-description = "墙外很危险, 注意保护好自己"
+description = "Ubuntu 系统科学上网完整教程：electron-ssr 安装配置、终端代理设置、机场选择建议。帮助 Linux 用户轻松实现稳定翻墙，访问 Google Scholar 等学术资源。"
 tags = ["科学上网","Ubuntu 装机与优化"]
 keywords = ["科学上网","Ubuntu"]
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132525.png"]

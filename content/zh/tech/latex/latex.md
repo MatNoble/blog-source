@@ -1,13 +1,10 @@
 +++
-title = "LaTeX 实用命令汇总(长期更新)"
-mathjax = true
-description = "从小白到老司机"
-categories = ["TECH","LaTeX 科技排版"]
+title = "LaTeX 排版「冷」知识"
+date = "2019-08-17T00:00:00+00:00"
+description = "LaTeX 排版从入门到精通：涵盖基础语法、数学公式、中文支持、表格制作等核心知识点。适合新手快速上手，也适合老手查漏补缺。"
 tags = ["LaTeX"]
-date = "2019-02-22T19:32:00+08:00"
-keywords = ["经验分享","技术总结","LaTeX","自定义字体","添加注脚","数学公式","矩阵","matrix","matnoble","数系家园"] 
-toc = true
-smallcap = false
+dropCap = false
+displayCopyright = false
 +++
 
 本文是笔者在长期使用中, 遇到问题 $\to$ 解决问题 $\to$ 记录下来, 长期更新, 供我自己和大家参考！ 同时, 欢迎大家在评论区交流！{{< mark text="可使用 Ctrl + F 按关键词搜索 tex 命令" >}}

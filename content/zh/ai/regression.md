@@ -1,7 +1,7 @@
 +++
 title = "线性回归"
 date = "2021-01-24T00:20:33+08:00"
-description = "手撕线性回归代码"
+description = "从零实现线性回归算法：详解数学原理、Python 代码实现、梯度下降优化。对比 NumPy 和 PyTorch 两种实现方式，通过手写代码深入理解机器学习基础。"
 categories = ["机器学习"]
 tags = ["机器学习"]
 keywords = ["线性回归","梯度下降","归一化","标准化","正则化","矩阵","MatNoble"]
