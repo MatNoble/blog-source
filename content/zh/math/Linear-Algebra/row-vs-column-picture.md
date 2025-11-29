@@ -25,7 +25,7 @@ $$ \mathbf{A}\boldsymbol{x} = \boldsymbol{b} $$
 
 $$
 \begin{cases}
-x + y = 2 \\
+x + y = 2 \\\\
 x - y = 0
 \end{cases}
 $$
@@ -63,16 +63,16 @@ _(图注：这是我们熟悉的“行图像”)_
 现在，让我们施展魔法，把方程组 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$ 拆开来看。
 
 $$
-\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}
+\begin{bmatrix} 1 & 1 \\\\ 1 & -1 \end{bmatrix} \begin{bmatrix} x \\\\ y \end{bmatrix} = \begin{bmatrix} 2 \\\\ 0 \end{bmatrix}
 $$
 
 我们不再横着看（行），而是竖着看（列）。
-我们将矩阵 $\mathbf{A}$ 拆分为两个列向量：$\boldsymbol{c}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$ 和 $\boldsymbol{c}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$。
+我们将矩阵 $\mathbf{A}$ 拆分为两个列向量：$\boldsymbol{c}_1 = \begin{bmatrix} 1 \\\\ 1 \end{bmatrix}$ 和 $\boldsymbol{c}_2 = \begin{bmatrix} 1 \\\\ -1 \end{bmatrix}$。
 
 此时，方程组奇迹般地变成了一个**向量的线性组合**问题：
 
 $$
-x \begin{bmatrix} 1 \\ 1 \end{bmatrix} + y \begin{bmatrix} 1 \\ -1 \end{bmatrix} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}
+x \begin{bmatrix} 1 \\\\ 1 \end{bmatrix} + y \begin{bmatrix} 1 \\\\ -1 \end{bmatrix} = \begin{bmatrix} 2 \\\\ 0 \end{bmatrix}
 $$
 
 ### 这里的几何意义完全变了！
@@ -94,11 +94,11 @@ _(图注：列图像——向量的合成)_
 
 问得好。但在更高维度的世界里，“列图像”才是王道。它引出了线性代数中最重要的概念之一：**列空间 (Column Space)**。
 
-试想，如果 $\boldsymbol{b}$ 变了，变成了 $\begin{bmatrix} 3 \\ 5 \end{bmatrix}$，或者其他任何向量。
+试想，如果 $\boldsymbol{b}$ 变了，变成了 $\begin{bmatrix} 3 \\\\ 5 \end{bmatrix}$，或者其他任何向量。
 我们真正关心的是：**这两个列向量，到底能拼出多少种可能性？**
 
 - 它们能铺满整个二维平面吗？（在这个例子里，能！）
-- 如果 $\boldsymbol{c}_1$ 和 $\boldsymbol{c}_2$ 共线了（比如 $\boldsymbol{c}_2$ 也是 $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$），它们还能铺满平面吗？（不能，只能铺满一条线！）
+- 如果 $\boldsymbol{c}_1$ 和 $\boldsymbol{c}_2$ 共线了（比如 $\boldsymbol{c}_2$ 也是 $\begin{bmatrix} 1 \\\\ 1 \end{bmatrix}$），它们还能铺满平面吗？（不能，只能铺满一条线！）
 
 这就是**线性相关性**的几何直观。
 
@@ -128,4 +128,4 @@ _(图注：列图像——向量的合成)_
 ---
 
 **互动思考**：
-你能画出 $x \begin{bmatrix} 1 \\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$ 的列图像吗？在评论区告诉我你的理解！
+你能画出 $x \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\\\ 4 \end{bmatrix}$ 的列图像吗？在评论区告诉我你的理解！

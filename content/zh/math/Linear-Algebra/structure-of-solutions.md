@@ -33,7 +33,7 @@ $$ \boldsymbol{x} = \boldsymbol{x}\_p + \boldsymbol{x}\_h $$
 ## 1. 齐次方程：寻找“零空间”
 
 首先，我们来看看 $\mathbf{A}\boldsymbol{x}=\boldsymbol{0}$。
-$$ \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} $$
+$$ \begin{bmatrix} 1 & 2 \\\\ 2 & 4 \end{bmatrix} \begin{bmatrix} x \\\\ y \end{bmatrix} = \begin{bmatrix} 0 \\\\ 0 \end{bmatrix} $$
 显然，$(0,0)$ 肯定是一个解。除此之外呢？
 你会发现，所有满足 $x + 2y = 0$ 的向量都是解，比如 $(-2, 1), (-4, 2)$ 等等。
 
@@ -53,7 +53,7 @@ $$ \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmat
 ## 2. 非齐次方程：平移的艺术
 
 现在，我们回到 $\mathbf{A}\boldsymbol{x}=\boldsymbol{b}$。
-$$ \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 3 \\ 6 \end{bmatrix} $$
+$$ \begin{bmatrix} 1 & 2 \\\\ 2 & 4 \end{bmatrix} \begin{bmatrix} x \\\\ y \end{bmatrix} = \begin{bmatrix} 3 \\\\ 6 \end{bmatrix} $$
 我们很容易找到一个特解，比如 $\boldsymbol{x}_p = (1, 1)$。
 那么，其他的解在哪里呢？
 
