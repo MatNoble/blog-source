@@ -35,6 +35,8 @@ meta = false
 
 {{< blockquote author="MatNoble" link="https://github.com/MatNoble" >}}
 
+- [MatMemorize](https://memorize.matnoble.top)
+  <br>一款辅助记忆知识的在线服务（最好的记忆是理解）
 - [MatEditor](https://editor.matnoble.top)
   <br>一款将 Markdown 文档携带精美主题转化为 HTML 的在线工具
 - [中英文 $\LaTeX$ 文档模板](https://github.com/MatNoble/LaTeX-Document)
@@ -83,3 +85,4 @@ meta = false
 <p style="display:block;text-align:center;color:gray;font-size:18pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">记录所思，所想，所为</p>
 
 _本站建议使用 Chrome 或 Safari 浏览器浏览，为防止遗忘本站，可快捷键 `Ctrl + D` 将本站添加至浏览器书签_
+
