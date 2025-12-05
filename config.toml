@@ -36,12 +36,6 @@ enableGitInfo = true
 # 是否生成 robots.txt 文件
 enableRobotsTXT = true
 
-# Sitemap 配置
-[sitemap]
-  changefreq = "weekly"
-  priority = 0.5
-  filename = "sitemap.xml"
-
 # 每一分页的文章数（仅对「文章摘要」首页布局有效）
 paginate = 10
 
@@ -175,7 +169,7 @@ uglyURLs = false
 
 # RSS & Atom 文章数限制
 [services.rss]
-    limit = 20
+    limit = 50
     
 ##########################################
 # 菜单配置
@@ -1534,4 +1528,5 @@ uglyURLs = false
     languageCode = "en-US"
     hasCJKLanguage = false
     copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+
 
