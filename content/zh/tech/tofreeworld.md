@@ -21,7 +21,7 @@ We hold these truths to be self-evident, that all men are created equal, that th
 
 ## 科学上网方法
 
-目前，我知道的有两大类：..商业软件VPN.. 和 ..机场.. 
+目前，我知道的有两大类：**商业软件VPN** 和 **机场** 
 
 1. 商业软件 VPN 诸如著名的蓝灯之类的，价格略高，优点是简单且不折腾。
 2. 机场包括免费分享机场，付费机场和自建机场。

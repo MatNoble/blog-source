@@ -1,7 +1,7 @@
 +++
 title = "在 Hugo 博客上实践 Shortcodes 短代码, 太强大了"
 date = "2020-02-16T00:22:42+08:00"
-description = "Hugo 这个「高度自定义」功能太喜欢了"
+description = "深入探索 Hugo 短代码的实践应用，解锁其强大的自定义功能，让你的博客内容更丰富、更具表现力。"
 categories = ["TECH","建站那些事儿"]
 tags = ["Hugo"]
 keywords = ["Shortcodes","短代码","Hugo 博客","建站那些事儿","year","hugo-notice","music","video","friend link","优酷","维基百科 Wikipedia","blockquote"]
@@ -36,7 +36,7 @@ Shortcodes 翻译为: 短代码或者简码
 MemE v4.0.0 breaks Hugo shortcodes
 {{< /blockquote >}}
 
-- 为防止 `shortcodes` 语法被博客生产 `短代码`, 加{{< mark text="*">}}使用{{< mark text="{{</* myshortcode */>}}" >}}
+- 为防止 `shortcodes` 语法被博客渲染，应在代码示例中使用 `{{</* myshortcode */>}}` 这样的格式进行展示。
 
 输出结果为:
 ```
