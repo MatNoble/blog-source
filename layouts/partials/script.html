@@ -37,7 +37,8 @@
 {{- end -}}
 
 {{- if .Site.Params.enableAlgoliaSearch -}}
-    {{- $scripts = union $scripts (partial "third-party/algolia-search.html" .) -}}
+    {{- $algolia := resources.Get "js/algolia-search.js" | resources.ExecuteAsTemplate "js/algolia-search-debug.js" . -}}
+    <script src="{{ $algolia.RelPermalink }}" defer></script>
 {{- end -}}
 
 {{- $scripts = union $scripts (slice "js/custom.js") -}}
