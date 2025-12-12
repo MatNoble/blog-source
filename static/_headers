@@ -1,0 +1,17 @@
+# Cloudflare Pages / Netlify Headers
+
+# Fonts: 1 Year
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS: 1 Year (Hashed)
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# JS: 1 Year (Hashed)
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images: 1 Month
+/images/*
+  Cache-Control: public, max-age=2592000, immutable
