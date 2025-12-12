@@ -1,14 +1,92 @@
-<!-- http://ogp.me/ -->
-<!-- https://developers.facebook.com/docs/sharing/webmasters -->
-<!-- https://developers.google.com/web/fundamentals/discovery/social-discovery/ -->
-<!-- https://stackoverflow.com/a/29831974 -->
-<!-- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/opengraph.html -->
 {{- $ := index . "$" -}}
 {{- $description := .description -}}
 <!-- Date -->
 {{- $dates := partial "utils/date.html" $ -}}
-<!-- Images -->
+
+{{- $processedImage := "" -}}
+{{- $imageFound := false -}}
+
+<!-- Try to get and process images from $images slice -->
 {{- $images := partial "utils/images.html" $ -}}
+{{- with $images -}}
+    {{- range $imgURL := . -}}
+        {{- if not $imageFound -}}
+            {{- $imageResource := "" -}}
+            {{- if $.Page.Resources.GetMatch $imgURL -}}
+                {{- $imageResource = $.Page.Resources.GetMatch $imgURL -}}
+            {{- else if $.Site.GetPage $imgURL -}}
+                {{- /* If $imgURL is a path to a page bundle, try to get its main image */ -}}
+                {{- $imageResource = $.Site.GetPage $imgURL -}}
+                {{- if $imageResource -}}
+                    {{- $imageResource = $imageResource.Resources.GetMatch "*{.png,.jpg,.jpeg,.gif,.webp,.svg}" -}}
+                {{- end -}}
+            {{- else -}}
+                {{- /* Try to get the image from site-wide assets or static folder */ -}}
+                {{- $imageResource = $.Site.GetPage (path.Dir $imgURL) -}}
+                {{- with $imageResource -}}
+                    {{- $imageResource = .Resources.GetMatch (path.Base $imgURL) -}}
+                {{- end -}}
+            {{- end -}}
+
+            {{- if $imageResource -}}
+                {{- if $imageResource.MediaType.IsImage -}}
+                    {{- $processed := $imageResource.Fill "1200x630 webp q80" -}}
+                    {{- $processedImage = $processed.Permalink -}}
+                    {{- $imageFound = true -}}
+                {{- end -}}
+            {{- else if hasPrefix $imgURL "/" -}}
+                {{- /* If still not found as local resource (might be in static or directly in assets outside of bundle) */ -}}
+                {{- /* For images in /static, we don't need resource processing; just absURL */ -}}
+                {{- /* For images in /assets, they need to be defined as page resources of the site itself */ -}}
+                {{- $staticImage := $.Site.GetPage "static" -}}
+                {{- with $staticImage -}}
+                    {{- $resourceFromStatic := .Resources.GetMatch (strings.TrimPrefix "/static/" $imgURL) -}}
+                    {{- if $resourceFromStatic -}}
+                        {{- $processed := $resourceFromStatic.Fill "1200x630 webp q80" -}}
+                        {{- $processedImage = $processed.Permalink -}}
+                        {{- $imageFound = true -}}
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            
+            {{- if not $imageFound -}}
+                {{- /* If still not found as local resource, use original URL (could be external or unhandled local path) */ -}}
+                {{- $processedImage = $imgURL | absURL -}}
+                {{- $imageFound = true -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+<!-- Fallback to siteLogo if no other image is found -->
+{{- if not $imageFound -}}
+    {{- with $.Site.Params.siteLogo -}}
+        {{- $siteLogoPath := . -}}
+        {{- $siteLogoResource := "" -}}
+        
+        {{- if $.Page.Resources.GetMatch $siteLogoPath -}}
+            {{- $siteLogoResource = $.Page.Resources.GetMatch $siteLogoPath -}}
+        {{- else -}}
+            {{- /* Try to get the site logo from site-wide resources (e.g., /static) */ -}}
+            {{- $staticImage := $.Site.GetPage "static" -}}
+            {{- with $staticImage -}}
+                {{- $siteLogoResource = .Resources.GetMatch (strings.TrimPrefix "/static/" $siteLogoPath) -}}
+            {{- end -}}
+        {{- end -}}
+
+        {{- if $siteLogoResource -}}
+            {{- if $siteLogoResource.MediaType.IsImage -}}
+                {{- $processed := $siteLogoResource.Fill "1200x630 webp q80" -}}
+                {{- $processedImage = $processed.Permalink -}}
+                {{- $imageFound = true -}}
+            {{- end -}}
+        {{- end -}}
+        {{- if not $imageFound -}}
+            {{- $processedImage = . | absURL -}}
+            {{- $imageFound = true -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
 
 <meta property="og:title" content="{{ (partial "utils/title.html" (dict "$" $ "title" $.Title)).rawTitle }}" />
 <meta property="og:description" content="{{ $description }}" />
@@ -23,12 +101,8 @@
     {{- end -}}
 {{- end -}}
 
-{{- with $images -}}
-    <meta property="og:image" content="{{ index . 0 }}" />
-{{ else -}}
-    {{ with $.Site.Params.siteLogo -}}
-        <meta property="og:image" content="{{ . | absURL }}" />
-    {{ end -}}
+{{- with $processedImage -}}
+    <meta property="og:image" content="{{ . }}" />
 {{- end -}}
 
 {{- if and $.IsPage (in $.Site.Params.mainSections $.Section) -}}

@@ -65,7 +65,7 @@
     {{- $script = $script | resources.Fingerprint -}}
     <script src="{{ $script.RelPermalink }}"
     {{- if .Site.Params.enableSRI }} integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"{{- end -}}
-    ></script>
+    defer></script>
 {{- else -}}
     <script src="{{ $script.RelPermalink }}"></script>
 {{- end }}

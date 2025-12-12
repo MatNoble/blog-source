@@ -93,7 +93,7 @@ uglyURLs = false
 
 # 压缩 HTML
 [minify.tdewolff.html]
-    keepWhitespace = true
+    keepWhitespace = false
 
 # 作者信息
 [author]
