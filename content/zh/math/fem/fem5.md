@@ -8,6 +8,7 @@ toc = true
 katex = true
 series = ["fem"]
 aliases = ["/posts/fem5"]
+description = "> 例题 1" 
 +++
 
 <img src="https://imgkr.cn-bj.ufileos.com/64498351-25f9-435e-8951-704f5883d9e0.png" title="简述有限元: 逼近函数 IV"  alt="简述有限元逼近函数" />

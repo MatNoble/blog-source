@@ -4,6 +4,7 @@ date = "2023-08-24T00:21:30+08:00"
 tags = ["Spark"]
 keywords = ["Spark","RDD"]
 toc = true
+description = "RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构，它是一个..不可变的分布式..数据集合，可以在集群中进行..并行处理..。" 
 +++
 
 RDD（Resilient Distributed Datasets）是 Spark 中最基本的数据结构，它是一个..不可变的分布式..数据集合，可以在集群中进行..并行处理..。

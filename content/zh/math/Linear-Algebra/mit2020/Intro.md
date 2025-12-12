@@ -7,6 +7,7 @@ keywords = ["MIT 线性代数","Pro. Gilbert Strang","线代拾遗","矩阵","�
 toc = true
 katex = true
 series = ["mla"]
+description = "今年早些时候，Gilbert Strang 教授把经典的 18.06 线性代数 更新了一些内容，准确来说是：重新阐释了其中一些重要内容，是对之前课程的补充。" 
 +++
 
 今年早些时候，Gilbert Strang 教授把经典的 18.06 线性代数 更新了一些内容，准确来说是：重新阐释了其中一些重要内容，是对之前课程的补充。

@@ -5,6 +5,7 @@ tags = ["高频算法题","编程刷题"]
 keywords = ["leetcode","数据结构","python","栈","二分法","MatNoble"]
 toc = false
 katex = true
+description = "- 只处理一种括号" 
 +++
 
 ## 目录

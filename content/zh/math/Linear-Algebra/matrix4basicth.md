@@ -8,6 +8,7 @@ toc = true
 katex = true
 series = ["mla"]
 aliases = ["/posts/matrix4basicth"]
+description = "秩-零化度定理告诉我们: mtimes n 阶矩阵 A 的零空间(Nullspace) N(A) 和列空间(Column sapce) C(A) 的关系:" 
 +++
 
 秩-零化度定理告诉我们: $m\times n$ 阶矩阵 $A$ 的零空间(Nullspace) $N(A)$ 和列空间(Column sapce) $C(A)$ 的关系:

@@ -5,6 +5,7 @@ keywords = ["git 安装与配置","Git 基础教程","Git 实用命令","单个�
 date = "2019-03-14T00:00:00+08:00"
 toc = true
 aliases = ["/posts/git"]
+description = "git 是用于 Linux 内核开发的版本控制工具。与 CVS、Subversion 一类的集中式版本控制工具不同，它采用了分布式版本库的作法，不需要服务器端软件，就可以运作版本控制，使得源代码的发布和交流极其方便。git 的速度很快，这对于诸如 Linux 内核这样的大项目来说自然很重要。g..." 
 +++
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210204185140.png" title="Git && GitHub" >}}

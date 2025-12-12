@@ -6,6 +6,7 @@ keywords = ["引号", "经验分享", "技术总结", "LaTeX", "matnoble", "数�
 tags = ["排版微调", "标点符号"]
 katex = true
 series = ["latex"]
+description = "LaTeX 排版时, 如果使用键盘上的引号, 会得到顺撇的引号:" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}

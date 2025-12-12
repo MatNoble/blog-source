@@ -7,6 +7,7 @@ keywords = ["Derivatives","Differentials","taylor","微分","高等数学"]
 toc = true
 katex = true
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"]
+description = "> “如果给我一个支点，我就能撬动整个地球。” ——阿基米德" 
 +++
 
 > “如果给我一个支点，我就能撬动整个地球。” ——阿基米德

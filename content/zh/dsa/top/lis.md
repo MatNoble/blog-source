@@ -5,6 +5,7 @@ tags = ["高频算法题","编程刷题"]
 keywords = ["leetcode","数据结构","python","动态规划","二分法","最长递增子序列","MatNoble"]
 toc = false
 katex = true
+description = "- 674. 最长连续递增序列" 
 +++
 
 ## 目录

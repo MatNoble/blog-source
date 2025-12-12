@@ -8,6 +8,7 @@ toc = true
 katex = true
 series = ["mla"]
 aliases = ["/posts/matrixleastsquares"]
+description = "在简述有限元系列中用到过最小二乘法, 矩阵的四个基本空间可以帮助我们更好的理解最小二乘法." 
 +++
 
 在[简述有限元系列](https://blog.matnoble.top/categories/%E7%AE%80%E8%BF%B0%E6%9C%89%E9%99%90%E5%85%83/)中用到过`最小二乘法`, 矩阵的四个基本空间可以帮助我们更好的理解`最小二乘法`.

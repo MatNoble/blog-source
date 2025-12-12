@@ -46,8 +46,10 @@
     <meta name="description" content="{{ $description }}" />
 
     <!-- Keywords -->
-    {{- with .Params.keywords -}}
-        <meta name="keywords" content="{{ delimit . ", " }}" />
+    {{- if .Params.keywords -}}
+        <meta name="keywords" content="{{ delimit .Params.keywords ", " }}" />
+    {{- else if and .IsHome .Site.Params.homeKeywords -}}
+        <meta name="keywords" content="{{ .Site.Params.homeKeywords }}" />
     {{- end -}}
 
     <!-- Favicon, Icons, Web App -->

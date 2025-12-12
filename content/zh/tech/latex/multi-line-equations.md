@@ -7,6 +7,7 @@ tags = ["数学公式"]
 katex = true
 series = ["latex"]
 toc = true
+description = "在 LaTeX 排版过程中，多行公式经常被遇到。其中，又分为多种情况" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}

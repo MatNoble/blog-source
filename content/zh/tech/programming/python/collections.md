@@ -4,6 +4,7 @@ tags = ["编程之道"]
 keywords = ["python"]
 date = "2021-03-13T00:10:00+08:00"
 toc = true
+description = "这个模块实现了特定目标的容器，以提供 Python 标准内建容器 dict, list, set, 和 tuple 的替代选择。" 
 +++
 
 {{< blockquote author="Python 官方文档" link="https://docs.python.org/zh-cn/3/library/collections.html" title="collections --- 容器数据类型" >}}

@@ -6,6 +6,7 @@ keywords = ["矩阵转置符", "经验分享", "技术总结", "LaTeX", "matnobl
 katex = true
 series = ["latex"]
 tags = ["数学公式", "数学符号"]
+description = "3 或 4 都可, 我平常使用 3." 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}

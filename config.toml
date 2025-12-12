@@ -398,7 +398,7 @@ uglyURLs = false
     homeTitle = "MatNoble"
     homeMotto = "每天进步一点点"
     homeDescription = "MatNoble 的个人博客。作为一名从程序员转型的大学数学教师，我致力于用代码视角解读数学（线性代数、微积分），用可视化工具（Manim）重构知识，并分享大数据与 LaTeX 排版的技术心得。"
-    homeKeywords = "数学可视化,线性代数直观理解,微积分教学,Python数据分析,LaTeX排版教程,Hugo博客搭建,程序员转型教师"
+    homeKeywords = "MatNoble,Python,LaTeX排版,人工智能,AI,机器学习,Machine Learning,线性代数,Linear Algebra,微积分,Calculus,数据科学,Data Science,Spark,Hugo博客,数学可视化,Manim,程序员转型"
     homeLinksDelimiter = "."
 
     ## 「文章摘要」
@@ -1489,7 +1489,7 @@ uglyURLs = false
         #      并将文件放到你的 /static/js/lib.min.js
     [params.lib.path]
         clipboard = "/npm/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.min.js"
-        instantsearch = "/npm/instantsearch.js@2/dist/instantsearch.min.js"
+        instantsearch = "static/js/lib/instantsearch.min.js"
         gitalk = "/npm/gitalk@1/dist/gitalk.min.js"
         gitalk_css = "/npm/gitalk@1/dist/gitalk.css"
         instantpage = "/npm/instant.page@5.1.0/instantpage.min.js"
@@ -1502,7 +1502,7 @@ uglyURLs = false
         lunr_stemmer = "/npm/lunr-languages@1.4.0/min/lunr.stemmer.support.min.js"
         lunr_lang = "/npm/lunr-languages@1.4.0/min/lunr.de.min.js"
         mathjax = "/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"
-        medium_zoom = "/npm/medium-zoom@latest/dist/medium-zoom.min.js"
+        medium_zoom = "static/js/lib/medium-zoom.min.js"
         mermaid = "/npm/mermaid@8.8.3/dist/mermaid.min.js"
         qrcode = "/npm/qrcode-generator@1.4.4/qrcode.min.js"
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"

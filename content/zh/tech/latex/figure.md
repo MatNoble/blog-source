@@ -7,6 +7,7 @@ tags = ["图片表格"]
 katex = true
 series = ["latex"]
 toc = true
+description = "在 LaTeX 里添加图片使用 graphicx 宏包，在导言区导入" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}

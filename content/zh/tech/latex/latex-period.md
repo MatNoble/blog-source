@@ -7,6 +7,7 @@ tags = ["排版微调", "标点符号"]
 katex = true
 series = ["latex"]
 toc = true
+description = "由于中文空心句号是一个小圈，容易与作为下标的数字 0 或字母 o 混淆。因此，在专业数学书籍、论文排版中，最好是使用实心句点 ． 来代替中文空心句号。" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}

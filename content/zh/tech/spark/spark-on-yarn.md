@@ -5,6 +5,7 @@ tags = ["Spark"]
 keywords = ["Spark", "YARN", "Spark on YARN", "分布式", "资源管理"]
 images = ["https://spark.apache.org/docs/latest/img/cluster-overview.png"]
 toc = true
+description = "摘要：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。" 
 +++
 
 **摘要**：本文介绍了 Spark on YARN 架构 的基本原理和特点。文章首先介绍了 Hadoop YARN 架构 的两个核心组件：资源管理和计算调度，然后介绍了 Spark 架构 的主要组成部分和功能。文章最后总结了 Spark on YARN 架构 的优势和应用场景。

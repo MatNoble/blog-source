@@ -4,6 +4,7 @@ tags = ["开发"]
 keywords = ["linux","zsh","oh my zsh","git","java","maven","scala","Python","开发环境"]
 date = "2023-07-23T00:17:00+08:00"
 toc = true
+description = "下载地址：华为云👍，..环境变量..配置：" 
 +++
 
 ## zsh & oh my zsh

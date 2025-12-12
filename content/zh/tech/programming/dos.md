@@ -4,6 +4,7 @@ categories = ["JAVA","LaTeX 科技排版"]
 date = "2021-10-18T00:18:32+08:00"
 keywords = ["JAVA","matnoble","数系家园","数学小兵儿"]
 toc = true
+description = "- 运行：Win + R" 
 +++
 
 ## 基本 Windows 快捷键

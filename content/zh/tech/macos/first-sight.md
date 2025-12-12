@@ -4,6 +4,7 @@ date = "2020-08-15T00:20:33+08:00"
 tags = ["Mac os"]
 keywords = ["黑苹果","Hackintosh"]
 katex = true
+description = "参照 黑果小兵的部落阁 的 黑苹果教程 把我新买的 联想小新 pro 13 装上了苹果系统 --- Mac OS Catalina 10.15.6" 
 +++
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/截屏2020-08-15 下午7.24.37.png" title="一旦用过, 就回不去了" alt="mac os" >}}

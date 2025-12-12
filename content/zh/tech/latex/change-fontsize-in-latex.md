@@ -7,6 +7,7 @@ tags = ["排版微调", "字体设置"]
 katex = true
 series = ["latex"]
 toc = true
+description = "在 LaTeX 里改变字体大小分为两个层级, 一是整个文档统一调整, 一是设置文档中某个部分的字体大小." 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}

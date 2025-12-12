@@ -7,6 +7,7 @@ keywords = ["matrix","linear algebra","Rank-Nullity Theorem","MatNoble"]
 toc = true
 katex = true
 series = ["mla"]
+description = "在人工智能, 机器学习, 深度学习的浪潮中, ..数学.. 知识的发展与应用起着至关重要的作用." 
 +++
 
 在人工智能, 机器学习, 深度学习的浪潮中, ..数学.. 知识的发展与应用起着至关重要的作用.

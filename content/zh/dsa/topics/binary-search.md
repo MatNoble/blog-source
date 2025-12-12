@@ -5,6 +5,7 @@ tags = ["编程刷题"]
 keywords = ["leetcode","数据结构","python","数组","binary-search","二分法","MatNoble"]
 toc = false
 katex = true
+description = "- 二分模板" 
 +++
 
 # 目录

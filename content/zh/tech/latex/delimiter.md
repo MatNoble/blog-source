@@ -6,6 +6,7 @@ keywords = ["LaTeX 定界符", "经验分享", "技术总结", "LaTeX", "matnobl
 tags = ["数学符号"]
 katex = true
 series = ["latex"]
+description = "LaTeX 提供了多种形式的定界符，包括各种括号:" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
