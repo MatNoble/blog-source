@@ -308,8 +308,6 @@ uglyURLs = false
 # 主题配置
 
 [params]
-    # 开启资源指纹 (为 CSS/JS 添加 Hash) 以支持长期缓存
-    enableFingerprint = true
     ######################################
     # 顶栏
 
@@ -1398,7 +1396,7 @@ uglyURLs = false
     # 说明：仅对 MemE 生成的 CSS 和 JS 有效
 
     # 是否开启
-    enableFingerprint = false
+    enableFingerprint = true
 
     # 是否开启子资源完整性验证
     enableSRI = false
