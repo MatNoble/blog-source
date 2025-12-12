@@ -6,7 +6,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["线性方程组"]
 keywords = ["线代拾遗","线性代数","线性变换","矩阵映射","四个基本子空间","秩零化度定理","核空间","列空间","行空间","降维打击"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 +++
 

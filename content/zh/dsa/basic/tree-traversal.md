@@ -5,7 +5,7 @@ description = "数据结构从 0 到 1"
 tags = ["数据结构与算法","编程刷题","树"]
 keywords = ["leetcode","数据结构","遍历二叉树","深度优先搜索","广度优先搜索","前序遍历","中序遍历","后序遍历","层序遍历","python","链表","数组","栈","队列","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 +++
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/Order.svg" title="二叉树的遍历">}}

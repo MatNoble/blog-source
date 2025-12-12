@@ -5,7 +5,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["线代基本定理"]
 keywords = ["matrix","linear algebra","Rank-Nullity Theorem","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 +++
 

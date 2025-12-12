@@ -4,7 +4,7 @@ date = "2021-03-12T00:19:30+08:00"
 tags = ["动态规划","编程刷题"]
 keywords = ["leetcode","数据结构","python","数组","栈","队列","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 +++
 
 动态规划问题的一般形式就是..求最值..，求解动态规划的核心问题是..穷举..。

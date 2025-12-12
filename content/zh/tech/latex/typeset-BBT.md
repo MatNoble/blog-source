@@ -3,11 +3,10 @@ title = "科技文档排版漫谈"
 date = "2020-03-12T00:15:30+08:00"
 description = "从 Word 写到 LaTeX"
 categories = ["TECH","LaTeX 科技排版"]
-tags = ["latex"]
-keywords = ["文档排版漫谈","Office Word","LaTeX","AxMath","Beamer","Document","mathpix snip","分享知识"]
+tags = ["字体设置", "数学公式"]
+keywords = ["文档排版漫谈", "Office Word", "LaTeX", "AxMath", "Beamer", "Document", "mathpix snip", "分享知识", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 toc = true
 katex = true
-images = ["https://ttfou.com/images/2020/03/12/9aa2a22b65d587a51d2e275fc57b00d7.png"]
 +++
 
 ## Word 排版技能提升

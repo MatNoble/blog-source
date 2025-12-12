@@ -6,7 +6,7 @@ tags = ["有限元","最小二乘法"]
 keywords = ["有限元","FEM"]
 date = "2019-12-12T00:00:00+08:00"
 toc = true
-mathjax = true
+katex = true
 series = ["fem"]
 aliases = ["/posts/fem1"]
 +++

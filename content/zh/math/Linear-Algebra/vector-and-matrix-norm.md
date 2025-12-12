@@ -6,7 +6,7 @@ categories = ["MATH","线代拾遗"]
 tags = [""]
 keywords = ["向量范数","矩阵范数","线性代数","matrix","linear algebra","vector norm","matrix norm","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 +++
 

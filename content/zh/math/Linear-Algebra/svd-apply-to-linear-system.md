@@ -6,7 +6,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["最小二乘法","奇异值分解"]
 keywords = ["线性方程组","奇异值分解","system of linear equations","SVD","线性代数","最小二乘法","matrix","linear algebra","leastsquares","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 aliases = ["/posts/svd-linear-system"]
 +++

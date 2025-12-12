@@ -5,7 +5,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["MIT 2020"]
 keywords = ["MIT 线性代数","Pro. Gilbert Strang","线代拾遗","矩阵","线性代数","基底","matrix","linear algebra","Space base","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 +++
 

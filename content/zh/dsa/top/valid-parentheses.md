@@ -4,7 +4,7 @@ date = "2021-03-05T00:20:30+08:00"
 tags = ["高频算法题","编程刷题"]
 keywords = ["leetcode","数据结构","python","栈","二分法","MatNoble"]
 toc = false
-mathjax = true
+katex = true
 +++
 
 ## 目录

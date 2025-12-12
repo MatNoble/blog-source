@@ -6,7 +6,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["奇异值分解"]
 keywords = ["线代拾遗","矩阵","线性代数","svd","奇异值分解","matrix","linear algebra","Space base","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 aliases = ["/posts/svd"]
 +++

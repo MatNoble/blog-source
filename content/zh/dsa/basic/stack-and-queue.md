@@ -5,7 +5,7 @@ description = "91 天学算法"
 tags = ["LeetCode题解","编程刷题"]
 keywords = ["leetcode","数据结构","python","数组","栈","队列","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 +++
 
 ## 栈 Stack

@@ -6,7 +6,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["矩阵","特殊矩阵"]
 keywords = ["矩阵","线性代数","Gram 矩阵","Gram matrix","matrix","linear algebra","diagonalization","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 +++
 

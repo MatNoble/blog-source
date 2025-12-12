@@ -6,7 +6,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["线性方程组"]
 keywords = ["线代拾遗","线性代数","齐次方程","非齐次方程","特解","通解","零空间","核空间","仿射空间","线性子空间"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 +++
 

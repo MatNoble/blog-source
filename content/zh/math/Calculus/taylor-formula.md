@@ -5,7 +5,7 @@ categories = ["MATH","微积分"]
 tags = ["微积分"]
 keywords = ["Derivatives","Differentials","taylor","微分","高等数学"]
 toc = true
-mathjax = true
+katex = true
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"]
 +++
 

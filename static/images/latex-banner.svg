@@ -1,0 +1,30 @@
+<svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Gradient -->
+    <rect width="800" height="200" rx="10" fill="url(#paint0_linear)"/>
+    
+    <!-- Abstract LaTeX Symbols Background -->
+    <g opacity="0.1" fill="#FFFFFF" font-family="Times New Roman, serif" font-weight="bold">
+        <text x="50" y="150" font-size="120">{</text>
+        <text x="700" y="150" font-size="120">}</text>
+        <text x="200" y="50" font-size="60">\</text>
+        <text x="600" y="180" font-size="80">$\sum$</text>
+        <text x="100" y="50" font-size="40">$\int$</text>
+        <text x="500" y="40" font-size="50">$\pi$</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="400" y="115" fill="#FFFFFF" font-family="'Courier New', monospace" font-weight="bold" font-size="60" text-anchor="middle" letter-spacing="4">
+        \LaTeX
+    </text>
+
+    <!-- Subtitle/Decoration Line -->
+    <line x1="300" y1="140" x2="500" y2="140" stroke="#61dafb" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Definitions -->
+    <defs>
+        <linearGradient id="paint0_linear" x1="0" y1="0" x2="800" y2="200" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2c3e50"/>
+            <stop offset="1" stop-color="#3498db"/>
+        </linearGradient>
+    </defs>
+</svg>

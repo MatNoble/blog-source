@@ -6,7 +6,7 @@ categories = ["MATH","微积分"]
 tags = ["微积分", "知识图谱", "考研数学"]
 keywords = ["微积分","MatNoble","定积分应用","极限"]
 toc = true
-mathjax = true
+katex = true
 mermaid = true
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"]
 +++

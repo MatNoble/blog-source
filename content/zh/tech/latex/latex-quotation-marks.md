@@ -2,14 +2,13 @@
 title = "LaTeX 引号你用对了吗？"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2019-12-30T00:23:25+08:00"
-keywords = ["引号","经验分享","技术总结","LaTeX","matnoble","数系家园","数学小兵儿"]
-tags = [""]
+keywords = ["引号", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
+tags = ["排版微调", "标点符号"]
 katex = true
 series = ["latex"]
 +++
 
-<img src="https://imgkr.cn-bj.ufileos.com/4e7ca500-bdca-42dc-9444-bffa8af84fc5.png" width="95%" />
-<div align="center"><a href="/series/latex">◎ 你过来啊 🤞</a></div>
+{{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
 
 <!--more-->
 

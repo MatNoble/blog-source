@@ -5,7 +5,7 @@ description = "数据结构从 0 到 1"
 tags = ["数据结构与算法","编程刷题","链表"]
 keywords = ["leetcode","数据结构","反转链表","python","链表","数组","栈","队列","MatNoble"]
 toc = false
-mathjax = true
+katex = true
 +++
 
 ## 目录

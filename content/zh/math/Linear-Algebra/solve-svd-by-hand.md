@@ -6,7 +6,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["奇异值分解"]
 keywords = ["「手撕」奇异值分解 SVD","奇异度","线性相关","SVD","线性代数","matrix","linear algebra","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 +++
 

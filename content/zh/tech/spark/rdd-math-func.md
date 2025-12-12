@@ -5,7 +5,7 @@ date = "2023-08-27T22:30:00+08:00"
 tags = ["Spark"]
 keywords = ["Spark","RDD","Avg", "Count", "sum", "统计函数", "分布式"]
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images/win/rdd-avg-aggregate-202308272228873.png"]
-mathjax = true
+katex = true
 toc = false
 +++
 

@@ -2,15 +2,14 @@
 title = "一行代码为 LaTeX 修改数学公式字体"
 description = "LaTeX 数学公式换字体也不难"
 categories = ["TECH","LaTeX 科技排版"]
-tags = [""]
+tags = ["字体设置", "数学公式"]
 date = "2020-02-27T00:19:35+08:00"
-keywords = ["经验分享","技术总结","LaTeX","自定义字体","matnoble","数系家园"]
+keywords = ["经验分享", "技术总结", "LaTeX", "自定义字体", "matnoble", "数系家园", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 katex = true
 series = ["latex"]
 +++
 
-<img src="https://imgkr.cn-bj.ufileos.com/4e7ca500-bdca-42dc-9444-bffa8af84fc5.png" width="95%" />
-<div align="center"><a href="/series/latex">◎ 你过来啊 🤞</a></div>
+{{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
 
 排版公式是 $\LaTeX$ 的强项, 但同一个字体看的次数多了, 也难免审美疲劳．所以, 今天用简单的几行命令改变一下公式的字体
 

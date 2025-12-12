@@ -6,7 +6,7 @@ categories = ["Tech", "App"]
 tags = ["MatMemorize", "数学学习", "间隔重复", "React", "PWA"]
 keywords = ["大学生数学学习软件","考研数学复习工具","艾宾浩斯记忆法","微积分公式记忆","线性代数复习","概率论知识点","间隔重复算法"]
 toc = true
-mathjax = true
+katex = true
 +++
 
 ![MatMemorize Banner](https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251205153655965.png)

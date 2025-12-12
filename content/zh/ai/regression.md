@@ -6,7 +6,7 @@ categories = ["机器学习"]
 tags = ["机器学习"]
 keywords = ["线性回归","梯度下降","归一化","标准化","正则化","矩阵","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["AI"]
 +++
 

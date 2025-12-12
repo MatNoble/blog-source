@@ -34,7 +34,7 @@ footnoteReturnLinkContents = "↩"
 enableGitInfo = true
 
 # 是否生成 robots.txt 文件
-enableRobotsTXT = false
+enableRobotsTXT = true
 
 # 每一分页的文章数（仅对「文章摘要」首页布局有效）
 paginate = 10
@@ -397,8 +397,8 @@ uglyURLs = false
     homeLogoLink = "/home/"
     homeTitle = "MatNoble"
     homeMotto = "每天进步一点点"
-    homeDescription = ""
-    homeKeywords = "数学，计算机，分享知识"
+    homeDescription = "MatNoble 的个人博客。作为一名从程序员转型的大学数学教师，我致力于用代码视角解读数学（线性代数、微积分），用可视化工具（Manim）重构知识，并分享大数据与 LaTeX 排版的技术心得。"
+    homeKeywords = "数学可视化,线性代数直观理解,微积分教学,Python数据分析,LaTeX排版教程,Hugo博客搭建,程序员转型教师"
     homeLinksDelimiter = "."
 
     ## 「文章摘要」
@@ -414,7 +414,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "分享数学, 大数据和 LaTeX 排版等知识, 分享学习心得, 分享生活感悟．<br />Sharing knowledge about mathematics, big data and LaTeX typesetting, sharing learning experience, sharing life experience"
+    siteDescription = "分享数学直观理解, 大数据技术和 LaTeX 排版经验。MatNoble 致力于消除数学与代码之间的认知壁垒。"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 

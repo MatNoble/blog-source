@@ -5,7 +5,7 @@ description = "Python 版"
 tags = ["剑指Offer题解","编程刷题"]
 keywords = ["leetcode","剑指offer","数据结构","python","数组","栈","队列","德摩根定律","MatNoble"]
 toc = false
-mathjax = true
+katex = true
 +++
 
 ## 目录

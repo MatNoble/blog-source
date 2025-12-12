@@ -1,386 +1,248 @@
 +++
-title = "LaTeX 排版「冷」知识"
+title = "LaTeX 排版速查手册"
 date = "2019-08-17T00:00:00+00:00"
-description = "LaTeX 排版从入门到精通：涵盖基础语法、数学公式、中文支持、表格制作等核心知识点。适合新手快速上手，也适合老手查漏补缺。"
-tags = ["LaTeX"]
+description = "一份长期维护的 LaTeX 常用命令速查表。涵盖自定义字体、脚注设置、希腊字母、微积分公式、线性代数矩阵以及各类符号表，助你写作效率翻倍。"
+tags = ["LaTeX入门"]
 dropCap = false
 displayCopyright = false
+keywords = ["LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
+katex = true
 +++
 
-本文是笔者在长期使用中, 遇到问题 $\to$ 解决问题 $\to$ 记录下来, 长期更新, 供我自己和大家参考！ 同时, 欢迎大家在评论区交流！{{< mark text="可使用 Ctrl + F 按关键词搜索 tex 命令" >}}
+本文是笔者在长期使用 LaTeX 过程中，将遇到的问题和高频使用的命令整理而成的**速查手册**。
+
+它不是一本厚重的教科书，而是一个**工具箱**。当你忘记某个符号怎么打，或者想调整一下字体时，希望这里能帮你快速找到答案。
+
+> **提示**：善用 `Ctrl + F` 搜索关键词（如 "矩阵"、"希腊字母"）。
 
 <!--more-->
 
-{{< imgcap src="https://imgkr.cn-bj.ufileos.com/3b558a96-8f4a-4a45-9980-c48489db0b24.jpg" title="LaTex 命令图书馆" >}}
+{{< imgcap src="/images/latex-banner.svg" alt="LaTeX 常用命令速查手册" title="LaTeX 命令图书馆" >}}
 
-## 前言
+## 0. 为什么选择 LaTeX？
 
-理工科 + 数学公式 = 请使用 [$\LaTeX$](https://zh.wikipedia.org/wiki/LaTeX)  
+理工科 + 数学公式 = **请使用 [$\LaTeX$](https://zh.wikipedia.org/wiki/LaTeX)**。
 
-> + $\TeX$ 系统是公认的数学公式排得最好的系统  
-> + 大部分的 $\TeX$ 系统都是免费的  
-> + 除了文学作品以外，Word 很少有能超越 $\TeX$ 的地方
+- **专业性**：$\TeX$ 系统是公认的数学公式排版标杆。
+- **免费开源**：绝大部分 $\TeX$ 系统（如 TeX Live）都是免费的。
+- **专注内容**：让你从 Word 的“格式调整地狱”中解放出来，专注于内容本身。
 
-### 开源项目
+### 常用资源
+- **我的 GitHub 模板**: [github.com/MatNoble/LaTeX-Document](https://github.com/MatNoble/LaTeX-Document)
 
-$\LaTeX$ 模板 GitHub 地址: [github.com/MatNoble/LaTeX-Document](https://github.com/MatNoble/LaTeX-Document)
+---
 
-{{< bili aid=80723849 cid=138153662 >}}
+## 1. 文档排版基础
 
-<hr />
+### 1.1 自定义字体 (XeLaTeX)
 
-## 自定义字体
-
-使用 $\LaTeX $ 排版文档时, 改变字体不像 MS office 那样简单, 需要特定的代码来实现. 下面, 给出一个自定义字体的例子:
+想在文档中混用“思源黑体”和“Times New Roman”？你需要使用 `xeCJK` 宏包，并确保使用 **XeLaTeX** 编译器。
 
 ```tex
-\documentclass[16pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
+
+% 必须使用 xeCJK 宏包
 \usepackage{fontspec,xunicode,xltxtra}
+\usepackage{xeCJK} 
 
-%% 从这开始
-\usepackage{xeCJK} % 中文字体
-%================================== 设置中文字体 ================================%
-% 将系统字体名映射为逻辑字体名称, 主要是为了维护的方便
-\newcommand\fontnamehei{SimHei} 
-\newcommand\fontnamesong{SimSun} 
-\newcommand\fontnamekai{Kaiti}
-\newcommand\fontnamemono{DejaVu Sans Mono} 
+%================= 中文字体设置 =================%
+% 1. 设置主字体（文档默认字体）
+\setCJKmainfont[BoldFont=SimHei, ItalicFont=KaiTi]{SimSun} % 宋体，粗体用黑体，斜体用楷体
 
-% 设置文档正文字体为宋体
-\setCJKmainfont[BoldFont=\fontnamehei]{\fontnamesong} % 设置 CJK 主字体
-\setCJKsansfont[BoldFont=\fontnamehei]{\fontnamekai}  % 设置 CJK 无衬线的字体
-\setmonofont{\fontnamemono}                           % 设置 CJK 的等宽字体
+% 2. 定义自定义字体族
+% 注意：括号内的名字必须是系统已安装的字体文件名或名称
+\setCJKfamilyfont{my_hei}{Source Han Sans SC} % 思源黑体
+\newcommand{\sourcehan}{\CJKfamily{my_hei}}    % 定义快捷命令
 
-%================================== 设置英文字体 ================================%
-\setmainfont{Times New Roman}   % 西文默认衬线字体(serif)
-\setsansfont{Arial}             % 西文默认无衬线字体(sans serif)
-\setmonofont{Courier New}       % 西文默认的等宽字体
-
-%==================================  自定义字体  ================================%
-\setCJKfamilyfont{adhei}{SourceHanSansSC-Regular} % 开源的思源黑体 
-\newcommand{\adheiti}{\CJKfamily{adhei}}
-%% 到这结束
+%================= 英文字体设置 =================%
+\setmainfont{Times New Roman}   % 衬线字体 (Serif)
+\setsansfont{Arial}             % 无衬线字体 (Sans-Serif)
+\setmonofont{Courier New}       % 等宽字体 (Monospace)
 
 \begin{document}
-\section{黑体}
-正文是宋体, 博客: blog.matnoble.top
-\vskip 2em
-{\adheiti 这是思源黑体}	
+    这是默认的宋体。\textbf{这是自动调用的黑体}。
+    
+    \vskip 1em
+    
+    {\sourcehan 这里是手动切换的思源黑体。}
+    
+    This is Times New Roman. \textsf{This is Arial.}
 \end{document}
 ```
 
-<hr />
-## 添加脚注
+### 1.2 自定义脚注
+
+默认的脚注有时不符合中文排版习惯（比如带圈数字或不缩进）。
 
 ```tex
-% 导言区
-% 引入脚注的包
-\usepackage[marginal]{footmisc}
-\renewcommand{\thefootnote}{}
+% 导言区设置
+\usepackage[marginal]{footmisc} % 脚注内容不缩进，与编号对齐
+\renewcommand{\thefootnote}{\arabic{footnote}} % 使用阿拉伯数字 1, 2, 3
 
-% 正文需要添加注脚的页面
-% 添加脚注	
-\footnote{\noindent 
-          \textbf{这里是注脚}：\\
-         }.
+% 正文中使用
+这里有一段文字\footnote{\noindent \textbf{注说明}：这里是脚注的具体内容。}。
 ```
 
-<hr />
-## 数学公式
+---
 
+## 2. 数学公式速查
+
+在开始前，请确保导言区引入了核心宏包：
 ```tex
-# 导入美国数学学会字体包
 \usepackage{amsmath}
-```
-### 数学环境
-
-- 行内公式: 
-```tex
-$ ... $ 
-或者 
-\( ... \)
+\usepackage{amssymb}
 ```
 
-- 行间公式: 
+### 2.1 希腊字母表
+
+#### 小写字母
+| 代码 | 效果 | 代码 | 效果 | 代码 | 效果 | 代码 | 效果 |
+| :--- | :---: | :--- | :---: | :--- | :---: | :--- | :---: |
+| `\alpha` | $\alpha$ | `\beta` | $\beta$ | `\gamma` | $\gamma$ | `\delta` | $\delta$ |
+| `\epsilon` | $\epsilon$ | `\varepsilon` | $\varepsilon$ | `\zeta` | $\zeta$ | `\eta` | $\eta$ |
+| `\theta` | $\theta$ | `\vartheta` | $\vartheta$ | `\iota` | $\iota$ | `\kappa` | $\kappa$ |
+| `\lambda` | $\lambda$ | `\mu` | $\mu$ | `\nu` | $\nu$ | `\xi` | $\xi$ |
+| `\pi` | $\pi$ | `\varpi` | $\varpi$ | `\rho` | $\rho$ | `\varrho` | $\varrho$ |
+| `\sigma` | $\sigma$ | `\varsigma` | $\varsigma$ | `\tau` | $\tau$ | `\upsilon` | $\upsilon$ |
+| `\phi` | $\phi$ | `\varphi` | $\varphi$ | `\chi` | $\chi$ | `\psi` | $\psi$ |
+| `\omega` | $\omega$ | | | | | | |
+
+#### 大写字母
+| 代码 | 效果 | 代码 | 效果 | 代码 | 效果 | 代码 | 效果 |
+| :--- | :---: | :--- | :---: | :--- | :---: | :--- | :---: |
+| `\Gamma` | $\Gamma$ | `\Lambda` | $\Lambda$ | `\Sigma` | $\Sigma$ | `\Psi` | $\Psi$ |
+| `\Delta` | $\Delta$ | `\Xi` | $\Xi$ | `\Upsilon` | $\Upsilon$ | `\Omega` | $\Omega$ |
+| `\Theta` | $\Theta$ | `\Pi` | $\Pi$ | `\Phi` | $\Phi$ | | |
+
+### 2.2 常用运算符与修饰符
+
+#### 上下标与分式
 ```tex
-$$ ... $$ #(不建议使用) 
-或者 
-\[ ... \]
+x_{1} \qquad x^{2} \qquad x_{ij}^{3} \qquad \frac{x^{2}}{k+1}
 ```
+$$ x_{1} \qquad x^{2} \qquad x_{ij}^{3} \qquad \frac{x^{2}}{k+1} $$
 
-### 希腊字母
-
-#### 小写
-
-|                 |              |               |            |               |            |              |           |
-| :-------------: | :----------- | :-----------: | :--------- | :-----------: | :--------- | :----------: | :-------- |
-| $\alpha$        | \alpha       | $\theta$      | \theta     | o             | o          | $\upsilon$   | \upsilon  |
-| $\beta$         | \beta        | $\vartheta$   | \vartheta  | $\pi$         | \pi        | $\phi$       | \phi      |
-| $\gamma$        | \gamma       | $\iota$       | \iota      | $\varpi$      | \varpi     | $\varphi$    | \varphi   |
-| $\delta$        | \delta       | $\kappa$      | \kappa     | $\rho$        | \rho       | $\chi$       | \chi      |
-| $\epsilon$      | \epsilon     | $\lambda$     | \lambda    | $\varrho$     | \varrho    | $\psi$       | \psi      |
-| $\varepsilon$   | \varepsilon  | $\mu$         | \mu        | $\sigma$      | \sigma     | $\omega$     | \omega    |
-| $\zeta$         | \zeta        | $\nu$         | \nu        | $\varsigma$   | \varsigma  |              |           |
-| $\eta$          | \eta         | $\xi$         | \xi        | $\tau$        | \tau       |              |           |
-
-#### 大写
-|                 |              |               |            |               |            |              |           |
-| :-------------: | :----------- | :-----------: | :--------- | :-----------: | :--------- | :----------: | :-------- |
-| $\Gamma$        | \Gamma       | $\Lambda$     | \Lambda    | $\Sigma$      | \Sigma     | $\Psi$       | \Psi      |
-| $\Delta$        | \Delta       | $\Xi$         | \Xi        | $\Upsilon$    | \Upsilon   | $\Omega$     | \Omega    |
-| $\Theta$        | \Theta       | $\Pi$         | \Pi        | $\Phi$        | \Phi       |              |           |
-
-### 上标 & 下标
-
+#### 根式与组合数
 ```tex
-x_{1}         x^{2}
+\sqrt[3]{2} \qquad \binom{n}{k} = \frac{n!}{k!(n-k)!}
 ```
+$$ \sqrt[3]{2} \qquad \binom{n}{k} = \frac{n!}{k!(n-k)!} $$
 
-$$ x_{1} \qquad x^{2} $$
-
+#### 声调与帽子
 ```tex
-x_{ij}^{3}
+\bar{x} \quad \hat{x} \quad \tilde{x} \quad \vec{x} \quad \dot{x} \quad \ddot{x}
 ```
+$$ \bar{x} \quad \hat{x} \quad \tilde{x} \quad \vec{x} \quad \dot{x} \quad \ddot{x} $$
 
-$$ x_{ij}^{3} $$
-
+#### 顶部与底部修饰
 ```tex
-f(n) = n^5 + 4n^2 + 2 |_{n=17}
+\overline{a+b} \qquad \underline{a+b}
+\overbrace{a+\cdots+z}^{26} \qquad \underbrace{a+\cdots+z}_{26}
 ```
+$$ \overline{a+b} \qquad \underline{a+b} $$
+$$ \overbrace{a+\cdots+z}^{26} \qquad \underbrace{a+\cdots+z}_{26} $$
 
-$$ f(n) = n^5 + 4n^2 + 2 |_{n=17} $$
+### 2.3 微积分
 
-### 声调
-
+#### 极限、求和与积分
 ```tex
-\bar{x}    \acute{x}    \check{x}    \grave{x}
-```
-
-$$\bar{x} \qquad \acute{x} \qquad \check{x} \qquad \grave{x}$$
-
-```tex
-\dot{x}    \ddot{x}    \hat{x}    \tilde{x}
-```
-$$
-\dot{x} \qquad \ddot{x} \qquad \hat{x} \qquad \tilde{x}
-$$
-
-### 微分
-
-```tex
-\nabla    \partial x    \mathrm{d}x    x^{\prime}
-```
-
-$$\nabla \qquad \partial x \qquad \mathrm{d}x \qquad x^{\prime}$$
-
-### 求和
-```tex
+\lim_{x \to 0} \frac{\sin x}{x} = 1
 \sum_{i=1}^{n} t_i
-```
-$$ \sum_{i=1}^{n} t_i $$
-
-### 积分
-```tex
 \int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x
 ```
-$$ \int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x $$
+$$ \lim_{x \to 0} \frac{\sin x}{x} = 1 \qquad \sum_{i=1}^{n} t_i \qquad \int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x $$
 
-### 根式
-
+#### 偏导与梯度
 ```tex
-\sqrt[3]{2}
+\nabla f \qquad \frac{\partial f}{\partial x} \qquad f^{\prime}(x)
+```
+$$ \nabla f \qquad \frac{\partial f}{\partial x} \qquad f^{\prime}(x) $$
+
+### 2.4 线性代数（矩阵）
+
+LaTeX 提供了多种矩阵环境，区别在于两侧的定界符。
+
+| 环境名 | 定界符 | 示例 | 效果 |
+| :--- | :--- | :--- | :--- |
+| `matrix` | 无 | `\begin{matrix} ... \end{matrix}` | $\begin{matrix} 1 & 2 \\ 3 & 4 \end{matrix}$ |
+| `pmatrix` | `( )` | `\begin{pmatrix} ... \end{pmatrix}` | $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ |
+| `bmatrix` | `[ ]` | `\begin{bmatrix} ... \end{bmatrix}` | $\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$ |
+| `Bmatrix` | `{ }` | `\begin{Bmatrix} ... \end{Bmatrix}` | $\begin{Bmatrix} 1 & 2 \\ 3 & 4 \end{Bmatrix}$ |
+| `vmatrix` | `| |` | `\begin{vmatrix} ... \end{vmatrix}` | $\begin{vmatrix} 1 & 2 \\ 3 & 4 \end{vmatrix}$ |
+
+**代码示例**：
+```tex
+\mathbf{A} = \begin{bmatrix}
+    1 & 2 & \cdots & n \\ 
+    a & b & \cdots & z \\ 
+    \vdots & \vdots & \ddots & \vdots \\ 
+    0 & 0 & \cdots & 1
+\end{bmatrix}
 ```
 
-$$ \sqrt[3]{2} $$
+$$ 
+\mathbf{A} = \begin{bmatrix}
+    1 & 2 & \cdots & n \\\\
+    a & b & \cdots & z \\\\
+    \vdots & \vdots & \ddots & \vdots \\\\
+    0 & 0 & \cdots & 1
+\end{bmatrix}
+$$ 
 
-### 上划线 & 下划线
-
-```tex
-\overline{a+b}    \underline{a+b}
-```
-
-$$ \overline{a+b} \qquad \underline{a+b} $$
-
-```tex
-\overbrace{a+b+\cdots+z}^{26}    \underbrace{a+b+\cdots+z}_{26}
-```
-
-$$
-\overbrace{a+b+\cdots+z}^{26} \qquad \underbrace{a+b+\cdots+z}_{26}
-$$
-
-```tex
-\overrightarrow{AB}    \overleftarrow{AB}
-```
-$$ \overrightarrow{AB} \qquad \overleftarrow{AB}$$
-
-### 分式
-
-```tex
-\frac{x^{2}}{k+1} \qquad x^{\frac{2}{k+1}}
-```
-
-$$ \frac{x^{2}}{k+1} \qquad x^{\frac{2}{k+1}} $$
-
-```tex
-\frac{n!}{k!(n-k)!} = \binom{n}{k}
-```
-
-$$ \frac{n!}{k!(n-k)!} = \binom{n}{k} $$
-
-### 大括号
+### 2.5 分段函数 (Cases)
 
 ```tex
 f(n) =
   \begin{cases}
-    n/2       & \quad \text{if }\, n \, \text{ is even}\\[3pt]
-    -(n+1)/2  & \quad \text{if }\, n \,\text{ is odd}
+    n/2       & \text{if } n \text{ is even} \\
+    -(n+1)/2  & \text{if } n \text{ is odd}
   \end{cases}
 ```
-$$
-f(n) =
+
+$$ 
+ f(n) =
   \begin{cases}
-    n/2       & \quad \text{if }\, n \, \text{ is even}\\\\[3pt]
-    -(n+1)/2  & \quad \text{if }\, n \,\text{ is odd}
+    n/2       & \text{if } n \text{ is even} \\\\ 
+    -(n+1)/2  & \text{if } n \text{ is odd}
   \end{cases}
-$$
+$$ 
+
+> **技巧**：`&` 符号用于对齐，`\\` 用于换行。在文字描述中，建议使用 `\text{...}` 包裹文本，以保持正文字体。
+
+---
+
+## 3. 符号对照表
 
 ### 二元关系符
+| 代码 | 效果 | 代码 | 效果 | 代码 | 效果 |
+| :--- | :---: | :--- | :---: | :--- | :---: |
+| `\leq` / `\geq` | $\leq$ / $\geq$ | `\equiv` | $\equiv$ | `\sim` | $\sim$ |
+| `\ll` / `\gg` | $\ll$ / $\gg$ | `\approx` | $\approx$ | `\cong` | $\cong$ |
+| `\subset` | $\subset$ | `\in` | $\in$ | `\perp` | $\perp$ |
+| `\neq` | $\neq$ | `\parallel` | $\parallel$ | `\propto` | $\propto$ |
 
-|             |           |              |            |           |         |
-|:-----------:|:---------:|:------------:|:----------:|:---------:|:-------:|
-| $<$         | <         | $>$          | >          | $=$       | =       |
-| $\leq$      | \leq      | $\geq$       | \geq       | $\equiv$  | \equiv  |
-| $\ll$       | \ll       | $\gg$        | \gg        | $\doteq$  | \doteq  |
-| $\prec$     | \prec     | $\succ$      | \succ      | $\sim$    | \sim    |
-| $\preceq$   | \preceq   | $\succeq$    | \succeq    | $\simeq$  | \simeq  |
-| $\subset$   | \subset   | $\supset$    | \supset    | $\approx$ | \approx |
-| $\subseteq$ | \subseteq | $\supseteq$  | \supseteq  | $\cong$   | \cong   |
-| $\in$       | \in       | $\ni$        | \ni        | $\notin$  | \notin  |
-| $\mid$      | \mid      | $\parallel$  | \parallel  | $\perp$   | \perp   |
-| $\because$  | \because  | $\therefore$ | \therefore | $\neq$    | \neq    |
+### 箭头符号
+| 代码 | 效果 | 代码 | 效果 | 代码 | 效果 |
+| :--- | :---: | :--- | :---: | :--- | :---: |
+| `\to` | $\to$ | `\Rightarrow` | $\Rightarrow$ | `\implies` | $\implies$ |
+| `\leftrightarrow` | $\leftrightarrow$ | `\Leftrightarrow` | $\Leftrightarrow$ | `\iff` | $\iff$ |
+| `\mapsto` | $\mapsto$ | `\uparrow` | $\uparrow$ | `\downarrow` | $\downarrow$ |
 
-### 箭头
+### 逻辑与集合
+| 代码 | 效果 | 代码 | 效果 | 代码 | 效果 |
+| :--- | :---: | :--- | :---: | :--- | :---: |
+| `\forall` | $\forall$ | `\exists` | $\exists$ | `\emptyset` | $\emptyset$ |
+| `\cup` | $\cup$ | `\cap` | $\cap$ | `\setminus` | $\setminus$ |
 
-|                      |                     |                       |                     |                      |              |
-|:--------------------:|:--------------------|:---------------------:|:--------------------|:--------------------:|:-------------|
-| $\gets$              | \leftarrow or \gets | $\longleftarrow$      | \longleftarrow      | $\nearrow$           | \nearrow     |
-| $\to$                | \rightarrow or \to  | $\longrightarrow$     | \longrightarrow     | $\searrow$           | \searrow     |
-| $\leftrightarrow$    | \leftrightarrow     | $\longleftrightarrow$ | \longleftrightarrow | $\swarrow$           | \swarrow     |
-| $\Leftarrow$         | \Leftarrow          | $\Longleftarrow$      | \Longleftarrow      | $\nwarrow$           | \nwarrow     |
-| $\Rightarrow$        | \Rightarrow         | $\Longrightarrow$     | \Longrightarrow     | $\leadsto$           | \leadsto     |
-| $\Leftrightarrow$    | \Leftrightarrow     | $\Longleftrightarrow$ | \Longleftrightarrow | $\rightleftharpoons$ | \uparrow     |
-| $\mapsto$            | \mapsto             | $\longmapsto$         | \longmapsto         | $\uparrow$           | \downarrow   |
-| $\hookleftarrow$     | \hookleftarrow      | $\hookrightarrow$     | \hookrightarrow     | $\downarrow$         | \updownarrow |
-| $\leftharpoonup$     | \leftharpoonup      | $\rightharpoonup$     | \rightharpoonup     | $\updownarrow$       | \Uparrow     |
-| $\leftharpoondown$   | \leftharpoondown    | $\rightharpoondown$   | \rightharpoondown   | $\Uparrow$           | \Downarrow   |
-| $\rightleftharpoons$ | \rightleftharpoons  | $\iff$                | \iff                | $\Downarrow$         | \Updownarrow |
+---
 
-### 点
+## 4. 常见问题 (FAQ)
 
-|               |                |             |              |
-|---------------|----------------|-------------|--------------|
-| a   \dots  b  | a   \cdots  b  | \vdots      | \ddots       |
-| $a  \dots  b$ | $a  \cdots  b$ | $ \vdots  $ | $  \ddots  $ |
+**Q: 为什么我的公式里的英文是斜体，怎么改成正体？**
+> A: 数学模式默认变量为斜体。如果是文本（如 "if", "for"），请使用 `\text{...}`。如果是函数名（如 sin, cos, max），请使用 `\sin`, `\cos`, `\max`，或者自定义 `\DeclareMathOperator`。
 
-### 矩阵
- 
-#### 普通
+**Q: 矩阵或者表格太挤了怎么办？**
+> A: 可以在换行符 `\\` 后指定额外的间距，例如 `\[1ex]` 或 `\[6pt]`。
 
-```tex
-\begin{matrix}
-1 & 2 & 3\\
-a & b & c
-\end{matrix}
-```
-
-$$
-\begin{matrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{matrix}
-$$
-
-#### 圆括号
-
-```tex
-\begin{pmatrix}
-1 & 2 & 3\\
-a & b & c
-\end{pmatrix}
-```
-
-$$
-\begin{pmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{pmatrix}
-$$
-
-#### 中括号
-
-```tex
-\begin{bmatrix}
-1 & 2 & 3\\
-a & b & c
-\end{bmatrix}
-```
-
-$$
-\begin{bmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{bmatrix}
-$$
-
-#### 大括号
-
-```tex
-\begin{Bmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{Bmatrix}
-```
-
-$$
-\begin{Bmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{Bmatrix}
-$$
-
-#### 行列式
-
-```tex
-\begin{vmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{vmatrix}
-```
-
-$$
-\begin{vmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{vmatrix}
-$$
-
-```tex
-\begin{Vmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{Vmatrix}
-```
-
-$$
-\begin{Vmatrix}
-1 & 2 & 3\\\\
-a & b & c
-\end{Vmatrix}
-$$
-
-### 非公式
-```tex
-\textrm{apples}    \textbf{apples}    \textit{apples}
-```
-$$ \textrm{apples} \qquad \textbf{apples} \qquad  \textit{apples} $$
+**Q: 双引号怎么打？**
+>A: 左引号用两个反引号，右引号用两个单引号 ''。即：``Quote'' $\to$ “Quote”。

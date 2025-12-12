@@ -5,7 +5,7 @@ categories = ["MATH","线代拾遗"]
 tags = ["最小二乘法"]
 keywords = ["矩阵","线性代数","最小二乘法","matrix","linear algebra","leastsquares","MatNoble"]
 toc = true
-mathjax = true
+katex = true
 series = ["mla"]
 aliases = ["/posts/matrixleastsquares"]
 +++
