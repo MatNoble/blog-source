@@ -1,17 +1,18 @@
 +++
-title = "Git 实用命令汇总"
-tags = ["开发"]
-keywords = ["git 安装与配置","Git 基础教程","Git 实用命令","单个文件的“增删改查”","多设备间管理代码库","在 Github 上删除已提交的文件夹","SSH GitHub"]
+title = "Git 教程：实用命令、安装配置与进阶技巧"
+tags = ["开发", "Git", "GitHub", "版本控制"]
+keywords = ["Git", "Git命令", "Git安装配置", "Git分支管理", "GitHub教程", "SSH密钥", "代码协同", "删除远程文件"]
 date = "2019-03-14T00:00:00+08:00"
+lastmod = "2025-12-13T19:38:52+08:00"
 toc = true
 aliases = ["/posts/git"]
-description = "git 是用于 Linux 内核开发的版本控制工具。与 CVS、Subversion 一类的集中式版本控制工具不同，它采用了分布式版本库的作法，不需要服务器端软件，就可以运作版本控制，使得源代码的发布和交流极其方便。git 的速度很快，这对于诸如 Linux 内核这样的大项目来说自然很重要。g..." 
+description = "这是一份详细的 Git 实用命令汇总，涵盖 Git 安装与配置、SSH 密钥设置、常用提交命令、分支管理、项目协同开发流程（Fork & Pull Request）以及如何在 GitHub 上删除已提交的文件夹。帮助开发者高效管理代码版本。"
 +++
 
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210204185140.png" title="Git && GitHub" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210204185140.png" title="Git 与 GitHub：版本控制的利器" >}}
 
-{{< blockquote link="https://zh.wikipedia.org/zh-cn/Git" title="git 主要功能" >}}
-git 是用于 Linux 内核开发的版本控制工具。与 CVS、Subversion 一类的集中式版本控制工具不同，它采用了分布式版本库的作法，不需要服务器端软件，就可以运作版本控制，使得源代码的发布和交流极其方便。git 的速度很快，这对于诸如 Linux 内核这样的大项目来说自然很重要。git 最为出色的是它的合并追踪（merge tracing）能力。
+{{< blockquote link="https://zh.wikipedia.org/zh-cn/Git" title="Git 简介" >}}
+Git 是用于 Linux 内核开发的版本控制工具。与 CVS、Subversion 一类的集中式版本控制工具不同，它采用了分布式版本库的作法，不需要服务器端软件，就可以运作版本控制，使得源代码的发布和交流极其方便。Git 的速度很快，这对于诸如 Linux 内核这样的大项目来说自然很重要。Git 最为出色的是它的合并追踪（merge tracing）能力。
 {{< /blockquote >}}
 
 <!--more-->
@@ -163,11 +164,11 @@ git checkout -b new_branch
    git push
    ```
 
-## 在 Github 上删除已提交的文件夹
+## 实战技巧：删除远程仓库中的文件夹
 
 假如我们在提交中不小心把一个不需要的文件夹提交到了远程仓库，而此时再写入 `.gitignored` 已经为时已晚，为了解决这一问题，可以这样做:
 
-Github 在提交了之后无法在线删除文件夹，但是在本地 Git 库中却可以，只要在 Git 库中删除对应的缓存，再 push 到 Github 服务器，文件夹的删除目的就达成了
+GitHub 在提交了之后无法在线删除文件夹，但是在本地 Git 库中却可以，只要在 Git 库中删除对应的缓存，再 push 到 GitHub 服务器，文件夹的删除目的就达成了
 
 以下是具体操作:
 
