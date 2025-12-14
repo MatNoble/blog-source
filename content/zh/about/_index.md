@@ -1,8 +1,8 @@
 +++
-title = "「我」是谁"
+title = "关于我 | 热爱数学与编程的 HUSTer"
 date = "2020-01-03T16:29:06+08:00"
-description = "数学＆计算机 我都爱"
-keywords = ["MatNoble","blog.matnoble.top"]
+description = "MatNoble 的个人介绍。HUST 数学系毕业生，现从事计算机相关工作。本站主要分享数学（线性代数）、LaTeX 排版技巧、编程开发心得及 MatMemorize、MatEditor 等开源项目，记录所思、所想、所为。"
+keywords = ["MatNoble", "关于我", "HUST", "数学", "计算机", "线性代数", "LaTeX", "编程", "开源项目", "MatMemorize"]
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/IMG_20180628_164930_mh1530200778808-EFFECTS.jpg"]
 gitinfo = false
 katex = true
@@ -11,11 +11,11 @@ comments = true
 meta = false
 +++
 
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/hy3AhN.jpg" title=" Friends 💖" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/hy3AhN.jpg" title=" Friends 💖" alt="MatNoble 与朋友们的合影" >}}
 
-## About Me
+## 个人简介 (About Me)
 
-HUST 数学系毕业生，现从事计算机相关工作。喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待未来能和她去更多地方旅行。
+HUST 数学系毕业生，现从事计算机相关工作。喜欢数学，乐于编程序。热衷于探索**大数据内核**、**Web 开发**与**数学科普**的结合。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待未来能和她去更多地方旅行。
 
 {{< youtube h3PvkcCVdOg >}}
 
@@ -28,7 +28,7 @@ HUST 数学系毕业生，现从事计算机相关工作。喜欢数学，乐于
 ### 社交媒体 🖇
 
 - 微信公众号: [数学思维探究社](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0NDcwMzE0NQ==#wechat_redirect)
-- [YouTube](https://www.youtube.com/c/RossMatNoble?sub_confirmation=1)
+- YouTube 频道：[MatNoble](https://www.youtube.com/c/RossMatNoble?sub_confirmation=1)
 - 邮箱: [hustmatnoble@gmail.com](mailto:hustmatnoble@gmail.com)
 
 ### 我的一些 [GitHub](https://github.com/MatNoble) 开源项目 ✍
@@ -42,12 +42,11 @@ HUST 数学系毕业生，现从事计算机相关工作。喜欢数学，乐于
 - [中英文 $\LaTeX$ 文档模板](https://github.com/MatNoble/LaTeX-Document)
 - [HUST $\LaTeX$ Beamer](https://github.com/MatNoble/HUSTMatNobleBeamer)
 - [Hugo shortcodes](https://github.com/MatNoble/hugo-shortcodes-sets)
-- [My Emacs Private Configuration](https://github.com/MatNoble/.emacs.d)
   {{< /blockquote >}}
 
 <hr />
 
-## About This Site
+## 关于本站 (About This Site)
 
 <p style="display:block;text-align:center;color:gray;font-size:30pt;font-family: 'Arial', 'Microsoft YaHei', '黑体', '宋体', sans-serif"><a href="/">blog.matnoble.top</a></p>
 
