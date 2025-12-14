@@ -3,6 +3,9 @@ title = "关于我 | 热爱数学与编程的 HUSTer"
 date = "2020-01-03T16:29:06+08:00"
 description = "MatNoble 的个人介绍。HUST 数学系毕业生，现从事计算机相关工作。本站主要分享数学（线性代数）、LaTeX 排版技巧、编程开发心得及 MatMemorize、MatEditor 等开源项目，记录所思、所想、所为。"
 keywords = ["MatNoble", "关于我", "HUST", "数学", "计算机", "线性代数", "LaTeX", "编程", "开源项目", "MatMemorize"]
+videos = [
+  { id = "h3PvkcCVdOg", title = "MatNoble 2019 年终回顾", description = "记录 MatNoble 2019 年的生活点滴与旅行足迹，包含学习、生活与探索。", date = "2020-01-03" }
+]
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/IMG_20180628_164930_mh1530200778808-EFFECTS.jpg"]
 gitinfo = false
 katex = true

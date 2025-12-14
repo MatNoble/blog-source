@@ -2,3 +2,26 @@
 
 <link rel="stylesheet" href="{{ $link }}" media="print" onload="this.media='all'" />
 <noscript><link rel="stylesheet" href="{{ $link }}" /></noscript>
+
+{{ if .Params.videos }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {{ range $index, $video := .Params.videos }}
+    {{ if $index }},{{ end }}
+    {
+      "@type": "VideoObject",
+      "name": "{{ $video.title }}",
+      "description": "{{ $video.description }}",
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/{{ $video.id }}/maxresdefault.jpg"
+      ],
+      "uploadDate": "{{ $video.date }}",
+      "embedUrl": "https://www.youtube.com/embed/{{ $video.id }}"
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
