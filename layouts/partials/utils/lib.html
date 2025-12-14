@@ -4,12 +4,20 @@
 
 {{- $host := $.Site.Params.lib.host | default "https://cdn.jsdelivr.net" -}}
 {{- $path := "" -}}
+{{- $localRes := "" -}}
 
-<!--
+{{/* Special handling for local instantpage */}}
+{{- if eq $type "instantpage" -}}
+    {{- $res := resources.Get "js/lib/instantpage.min.js" -}}
+    {{- if $res -}}
+        {{- if $.Site.Params.enableFingerprint -}}
+            {{- $res = $res | resources.Fingerprint -}}
+        {{- end -}}
+        {{- $localRes = $res.RelPermalink -}}
+    {{- end -}}
+{{- end -}}
 
-  Common libraries
-
---->
+<!-- Common libraries -->
 
 {{- if eq $type "clipboard" -}}
     {{- $defalut := "/npm/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.min.js" -}}
@@ -94,11 +102,7 @@
     {{- $path = $.Site.Params.lib.path.valine | default $defalut -}}
 {{- end -}}
 
-<!--
-
-  Third-party services
-
---->
+<!-- Third-party services -->
 
 {{- if eq $type "busuanzi" -}}
     {{- $defalut := "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" -}}
@@ -110,12 +114,8 @@
     {{- $host = $.Site.Params.lib.path.utterances | default $defalut -}}
 {{- end -}}
 
-<!--
-  CUSTOM LOGIC FOR LOCAL ASSETS
--->
-{{- if in $path "static/js/lib/" -}}
-    {{- $host = "" -}}
-    {{- $path = replace $path "static/" "/" -}}
+{{- if ne $localRes "" -}}
+    {{- $localRes -}}
+{{- else -}}
+    {{- printf `%s%s` $host $path -}}
 {{- end -}}
-
-{{- return printf `%s%s` $host $path -}}
