@@ -560,7 +560,7 @@ uglyURLs = false
     # 深色模式
 
     # 是否开启
-    enableDarkMode = false
+    enableDarkMode = true
 
     # 默认模式
     defaultTheme = "light"
