@@ -17,7 +17,7 @@
       "thumbnailUrl": [
         "https://i.ytimg.com/vi/{{ $video.id }}/maxresdefault.jpg"
       ],
-      "uploadDate": "{{ $video.date.Format "2006-01-02T15:04:05Z" }}",
+      "uploadDate": "{{ ($video.date | time.AsTime).Format "2006-01-02T15:04:05-07:00" }}",
       "embedUrl": "https://www.youtube.com/embed/{{ $video.id }}"
     }
     {{ end }}
