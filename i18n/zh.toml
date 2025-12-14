@@ -9,3 +9,6 @@ other = "Info"
 
 [tip]
 other = "Tips"
+
+[search]
+other = "搜索"
