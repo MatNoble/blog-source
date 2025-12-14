@@ -15,15 +15,15 @@ meta = false
 
 ## About Me
 
-~~HUST 数学系在读研究生（即将毕业）~~。~~现就职于某 ICT 大厂~~。HUST 数学系毕业生，现从事计算机相关工作。喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待未来能和她去更多地方旅行。
+HUST 数学系毕业生，现从事计算机相关工作。喜欢数学，乐于编程序。不吸烟，但偶尔会小酌一杯。喜欢旅行 ✈，却还没有去过太多地方，期待未来能和她去更多地方旅行。
 
 {{< youtube h3PvkcCVdOg >}}
 
-### 足迹
+<!-- ### 足迹
 
 <div style="position: relative; width: 100%; padding-bottom: 70%; padding-top: 5px; height: 0; overflow: hidden;">
-  <iframe src="https://www.google.com/maps/d/embed?mid=1L2Lih0i8JwsobbtokWqHQ8BOziiMMXO_" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"> </iframe>
-</div>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1L2Lih0i8JwsobbtokWqHQ8BOziiMMXO_" width="100%" height="100%" loading="lazy" style="position: absolute; top: 0; left: 0; border: 0;"></iframe>
+</div> -->
 
 ### 社交媒体 🖇
 
@@ -49,17 +49,17 @@ meta = false
 
 ## About This Site
 
-<p style="display:block;text-align:center;color:gray;font-size:30pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif"><a href="/">blog.matnoble.top</a></p>
+<p style="display:block;text-align:center;color:gray;font-size:30pt;font-family: 'Arial', 'Microsoft YaHei', '黑体', '宋体', sans-serif"><a href="/">blog.matnoble.top</a></p>
 
 {{< mark text="MatNoble">}}可以拆分为两部分: Mat + Noble
 
 - 「Mat」可以是 「Mathematics」，数学系的我自然对这个单词情有独钟!
 
-  > MatNoble= Mathematics + Noble
+  > MatNoble = Mathematics + Noble
 
 - 「Mat」也可以是 「Matrix」，有仿照 Matlab 的嫌疑(2333)，矩阵也是一个非常重要的「发明」，对我来说，学习理论知识和编程序都离不开 Matrix
 
-  > MatNoble= Matrix + Noble
+  > MatNoble = Matrix + Noble
 
 - 「Noble」意为「高贵的，贵族的」，所以整体寓意为「数学是高贵的」。灵感来自一个有关笛卡尔的[“浪漫”的爱情故事](https://www.bilibili.com/read/cv166401)
 
@@ -81,9 +81,8 @@ meta = false
 
 此外，本博客是一个 [PWA](https://developers.google.com/web/progressive-web-apps/?hl=zh_cn) 站点，你可以通过浏览器添加本博客到你的手机主屏或电脑桌面，随时随地查看本博客。如果你想订阅本博客，推荐<a href="/atom.xml" target="_blank" rel="noopener">Atom</a>/<a href="/rss.xml" target="_blank" rel="noopener">RSS</a>。
 
-同时，欢迎兴趣相投者与我友链 $\to$ [点我跳转](https://blog.matnoble.top/search/#友链)
+同时，欢迎兴趣相投者与我友链 $\to$ [点我跳转](/friends/)
 
-<p style="display:block;text-align:center;color:gray;font-size:18pt;font-family: "Arial"，"Microsoft YaHei"，"黑体"，"宋体"，sans-serif">记录所思，所想，所为</p>
+<p style="display:block;text-align:center;color:gray;font-size:18pt;font-family: 'Arial', 'Microsoft YaHei', '黑体', '宋体', sans-serif">记录所思，所想，所为</p>
 
 _本站建议使用 Chrome 或 Safari 浏览器浏览，为防止遗忘本站，可快捷键 `Ctrl + D` 将本站添加至浏览器书签_
-

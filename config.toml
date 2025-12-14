@@ -237,12 +237,12 @@ uglyURLs = false
 	    post = "user-circle"
 	    identifier = "about"
     [[menu.main]]
-        pageref = "/search/"
+        pageref = "/friends/"
 	    name = "友链"
 	    weight = 6
 	    pre = "internal"
 	    post = "sfriend"
-	    identifier = "searchs"
+	    identifier = "friends"
     [[menu.main]]
         weight = 7
         identifier = "theme-switcher"
