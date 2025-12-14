@@ -1,0 +1,20 @@
+<script>
+    (function() {
+        var adsLoaded = false;
+        function loadAds() {
+            if (adsLoaded) return;
+            adsLoaded = true;
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+            document.head.appendChild(script);
+        }
+
+        ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(evt => 
+            window.addEventListener(evt, loadAds, { once: true, passive: true })
+        );
+        
+        // Load ads slightly later to prioritize content and analytics
+        setTimeout(loadAds, 6000);
+    })();
+</script>

@@ -1,0 +1,57 @@
+{{ $id := .Site.Params.trackingID }}
+
+{{ if eq .Site.Params.trackingCodeType "gtag" }}
+    <script>
+        (function() {
+            var gaLoaded = false;
+            function loadGA() {
+                if (gaLoaded) return;
+                gaLoaded = true;
+                
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = 'https://www.googletagmanager.com/gtag/js?id={{ $id }}';
+                document.head.appendChild(script);
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '{{ $id }}');
+            }
+
+            ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(evt => 
+                window.addEventListener(evt, loadGA, { once: true, passive: true })
+            );
+            
+            // Fallback: load after 5 seconds if no interaction
+            setTimeout(loadGA, 5000);
+        })();
+    </script>
+{{ end }}
+
+{{ if eq .Site.Params.trackingCodeType "analytics" }}
+    <script>
+        (function() {
+            var gaLoaded = false;
+            function loadGA() {
+                if (gaLoaded) return;
+                gaLoaded = true;
+
+                window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+                ga('create', '{{ $id }}', 'auto');
+                ga('send', 'pageview');
+
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = 'https://www.google-analytics.com/analytics.js';
+                document.head.appendChild(script);
+            }
+
+            ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(evt => 
+                window.addEventListener(evt, loadGA, { once: true, passive: true })
+            );
+            
+            setTimeout(loadGA, 5000);
+        })();
+    </script>
+{{ end }}
