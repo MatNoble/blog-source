@@ -102,7 +102,7 @@ uglyURLs = false
     # 邮箱
     email = "hustmatnoble@gmail.com"
     # 座右铭或简介
-    motto = "为生活而工作"
+    motto = "以数学训练思维，用技术改善生活"
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
