@@ -2,7 +2,7 @@
 title = "高等数学知识图谱：从极限到定积分应用"
 description = "一张图搞定微积分核心脉络：极限、导数、微分与定积分应用"
 date = "2025-11-03T00:00:00+08:00"
-categories = ["MATH","微积分"]
+categories = ["Math","Calculus"]
 tags = ["微积分", "知识图谱", "考研数学"]
 keywords = ["微积分","MatNoble","定积分应用","极限"]
 toc = true

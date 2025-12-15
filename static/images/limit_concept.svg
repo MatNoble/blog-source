@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <!-- Axis Arrow (Dark Grey in Light, White in Dark) -->
+    <marker id="arrow-axis" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <!-- Changed default fill from #333 to #111 (darker) -->
+      <path d="M0,0 L0,6 L9,3 z" fill="#111" class="axis-arrow-fill" />
+    </marker>
+    
+    <!-- Approach Arrow (Red in Light, Lighter Red in Dark) -->
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d9534f" class="accent-arrow-fill" />
+    </marker>
+  </defs>
+
+  <style>
+    /* Dark Mode Overrides */
+    @media (prefers-color-scheme: dark) {
+      /* Text and Axis Lines */
+      .axis-stroke { stroke: #e0e0e0 !important; }
+      .axis-fill { fill: #e0e0e0 !important; }
+      .axis-arrow-fill { fill: #e0e0e0 !important; }
+
+      /* Function Curve */
+      .func-stroke { stroke: #4dabf7 !important; } /* Lighter blue */
+      .func-fill { fill: #4dabf7 !important; }
+
+      /* Dashed Lines */
+      .dash-stroke { stroke: #aaa !important; }
+
+      /* Accent/Approach Items */
+      .accent-stroke { stroke: #ff6b6b !important; } /* Lighter red */
+      .accent-fill { fill: #ff6b6b !important; }
+      .accent-arrow-fill { fill: #ff6b6b !important; }
+      
+      /* Hole Center */
+      .hole-fill { fill: #121212 !important; } /* Dark background simulation */
+    }
+  </style>
+
+  <!-- Axes: Changed default stroke from #333 to #111 -->
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#111" stroke-width="2" marker-end="url(#arrow-axis)" class="axis-stroke" />
+  <line x1="50" y1="350" x2="50" y2="50" stroke="#111" stroke-width="2" marker-end="url(#arrow-axis)" class="axis-stroke" />
+  <text x="540" y="380" font-family="sans-serif" font-size="20" fill="#111" class="axis-fill">x</text>
+  <text x="20" y="60" font-family="sans-serif" font-size="20" fill="#111" class="axis-fill">y</text>
+
+  <!-- Function Curve (y = f(x)) -->
+  <!-- Left part -->
+  <path d="M 50 300 Q 150 280 295 155" stroke="#007bff" stroke-width="3" fill="none" class="func-stroke" />
+  <!-- Right part -->
+  <path d="M 305 145 Q 450 50 550 40" stroke="#007bff" stroke-width="3" fill="none" class="func-stroke" />
+
+  <!-- Limit Point (Hole) -->
+  <!-- We draw the outline with the curve color, and fill with background color -->
+  <circle cx="300" cy="150" r="5" stroke="#007bff" stroke-width="2" fill="white" class="func-stroke hole-fill" />
+
+  <!-- Dashed Lines: Changed default stroke from #666 to #444 (darker grey) -->
+  <line x1="300" y1="150" x2="300" y2="350" stroke="#444" stroke-width="1" stroke-dasharray="5,5" class="dash-stroke" />
+  <line x1="300" y1="150" x2="50" y2="150" stroke="#444" stroke-width="1" stroke-dasharray="5,5" class="dash-stroke" />
+
+  <!-- Labels: Changed default fill from #333 to #111 -->
+  <text x="295" y="375" font-family="sans-serif" font-size="18" fill="#111" class="axis-fill">a</text>
+  <text x="25" y="155" font-family="sans-serif" font-size="18" fill="#111" class="axis-fill">L</text>
+  
+  <text x="420" y="80" font-family="sans-serif" font-size="18" fill="#007bff" class="func-fill">y = f(x)</text>
+
+  <!-- Approaching Arrows on x-axis -->
+  <line x1="220" y1="350" x2="280" y2="350" stroke="#d9534f" stroke-width="2" marker-end="url(#arrow-red)" class="accent-stroke" />
+  <line x1="380" y1="350" x2="320" y2="350" stroke="#d9534f" stroke-width="2" marker-end="url(#arrow-red)" class="accent-stroke" />
+  
+  <text x="230" y="330" font-family="sans-serif" font-size="14" fill="#d9534f" class="accent-fill">x &#8594; a⁻</text>
+  <text x="330" y="330" font-family="sans-serif" font-size="14" fill="#d9534f" class="accent-fill">x &#8594; a⁺</text>
+
+</svg>

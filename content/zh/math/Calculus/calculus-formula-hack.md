@@ -2,7 +2,7 @@
 title = "基本初等函数导数与微分：统一方法"
 description = "Calculus Hack: The 'Buy One, Get One Free' Rule"
 date = "2025-11-06T00:00:00+08:00"
-categories = ["MATH","微积分"]
+categories = ["Math", "Calculus"]
 tags = ["微积分"]
 keywords = ["Derivatives","Differentials","导数","微分","高等数学"]
 toc = true

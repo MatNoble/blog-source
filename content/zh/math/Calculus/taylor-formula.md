@@ -1,7 +1,7 @@
 +++
 title = "别怕，泰勒公式是纸老虎：从“以直代曲”到“指哪打哪”"
 date = "2025-11-11T00:00:00+08:00"
-categories = ["MATH","微积分"]
+categories = ["Math", "Calculus"]
 tags = ["微积分"]
 keywords = ["Derivatives","Differentials","taylor","微分","高等数学"]
 toc = true
