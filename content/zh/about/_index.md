@@ -69,9 +69,9 @@ HUST 数学系毕业生，长期从事大学数学相关课程的教学与内容
 
 - 「Noble」意为「高贵的，贵族的」，所以整体寓意为「数学是高贵的」。灵感来自一个有关笛卡尔的[“浪漫”的爱情故事](https://www.bilibili.com/read/cv166401)
 
-<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/windows/matnoble-bytedance.gif"/>
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/windows/matnoble-bytedance.gif" alt="类抖音版 logo" width="80%" >}}
 
-<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/windows/matnoble-youtube.png"/>
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/windows/matnoble-youtube.png" alt="类 YouTube 版 logo" width="80%" >}}
 
 <br />
 

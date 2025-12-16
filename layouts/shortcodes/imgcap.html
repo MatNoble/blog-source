@@ -9,5 +9,5 @@ https://blog.matnoble.top/posts/shortcodes-practice-tutorial-for-hugo/#image-wit
        alt="{{ if .Get "alt" }}{{ .Get "alt" }}{{ else }}{{ .Get "title" }}{{ end }}"
        width="{{ if .Get "width" }}{{ .Get "width" }}{{ else }}95%{{ end }}"
        >
-  <span class="caption">◎ {{ .Get "title" }}</span>
+  <span class="caption">{{ if .Get "title" }}◎ {{ .Get "title" }}{{ end }}</span>
 </span>

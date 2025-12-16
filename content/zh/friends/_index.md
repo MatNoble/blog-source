@@ -8,7 +8,6 @@ gitinfo = false
 smallCaps = true
 comments = true
 meta = false
-images =[]
 related = false
 +++
 
