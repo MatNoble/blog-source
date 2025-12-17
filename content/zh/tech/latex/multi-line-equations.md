@@ -4,7 +4,7 @@ categories = ["TECH","LaTeX 科技排版"]
 date = "2020-03-23T00:22:50+08:00"
 keywords = ["multline", "amsmath", "align", "aligned", "gather", "gathered", "cases", "empheq", "对齐公式", "LaTeX 排版多行公式", "多行公式并排", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 tags = ["数学公式"]
-katex = true
+mathjax = true
 series = ["latex"]
 toc = true
 description = "在 LaTeX 排版过程中，多行公式经常被遇到。其中，又分为多种情况" 
@@ -12,6 +12,7 @@ description = "在 LaTeX 排版过程中，多行公式经常被遇到。其中�
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
 
+<!--more-->
 
 <br />
 
@@ -324,11 +325,11 @@ l + m &= n
 \end{empheq}
 ```
 
-{{< imgcap src="https://imgkr.cn-bj.ufileos.com/cab3a67a-01f2-4b91-b3c3-b7aa47b07852.jpeg" title="AMS env name" width="90%">}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217231544422.png" title="AMS env name" width="90%">}}
 
 对于 `定界符号`，可以在 `markup instructions` 处填入下表中的命令
 
-<img src="https://imgkr.cn-bj.ufileos.com/13c84ea6-f584-41c0-94a1-77ca7cfa7ac4.jpeg" width="90%" />
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217231354320.png" width="90%" title="markup instructions">}}
 
 ```tex
 \begin{empheq}[left=\empheqlbrace]{align*}
@@ -337,13 +338,12 @@ l + m &= n
     Y & = \sum_{n=1}^\infty \frac{1}{n^2}
 \end{empheq}
 ```
-<img src="https://imgkr.cn-bj.ufileos.com/2c6cd65f-09b7-4748-93c9-d6ac5d794c8f.png" width="20%" />
+
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217231720765.png" width="20%" title="left=\empheqlbrace">}}
 
 <hr />
 
 `empheq` 环境还可以实现以下效果，感兴趣的可以看下官方文档[^2]
-
-<img src="https://imgkr.cn-bj.ufileos.com/7e8e342b-0097-451b-a826-4a163dd449c1.png" width="80%"/>
 
 [^1]: https://geelaw.blog/entries/la-composition-soignee-des-formules-mathematiques/#mistakes-latex-align-env
 [^2]: a way to produce arbitrary delimiters that span entire math displays <br> http://mirror.lzu.edu.cn/CTAN/macros/latex/contrib/mathtools/empheq.pdf
