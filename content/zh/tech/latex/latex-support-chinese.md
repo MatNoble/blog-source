@@ -97,7 +97,7 @@ If you don't use \usepackage[T1]{fontenc},
 
 以上两种方法效果类似
 
-{{< imgcap src="https://ttfou.com/images/2020/03/01/ea5b0f158fabaead708b707fda33b992.jpg" title=" ctexart 文档类 / ctex 宏包" width="55%" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217223851999.png" title=" ctexart 文档类 / ctex 宏包" width="55%" >}}
 
 <hr />
 
@@ -159,7 +159,7 @@ xeCJK 是一个 XeLaTeX 宏包[^3], 用于排版 CJK 文字, 包括字体选择�
 \end{document}
 ```
 
-{{< imgcap src="https://ttfou.com/images/2020/03/01/770bd56bce8072504addf47ddcab3c0d.jpg" title="xeCJK 效果图" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217225255837.png" title="xeCJK 效果图" >}}
 
 <br />
 
@@ -189,13 +189,9 @@ xeCJK 宏包有 4 个选项
 fc-list :lang=zh
 ```
 
-{{< imgcap src="https://ttfou.com/images/2020/03/01/2ef784aa429a93f588f80d21642e4a9b.png" title="texlive 查看中文字体" >}}
-
 <br />
 
 本文部分内容借鉴: 全面总结如何在 LaTeX 中使用中文 (2020 最新版)[^2], 现表示感谢🍻
-
-<img src="https://ttfou.com/images/2020/02/27/d45f84b14ca268ddd2e483c11638e892.gif">
 
 [^1]: http://www.ctex.org/CTeXReleaseNotes
 [^2]: https://jdhao.github.io/2018/03/29/latex-chinese.zh/

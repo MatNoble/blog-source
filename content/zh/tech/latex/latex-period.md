@@ -22,7 +22,7 @@ description = "由于中文空心句号是一个小圈，容易与作为下标�
 
 以上所说的使用实心句点是指..全篇使用.., 文章前后不宜出现不同的符号. 从本科毕业设计就坚持使用用句点, 但是, 之前两次数学建模的过程中, 非数学学院的队友感到诧异, 理科和工科还是有差距的吧.
 
-但有时写中文文章, 敲空心句号`。`已成习惯, 所以需要一个省时省力的方法. 以上链接中, 也给了相应解决方案, 就是使用 `xeCJK` 宏包提供的 `Mapping` 选项[^1]. 之前本站也介绍过使用 `xeCJK` 宏包实现[中英混合排版](https://blog.matnoble.top/posts/latex-support-chinese/#xecjk-%E5%AE%9E%E7%8E%B0%E4%B8%AD%E8%8B%B1%E6%B7%B7%E6%8E%92), 直接上代码
+但有时写中文文章, 敲空心句号`。`已成习惯, 所以需要一个省时省力的方法. 以上链接中, 也给了相应解决方案, 就是使用 `xeCJK` 宏包提供的 `Mapping` 选项[^1]. 之前本站也介绍过使用 `xeCJK` 宏包实现[中英混合排版](../latex-support-chinese/#xecjk-实现中英混排5), 直接上代码
 
 ```tex
 % 该文件使用 xelatex 命令可以编译通过
@@ -51,7 +51,7 @@ description = "由于中文空心句号是一个小圈，容易与作为下标�
 
 使用 `xelatex` 编译
 
-<img src="https://ttfou.com/images/2020/03/05/fb84414100b1b24e93e569ab1ac72213.png" width=75% />
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217225918379.png" title="xeCJK Mapping = fullwidth-stop" width="55%" >}}
 
 {{< notice note >}}
 **Mapping 选项** 总共有两组
@@ -70,7 +70,7 @@ description = "由于中文空心句号是一个小圈，容易与作为下标�
 
 显示效果如下:
 
-<img src="https://ttfou.com/images/2020/03/05/cd04f43de508e58e0e9d318f37ff3083.png" width=70% />
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217230219379.png" title="xeCJK Mapping = han-trad" width="55%" >}}
 
 若没有使用 `xeCJK` 宏包, 也可以在导言区中加入以下代码
 
@@ -93,7 +93,6 @@ description = "由于中文空心句号是一个小圈，容易与作为下标�
 Two people i.e. you and me...
 Two people i.e.\ you and me...
 ```
-<img src="https://ttfou.com/images/2020/03/05/0b2ab3c6633944ee98645eb34601dda9.png" title="latex 句点" alt="latex 句点" />
 
 - 另一种特殊情况下, $\TeX$ 并不会认为句号表示句子的结尾, 那就是**句号跟在一个大写字母的后面**. 此时 $\TeX$ 会认为这个句号表示人名缩写的间隔符, 因此仍然按照正常间距来排版, 比如「A. Einstein」. 然而这个看似贴心的规则在一些情况下会适得其反, 比如一句话明明以缩略语结尾, $\TeX$ 反而认为这并不是一句话的结尾: 「…… in NBA. He…」. 此时, 排版出的「He」之前的空格会小于正常的句间间距. 这种情况下, 需要使用 `\@.`(反斜杠 + @ + 句号 + 空格)来取代原先的句号, 即 `... in NBA\@. He...` `\@ ` 用来强制告诉 $\TeX$ 这里的的确确是一个句子的结尾.
 
@@ -101,8 +100,6 @@ Two people i.e.\ you and me...
 ... played in NBA. He was ...
 ... played in NBA\@. He was ...
 ```
-
-<img src="https://ttfou.com/images/2020/03/05/12f04a5977cc3af44b4d12edbbf8c67a.png" title="latex 句点" alt="latex 句点" />
 
 [^1]: http://mirrors.ibiblio.org/CTAN/macros/xetex/latex/xecjk/xeCJK.pdf
 [^2]: https://ridiqulous.com/latex-notes-details/
