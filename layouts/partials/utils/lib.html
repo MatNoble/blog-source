@@ -117,5 +117,9 @@
 {{- if ne $localRes "" -}}
     {{- $localRes -}}
 {{- else -}}
-    {{- printf `%s%s` $host $path -}}
+    {{- if strings.HasPrefix $path "static/" -}}
+        {{- strings.TrimPrefix "static" $path -}}
+    {{- else -}}
+        {{- printf `%s%s` $host $path -}}
+    {{- end -}}
 {{- end -}}

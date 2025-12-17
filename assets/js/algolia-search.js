@@ -1,4 +1,4 @@
-/* {{- $instantsearchPath := partial "utils/lib.html" (dict "$" . "type" "instantsearch") -}} */
+{{- $instantsearchPath := partial "utils/lib.html" (dict "$" . "type" "instantsearch") -}}
 ;(function() {
     window.addEventListener("DOMContentLoaded", function(event) {
         var origContent = null;
