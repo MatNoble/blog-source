@@ -23,4 +23,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: {{ "zh/sitemap.xml" | absURL }}
+Sitemap: {{ "sitemap.xml" | absURL }}
