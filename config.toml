@@ -795,7 +795,7 @@ uglyURLs = false
     enableGoogleAutoAds = false
 
     ## 广告单元
-    enableGoogleAdUnits = true
+    enableGoogleAdUnits = false
     # googleAdSlot = "6956337380"
     googleAdSlotInArticle = "3378279980"
     # googleAdSlotAutoRelaxed = "2825520680"
