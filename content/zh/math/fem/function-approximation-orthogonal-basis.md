@@ -15,8 +15,6 @@ series = ["fem"]
 
 <!--more-->
 
-# 逼近函数 II
-
 ## 程序实例(I)
 
 [逼近函数 I]({{< relref "function-approximation-intro.md" >}}) 中介绍了逼近函数的数学推导, 这一次用程序实现它.
