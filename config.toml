@@ -916,7 +916,7 @@ uglyURLs = false
     displayTOCTitle = true
 
     # 是否显示数字（全局设置）
-    displayTOCNum = true
+    displayTOCNum = false
     # 说明：文章的 Front Matter 中的 `tocNum`
     #      的优先级高于此处
 
