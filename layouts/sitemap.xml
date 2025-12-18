@@ -1,0 +1,44 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  {{- range .Data.Pages -}}
+    {{- if and .Permalink (not .Params.private) (not .Params.hidden) (ne .Params.sitemap.disable true) -}}
+      <url>
+        <loc>{{ .Permalink }}</loc>
+        {{- if not .Lastmod.IsZero }}
+          <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+        {{- end -}}
+        {{- with .Sitemap.ChangeFreq }}
+          <changefreq>{{ . }}</changefreq>
+        {{- else }}
+          <changefreq>weekly</changefreq>
+        {{- end -}}
+        {{- if ge .Sitemap.Priority 0.0 }}
+          <priority>{{ .Sitemap.Priority }}</priority>
+        {{- else }}
+          <priority>0.5</priority>
+        {{- end -}}
+        {{- if .IsTranslated -}}
+          {{- range .Translations }}
+            <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+          {{- end }}
+            <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+        {{- end -}}
+        {{- with .Params.images -}}
+          {{- range . }}
+            <image:image>
+              <image:loc>{{ . | absURL }}</image:loc>
+            </image:image>
+          {{- end -}}
+        {{- end -}}
+        {{- with .Params.featured_image }}
+            <image:image>
+              <image:loc>{{ . | absURL }}</image:loc>
+            </image:image>
+        {{- end -}}
+      </url>
+    {{- end -}}
+  {{- end -}}
+</urlset>

@@ -1,0 +1,23 @@
+# {{ .Site.Title }}
+
+> {{ .Site.Params.siteDescription }}
+
+## 站点概览
+- **作者**: {{ .Site.Author.name }} ({{ .Site.Author.motto }})
+- **语言**: {{ .Language.LanguageName }}
+- **主页**: {{ .Site.BaseURL }}
+
+## 核心专栏
+{{ range .Site.Menus.main -}}
+- [{{ .Name }}]({{ .URL | absURL }})
+{{ end }}
+
+## 精选内容与技术笔记
+{{ range (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) | first 50 -}}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Summary | plainify | truncate 150 }}
+{{ end }}
+
+## 外部链接
+- **GitHub**: https://github.com/MatNoble
+- **RSS Feed**: {{ "rss.xml" | absURL }}
+- **Sitemap**: {{ "sitemap.xml" | absURL }}

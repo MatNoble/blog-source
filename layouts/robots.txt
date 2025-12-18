@@ -1,4 +1,26 @@
 User-agent: *
 Disallow: /search/
+Disallow: /tags/
+Disallow: /categories/
 Disallow: /404.html
+
+# Allow AI Bots specifically (Explicitly welcoming them)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: {{ "zh/sitemap.xml" | absURL }}

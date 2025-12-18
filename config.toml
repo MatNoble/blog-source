@@ -36,6 +36,12 @@ enableGitInfo = true
 # 是否生成 robots.txt 文件
 enableRobotsTXT = true
 
+# Sitemap 配置
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 # 每一分页的文章数（仅对「文章摘要」首页布局有效）
 paginate = 10
 
@@ -158,11 +164,18 @@ uglyURLs = false
     isPlainText = true
     notAlternative = true
 
+# llms.txt 格式配置
+[outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+
 # Hugo 的输出控制
 [outputs]
     page = ["HTML"]
     # home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
-    home = ["HTML", "SectionsAtom", "SectionsRSS", "Algolia"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS", "Algolia", "Sitemap", "LLMS"]
     section = ["HTML"]
     taxonomy = ["HTML"]
     term = ["HTML"]
