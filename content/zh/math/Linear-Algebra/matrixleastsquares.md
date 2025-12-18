@@ -43,8 +43,6 @@ $$
 
 以三维情形为例, 误差向量 ${\rm e}$ 与 $\boldsymbol{A}$ 的列空间 $C(\boldsymbol{A})$ 正交时, $\rm e$ 的长度的平方最小
 
-![三维情形](https://imgkr.cn-bj.ufileos.com/390fed52-66a6-4c8f-80b1-366e381e2724.png)
-
 
 为计算方便, 我们首先介绍 **正交投影矩阵**
 
@@ -60,8 +58,6 @@ $$
 
 > `正交投影矩阵` $\boldsymbol{P}$ 是不仅是`幂等矩阵`, 还是`对称矩阵`, 即
 > $$ \boldsymbol{P} = \boldsymbol{P}^{\mathsf T} $$
-
-![](https://imgkr.cn-bj.ufileos.com/b0b4f944-6b71-4b38-b89b-3bff3bfb6bc5.png)
 
 
 证:如上图所示, 对任意 ${\rm x,y}\in\, \mathbb{R}^n$, 残差向量 ${\rm e}={\rm x} - \boldsymbol{P}{\rm x}$ 与 $C(\boldsymbol{P})$ 正交, 即
@@ -197,8 +193,6 @@ $$
 ### 小结
 
 由向量 ${\rm b }\in \mathbb{R}^m - C(\boldsymbol{A})$ 出发, ４个线性变换可总结至下图.
-
-![](https://imgkr.cn-bj.ufileos.com/c90892a5-d7e5-4d69-9a87-e4d5dabfcd71.png)
 
 注: 当今仅当 $\boldsymbol{A}$ 列满秩时, $\boldsymbol{A}^{\mathsf T}\boldsymbol{A}$ 可逆.
 
