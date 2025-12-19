@@ -913,7 +913,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 是否显示目录标题
-    displayTOCTitle = true
+    displayTOCTitle = false
 
     # 是否显示数字（全局设置）
     displayTOCNum = false
