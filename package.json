@@ -1,0 +1,14 @@
+{
+  "name": "blog-source",
+  "version": "1.0.0",
+  "description": "Hugo blog source",
+  "scripts": {
+    "build": "hugo --gc --minify"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
+  }
+}
