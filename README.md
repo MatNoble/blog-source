@@ -1,10 +1,10 @@
-## <a title="blog.matnoble.top" href="https://blog.matnoble.top"><img align="center" width="75" height="75" src="https://raw.githubusercontent.com/MatNoble/matnoble.github.io/master/static/icons/android-chrome-512x512.png"></a> MatNoble
+## <a title="blog.matnoble.top" href="https://blog.matnoble.top"><img align="center" width="75" height="75" src="https://raw.githubusercontent.com/MatNoble/blog-source/master/static/icons/android-chrome-512x512.png"></a> MatNoble
 
 [![Home](https://img.shields.io/badge/Home-MatNoble-blue)](https://blog.matnoble.top)
 [![Generator](https://img.shields.io/badge/Generator-Hugo-ff4088?&logo=hugo)](https://gohugo.io/)
 [![Theme](https://img.shields.io/badge/Theme-MemE-2a6df4)](https://github.com/reuixiy/hugo-theme-meme)
-[![Built on GitHub](https://github.com/MatNoble/matnoble.github.io/workflows/build/badge.svg)](https://github.com/MatNoble/matnoble.github.io/actions)
-[![time tracker](https://wakatime.com/badge/github/MatNoble/matnoble.github.io.svg)](https://wakatime.com/badge/github/MatNoble/matnoble.github.io)
+[![Built on GitHub](https://github.com/MatNoble/blog-source/workflows/build/badge.svg)](https://github.com/MatNoble/blog-source/actions)
+[![time tracker](https://wakatime.com/badge/github/MatNoble/blog-source.svg)](https://wakatime.com/badge/github/MatNoble/blog-source)
 
 > 关键词： 生活、学习、数学、大数据、机器学习、线性代数、有限元、计算机、Python、Matlab、LaTeX、Spark
 
@@ -47,7 +47,7 @@
 
 ### 授权情况
 
-本模板代码按 [CC 4.0 BY-SA](https://github.com/MatNoble/matnoble.github.io/blob/master/CC-BY-SA-4.0) 授权, 转载请附上原文出处链接和本声明.
+本模板代码按 [CC 4.0 BY-SA](https://github.com/MatNoble/blog-source/blob/master/CC-BY-SA-4.0) 授权, 转载请附上原文出处链接和本声明.
 
 ### 联系方式
 

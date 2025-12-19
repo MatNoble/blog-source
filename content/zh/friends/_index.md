@@ -23,7 +23,7 @@ related = false
 
 <br />
 
-想要加入我的友链就在下方留言或者提交 [Issues](https://github.com/MatNoble/matnoble.github.io/issues/1)! 同时, 也欢迎把我的博客加入你的友链 🤗
+想要加入我的友链就在下方留言或者提交 [Issues](https://github.com/MatNoble/blog-source/issues/1)! 同时, 也欢迎把我的博客加入你的友链 🤗
 
 <p class="note-default" style="text-align:left">
 网站名称：MatNoble<br>

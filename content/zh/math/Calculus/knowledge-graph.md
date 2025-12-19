@@ -8,10 +8,10 @@ keywords = ["微积分","MatNoble","定积分应用","极限"]
 toc = true
 katex = true
 mermaid = true
-images = ["https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg"]
+images = ["https://cdn.jsdelivr.net/gh/MatNoble/blog-source/static/images/sddefault.jpg"]
 +++
 
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/matnoble.github.io/static/images/sddefault.jpg" title="微积分的基石" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/blog-source/static/images/sddefault.jpg" title="微积分的基石" >}}
 
 ## **🗺️ 高等数学思维导图**
 

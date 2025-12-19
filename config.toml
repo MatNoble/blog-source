@@ -713,7 +713,7 @@ uglyURLs = false
 
     ## Utterances
     enableUtterances = true
-    utterancesRepo = "MatNoble/matnoble.github.io"
+    utterancesRepo = "MatNoble/blog-source"
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
@@ -1190,9 +1190,9 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = "https://github.com/MatNoble/matnoble.github.io"
+    repoURL = "https://github.com/MatNoble/blog-source"
     # 编辑地址
-    repoEditURL = "https://github.com/MatNoble/matnoble.github.io/blob/master"
+    repoEditURL = "https://github.com/MatNoble/blog-source/blob/master"
 
     # Git 的图标
     gitIcon = "code-branch"
@@ -1502,7 +1502,7 @@ uglyURLs = false
         #      并将文件放到你的 /static/js/lib.min.js
     [params.lib.path]
         clipboard = "/npm/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.min.js"
-        instantsearch = "/gh/MatNoble/matnoble.github.io@master/static/js/lib/instantsearch.min.js"
+        instantsearch = "/gh/MatNoble/blog-source@master/static/js/lib/instantsearch.min.js"
         gitalk = "/npm/gitalk@1/dist/gitalk.min.js"
         gitalk_css = "/npm/gitalk@1/dist/gitalk.css"
         instantpage = "/npm/instant.page@5.1.0/instantpage.min.js"
@@ -1515,7 +1515,7 @@ uglyURLs = false
         lunr_stemmer = "/npm/lunr-languages@1.4.0/min/lunr.stemmer.support.min.js"
         lunr_lang = "/npm/lunr-languages@1.4.0/min/lunr.de.min.js"
         mathjax = "/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"
-        medium_zoom = "/gh/MatNoble/matnoble.github.io@master/static/js/lib//medium-zoom.min.js"
+        medium_zoom = "/gh/MatNoble/blog-source@master/static/js/lib//medium-zoom.min.js"
         mermaid = "/npm/mermaid@8.8.3/dist/mermaid.min.js"
         qrcode = "/npm/qrcode-generator@1.4.4/qrcode.min.js"
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
