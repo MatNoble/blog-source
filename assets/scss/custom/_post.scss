@@ -64,3 +64,33 @@
     padding-left: 2em;
     list-style: circle;
 }
+
+// Summary Shortcode
+
+.geo-summary {
+    background-color: var(--color-contrast-lower);
+    border-left: 5px solid var(--color-primary);
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.geo-summary-title {
+    margin-top: 0 !important;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.geo-summary-icon {
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.geo-content {
+    ul, ol {
+        margin-bottom: 0;
+    }
+}
