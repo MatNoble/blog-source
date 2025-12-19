@@ -5,7 +5,9 @@
   "scripts": {
     "build": "hugo --gc --minify"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@vercel/analytics": "1.6.1"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",

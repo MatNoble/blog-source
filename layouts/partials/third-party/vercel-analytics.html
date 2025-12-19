@@ -1,0 +1,8 @@
+{{- if eq hugo.Environment "production" -}}
+    {{- $opts := dict "minify" true "target" "es2015" -}}
+    {{- $script := resources.Get "js/vercel-analytics.js" | js.Build $opts -}}
+    {{- if .Site.Params.enableFingerprint -}}
+        {{- $script = $script | resources.Fingerprint -}}
+    {{- end -}}
+    <script src="{{ $script.RelPermalink }}" defer {{ if .Site.Params.enableFingerprint }}integrity="{{ $script.Data.Integrity }}"{{ end }}></script>
+{{- end -}}
