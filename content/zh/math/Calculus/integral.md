@@ -78,7 +78,7 @@ mathjax = true
     3.  **积**：
         $$ \text{原式} = \int \sqrt{4-4\sin^2 t} \cdot 2\cos t \mathrm{d}t = \int 2\cos t \cdot 2\cos t \mathrm{d}t $$
         $$ = 4 \int \cos^2 t \mathrm{d}t = 4 \int \frac{1+\cos 2t}{2} \mathrm{d}t = 2(t + \frac{1}{2}\sin 2t) + C $$
-    4.  **回**：$2t + 2\sin t \cos t + C$。
+    4.  **回**：$2t + 2\sin t \cos t + C$  
         由 $x=2\sin t \implies \sin t = x/2, t=\arcsin(x/2), \cos t = \sqrt{4-x^2}/2$。
         $$ \text{结果} = 2\arcsin\frac{x}{2} + \frac{x}{2}\sqrt{4-x^2} + C $$
 
@@ -89,8 +89,8 @@ mathjax = true
 *   **解题口诀**：“分母能因式分解，直接裂项；分母不能分解，求导凑分子。”
 *   **解析步骤**：
     1.  **看分母**：$x^2-5x+6 = (x-2)(x-3)$，可以分解！
-    2.  **待定系数法（裂项）**：
-        设 $\frac{2x+3}{(x-2)(x-3)} = \frac{A}{x-2} + \frac{B}{x-3}$。
+    2.  **待定系数法（裂项）**：  
+        设 $\frac{2x+3}{(x-2)(x-3)} = \frac{A}{x-2} + \frac{B}{x-3}$。  
         通分对比系数：$A(x-3) + B(x-2) = 2x+3$。
         *   令 $x=2 \implies -A = 7 \implies A=-7$
         *   令 $x=3 \implies B = 9$
