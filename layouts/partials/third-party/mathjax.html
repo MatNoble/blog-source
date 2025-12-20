@@ -27,7 +27,7 @@
                 MathJax.startup.defaultReady();
                 MathJax.startup.promise.then(() => {
                     // Only typeset stable content containers
-                    const containers = document.querySelectorAll('.post-body, .summary, .home-header');
+                    const containers = document.querySelectorAll('.post-body, .summary, .home-header, .post-title');
                     if (containers.length > 0) {
                         MathJax.typesetPromise(Array.from(containers)).catch(e => console.debug("MathJax error:", e));
                     } else {
@@ -39,20 +39,13 @@
     };
 
     (function() {
-        if (typeof MathJax === 'undefined') {
+        if (typeof MathJax.version === 'undefined') {
             const script = document.createElement('script');
             script.src = '{{ $src }}';
             script.defer = true;
             document.head.appendChild(script);
         } else {
-            // Defensive check for MathJax.startup.promise to avoid "reading 'then' of undefined"
-            if (MathJax.startup && MathJax.startup.promise) {
-                MathJax.startup.promise.then(() => {
-                    if (typeof MathJax.typesetPromise === 'function') {
-                        MathJax.typesetPromise().catch(e => console.debug("MathJax typeset failed:", e));
-                    }
-                });
-            } else if (typeof MathJax.typesetPromise === 'function') {
+            if (typeof MathJax.typesetPromise === 'function') {
                 MathJax.typesetPromise().catch(e => console.debug("MathJax typeset failed:", e));
             }
         }
