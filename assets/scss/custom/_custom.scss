@@ -357,9 +357,9 @@ article.content.post.home {
     font-size: 0.9em;
     font-style: normal; // 中文字体斜体通常不好看，改为正常
     font-weight: 500;
-    color: var(--color-primary);
-    border: none;
-    padding: 0;
+    color: var(--color-contrast-high);
+    border-bottom: 1px dashed var(--color-contrast-low);
+    padding: 2px 0;
     transition: all 0.3s ease;
     &::after {
       content: " ⟶"; // 使用更优雅的长箭头
@@ -368,6 +368,7 @@ article.content.post.home {
     &:hover {
       background: none;
       color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
       text-decoration: none;
       padding-left: 5px; // 悬停时轻微向右滑动
       &::after {
