@@ -4,11 +4,23 @@
   2. https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook
 */
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = `meme-blog-${CACHE_VERSION}`;
 
-// Install event: Skip waiting to activate immediately
+// Pre-cache list
+const PRE_CACHE_RESOURCES = [
+  '/',
+  '/fonts/Amstelvar-Roman-VF.woff2',
+];
+
+// Install event: Pre-cache critical resources and skip waiting
 self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log('[Service Worker] Pre-caching critical resources');
+      return cache.addAll(PRE_CACHE_RESOURCES);
+    }).catch(err => console.error('[Service Worker] Pre-cache failed:', err))
+  );
   self.skipWaiting();
 });
 
@@ -31,41 +43,51 @@ self.addEventListener('activate', (event) => {
 
 // Fetch event: Handle requests with different strategies
 self.addEventListener('fetch', (event) => {
+  // Only handle GET requests
+  if (event.request.method !== 'GET') {
+    return;
+  }
+
   // Ignore cross-origin requests
   if (!event.request.url.startsWith(self.location.origin)) {
     return;
   }
 
-  const { request } = event;
+  // Ignore Vercel system paths
+  if (event.request.url.includes('/_vercel/')) {
+    return;
+  }
 
-  // Strategy 1: HTML Pages (Navigation) -> Network First
-  // We want to show the latest blog content, so we try the network first.
+  const { request } = event;
+  const url = new URL(request.url);
+
+  // Strategy 1: HTML Pages (Navigation) -> Stale-While-Revalidate
+  // For better performance on mobile PWA, show cache immediately and update in background.
   if (request.mode === 'navigate' || request.headers.get('Accept').includes('text/html')) {
     event.respondWith(
-      fetch(request)
-        .then((networkResponse) => {
-          // Verify response is valid
-          if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+      caches.match(request).then((cachedResponse) => {
+        const fetchPromise = fetch(request)
+          .then((networkResponse) => {
+            if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
+              const responseToCache = networkResponse.clone();
+              caches.open(CACHE_NAME).then((cache) => {
+                cache.put(request, responseToCache);
+              });
+            }
             return networkResponse;
-          }
-          // Clone and cache the fresh response
-          const responseToCache = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(request, responseToCache);
+          })
+          .catch(() => {
+            // Silently fail network update if offline
           });
-          return networkResponse;
-        })
-        .catch(() => {
-          // Network failed, try to serve from cache
-          return caches.match(request);
-        })
+
+        return cachedResponse || fetchPromise;
+      })
     );
     return;
   }
 
   // Strategy 2: Static Assets (CSS, JS, Images, Fonts) -> Cache First
-  // Since Hugo uses fingerprinting (enableFingerprint = true), filenames change on update.
-  // We can safely serve these from cache for maximum speed.
+  // Since Hugo uses fingerprinting, filenames change on update.
   if (
     request.destination === 'style' ||
     request.destination === 'script' ||
@@ -78,17 +100,23 @@ self.addEventListener('fetch', (event) => {
           return cachedResponse;
         }
 
-        return fetch(request).then((networkResponse) => {
-          // Don't cache if response is not valid
-          if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+        return fetch(request)
+          .then((networkResponse) => {
+            if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+              return networkResponse;
+            }
+            const responseToCache = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(request, responseToCache);
+            });
             return networkResponse;
-          }
-          const responseToCache = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(request, responseToCache);
+          })
+          .catch(() => {
+            return new Response('Network error occurred', {
+              status: 408,
+              headers: { 'Content-Type': 'text/plain' }
+            });
           });
-          return networkResponse;
-        });
       })
     );
     return;
