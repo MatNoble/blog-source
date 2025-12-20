@@ -711,8 +711,16 @@ uglyURLs = false
     valineRequiredFields = []
     # 说明：https://valine.js.org/
 
+    ## Waline
+    enableWaline = true
+    walineServerURL = "https://matnoble-comment.vercel.app/" # 填入你的 Waline 服务端地址
+    walineLang = "zh-CN"
+    walinePageview = true
+    walineReaction = true
+    walineRequiredMeta = ["nick", "mail"]
+
     ## Utterances
-    enableUtterances = true
+    enableUtterances = false
     utterancesRepo = "MatNoble/blog-source"
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"

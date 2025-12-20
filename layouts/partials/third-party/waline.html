@@ -1,0 +1,40 @@
+<script>
+    function loadComments() {
+        if (!document.getElementById('waline')) {
+            return;
+        }
+        // Load CSS
+        if (!document.getElementById('waline-css')) {
+             const link = document.createElement('link');
+             link.id = 'waline-css';
+             link.rel = 'stylesheet';
+             link.href = 'https://unpkg.com/@waline/client@v2/dist/waline.css';
+             document.head.appendChild(link);
+        }
+
+        // Load Script
+        if (typeof Waline === 'undefined') {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/@waline/client@v2/dist/waline.js';
+            script.onload = newValine;
+            document.body.appendChild(script);
+        } else {
+            newValine();
+        }
+    }
+    function newValine() {
+        Waline.init({
+            el: '#waline',
+            serverURL: '{{ .Site.Params.walineServerURL }}',
+            lang: '{{ .Site.Params.walineLang | default "zh-CN" }}',
+            dark: 'html[data-theme="dark"]',
+            emoji: [
+                'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+                'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
+            ],
+            requiredMeta: {{ .Site.Params.walineRequiredMeta | default (slice "nick" "mail") | jsonify | safeJS }},
+            pageview: {{ .Site.Params.walinePageview | default true }},
+            reaction: {{ .Site.Params.walineReaction | default true }},
+        });
+    }
+</script>
