@@ -1,8 +1,8 @@
-{{ if .Params.katex | default .Site.Params.enableKaTeX }}
+{{ if or .Params.katex .Site.Params.enableKaTeX .IsHome }}
     {{ partial "third-party/katex.html" . }}
 {{ end }}
 
-{{ if .Params.mathjax | default .Site.Params.enableMathJax }}
+{{ if or .Params.mathjax .Site.Params.enableMathJax .IsHome }}
     {{ partial "third-party/mathjax.html" . }}
 {{ end }}
 

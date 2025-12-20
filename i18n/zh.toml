@@ -1,14 +1,2 @@
-[warning]
-other = "Ｗarning"
-
-[note]
-other = "Note"
-
-[info]
-other = "Info"
-
-[tip]
-other = "Tips"
-
-[search]
-other = "搜索"
+[readMore]
+other = "阅读全文"

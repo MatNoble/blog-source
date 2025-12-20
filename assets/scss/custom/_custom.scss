@@ -93,7 +93,56 @@
   transform: translateY(0.4em);
 }
 
-// 自定义引用边框
+// Home Header (Integrated Minimalist)
+.home-header {
+  margin: 4.5em 0 1em;
+  text-align: center;
+  position: relative;
+
+  .home-poetry {
+    font-family: var(--font-family-body);
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 2;
+    color: var(--color-contrast-higher);
+    margin-bottom: 1.2em;
+    p {
+      margin: 0.1em 0;
+    }
+  }
+
+  .home-tagline {
+    font-family: var(--font-family-headings);
+    font-size: 0.8em;
+    color: var(--color-contrast-medium);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.7;
+
+    // 视觉桥梁：一根向下方内容延伸的渐隐线条
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(
+        to bottom,
+        var(--color-contrast-low),
+        transparent
+      );
+      margin: 2em auto 0;
+    }
+  }
+}
+
+// Home Posts Summary Refinement (MemE Style)
+article.content.post.home {
+  margin-top: 4.5em;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+// Home Posts Summary Refinement (MemE Style)
 
 .note-danger,
 .note-warning,
@@ -281,6 +330,51 @@ p#div-default {
   word-wrap: break-word;
   word-break: break-word;
   max-width: 100%;
+}
+
+// Home Posts Summary Refinement (MemE Style)
+article.content.post.home {
+  margin-top: 5em;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.summary {
+  font-family: var(--font-family-body);
+  line-height: 1.8;
+  color: var(--color-contrast-high);
+  font-size: 1.05em;
+  text-align: justify;
+  margin-top: 1.5em;
+  opacity: 0.85; // 稍微降低透明度，营造空气感
+}
+
+.read-more-container {
+  margin-top: 1.2em;
+  text-align: left; // 改为左对齐，符合阅读流
+  .read-more-link {
+    font-family: var(--font-family-headings);
+    font-size: 0.9em;
+    font-style: normal; // 中文字体斜体通常不好看，改为正常
+    font-weight: 500;
+    color: var(--color-primary);
+    border: none;
+    padding: 0;
+    transition: all 0.3s ease;
+    &::after {
+      content: " ⟶"; // 使用更优雅的长箭头
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      background: none;
+      color: var(--color-primary);
+      text-decoration: none;
+      padding-left: 5px; // 悬停时轻微向右滑动
+      &::after {
+        padding-left: 5px;
+      }
+    }
+  }
 }
 
 // --- Smart TOC Styles ---

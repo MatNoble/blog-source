@@ -22,7 +22,7 @@ defaultContentLanguageInSubdir = false
 pluralizeListTitles = false
 
 # 摘要的字数限制
-summaryLength = 42
+summaryLength = 150
 
 # 是否开启 GitHub 风格的 Emoji 书写方式
 enableEmoji = false
@@ -394,11 +394,11 @@ uglyURLs = false
     # 3. posts     文章摘要
     # 4. page      普通页面
 
-    homeLayout = "poetry"
+    homeLayout = "posts"
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = ["多少年时光重合，才有此刻你我","给你我最最珍贵，所有的所有","亲爱的陌生人，要看看远方，趁星辰还亮","亲爱的陌生人，要看看身旁，趁岁月还长"]
+    homePoetry = ["星辰尚亮，岁月还长","此间相逢，唯你与我"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
@@ -408,9 +408,9 @@ uglyURLs = false
     homeVideoMp4 = ""
     homeLogo = "/icons/android-chrome-512x512.png"
     homeLogoLink = "/home/"
-    homeTitle = "MatNoble"
-    homeMotto = "每天进步一点点"
-    homeDescription = "MatNoble 的个人博客。作为一名从程序员转型的大学数学教师，我致力于用代码视角解读数学（线性代数、微积分），用可视化工具（Manim）重构知识，并分享大数据与 LaTeX 排版的技术心得。"
+    homeTitle = "MatNoble | 数学可视化与 LaTeX 排版"
+    homeMotto = "用代码解构数学，用技术改善生活"
+    homeDescription = "专注于数学可视化、LaTeX 排版与大数据技术的跨界分享"
     homeKeywords = "MatNoble,Python,LaTeX排版,人工智能,AI,机器学习,Machine Learning,线性代数,Linear Algebra,微积分,Calculus,数据科学,Data Science,Spark,Hugo博客,数学可视化,Manim,程序员转型"
     homeLinksDelimiter = "."
 
