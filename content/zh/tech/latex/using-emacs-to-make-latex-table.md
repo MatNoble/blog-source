@@ -1,7 +1,8 @@
 +++
-title = "使用 Emacs 制作 LaTeX 表格"
+title = "Emacs 制作 LaTeX 表格技巧"
 date = "2020-02-14T00:00:00+08:00"
-description = "作为神的编辑器 Emacs, 处理 LaTeX, 小菜一碟"
+lastmod = "2025-12-23T00:00:00+08:00"
+description = "利用 Emacs 的块操作（Rectangle Mark Mode）和快捷键，极速创建和编辑 LaTeX 表格，告别繁琐的手动代码输入。"
 categories = ["TECH","LaTeX 科技排版"]
 tags = ["图片表格", "编辑器技巧"]
 keywords = ["神的编辑器 Emacs", "编辑器之神 Vim", "Emacs", "LaTeX", "org-mode", "python", "表格", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
@@ -11,6 +12,8 @@ images = ["https://imgkr.cn-bj.ufileos.com/72cfb590-7916-4f3f-a1a5-37756bcce23c.
 +++
 
 $\LaTeX$ 输出表格一般情况是不容易的, 但在 **Emacs** 中, 利用 **快捷键** 实现 **快捷操作**, 创建 $\LaTeX$ 表格就容易多了.
+
+<!--more-->
 
 {{< bili aid="88928743" cid="151902070" >}}
 

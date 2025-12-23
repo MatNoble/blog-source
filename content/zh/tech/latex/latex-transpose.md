@@ -1,12 +1,13 @@
 +++
-title = "LaTeX 矩阵转置符"
+title = "LaTeX 矩阵转置符输入指南"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2020-01-10T00:23:25+08:00"
+lastmod = "2025-12-23T00:00:00+08:00"
 keywords = ["矩阵转置符", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 katex = true
 series = ["latex"]
 tags = ["数学公式", "数学符号"]
-description = "3 或 4 都可, 我平常使用 3." 
+description = "对比 LaTeX 中四种常见的矩阵转置符号输入方法，推荐符合 ISO 标准的写法，并提供自定义命令示例。" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}

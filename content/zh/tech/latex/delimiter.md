@@ -1,12 +1,13 @@
 +++
-title = "LaTeX 定界符"
+title = "LaTeX 定界符指南：括号与范数"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2020-03-23T00:12:07+08:00"
+lastmod = "2025-12-23T00:00:00+08:00"
 keywords = ["LaTeX 定界符", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 tags = ["数学符号"]
 katex = true
 series = ["latex"]
-description = "LaTeX 提供了多种形式的定界符，包括各种括号:" 
+description = "全面解析 LaTeX 中各种定界符（括号）的输入方法，包括自动调整大小的 \\left \\right 命令以及 amsmath 宏包的高级用法。" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
@@ -71,7 +72,7 @@ $$
 \end{align*}
 ```
 
-![](https://imgkr.cn-bj.ufileos.com/5b410414-8fb7-4123-93c7-410978c5dc56.svg)
+![LaTeX 定界符大小调整示例](https://imgkr.cn-bj.ufileos.com/5b410414-8fb7-4123-93c7-410978c5dc56.svg)
 
 <br>
 $$

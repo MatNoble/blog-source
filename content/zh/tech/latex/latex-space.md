@@ -1,7 +1,8 @@
 +++
-title = "LaTeX 控制空格间距"
+title = "LaTeX 间距调整指南：7种常用命令"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2019-12-31T00:23:25+08:00"
+lastmod = "2025-12-23T00:00:00+08:00"
 keywords = ["控制空格间距", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 katex = true
 description = "在 LaTeX 排版中，精准控制空格间距是实现专业排版效果的关键。本文详细总结了从 \\quad 到紧贴 (\\!) 的 7 种常用空格命令，并配合数学公式案例展示其实际效果，助你轻松掌握精细化排版技巧。"

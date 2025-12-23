@@ -1,16 +1,19 @@
 +++
-title = "在 LaTeX 中添加图片"
+title = "LaTeX 插图指南：从基础到子图"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2020-04-07T00:18:32+08:00"
+lastmod = "2025-12-23T00:00:00+08:00"
 keywords = ["在 LaTeX 里更改字体大小", "Changing the font size in LaTeX", "font size", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 tags = ["图片表格"]
 katex = true
 series = ["latex"]
 toc = true
-description = "在 LaTeX 里添加图片使用 graphicx 宏包，在导言区导入" 
+description = "详解如何在 LaTeX 中插入图片，包括单图、多图并排、子图引用以及 graphicx 宏包的常用参数配置。" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
+
+<!--more-->
 
 ## 最基础
 
@@ -51,7 +54,7 @@ description = "在 LaTeX 里添加图片使用 graphicx 宏包，在导言区导
 }
 ```
 
-<img src="https://imgkr.cn-bj.ufileos.com/0e40f4dd-e865-4017-958c-e4404f50214c.png" width="85%" />
+<img src="https://imgkr.cn-bj.ufileos.com/0e40f4dd-e865-4017-958c-e4404f50214c.png" alt="MatNoble logo 居中旋转示例" width="85%" />
 
 {{< notice tip >}}
 `graphicx` 宏包支持多种常见的图片格式，但推荐使用 `.eps` 和 `.pdf` 格式，以得到更清晰的显示效果。
@@ -112,7 +115,7 @@ description = "在 LaTeX 里添加图片使用 graphicx 宏包，在导言区导
 figure \ref{fig:logo} is my logo
 ```
 
-<img src="https://imgkr.cn-bj.ufileos.com/9255d2bb-ca05-4726-a390-77a107dc3e94.png" width="85%" />
+<img src="https://imgkr.cn-bj.ufileos.com/9255d2bb-ca05-4726-a390-77a107dc3e94.png" alt="LaTeX 浮动图环境示例" width="85%" />
 
 ## 子图
 
@@ -145,7 +148,7 @@ figure \ref{fig:logo} is my logo
 图(\ref{fig:fig2})包括子图(\ref{fig:sub-first2})和子图(\ref{fig:sub-second2})
 ```
 
-<img src="https://imgkr.cn-bj.ufileos.com/dc3fa528-070e-4bad-a14f-1b1f3e17257b.png" width="85%" />
+<img src="https://imgkr.cn-bj.ufileos.com/dc3fa528-070e-4bad-a14f-1b1f3e17257b.png" alt="LaTeX 子图并排示例" width="85%" />
 
 ### 多行多列子图
 
@@ -205,7 +208,20 @@ figure \ref{fig:logo} is my logo
 图(\ref{fig:fig})包括子图(\ref{fig:sub-first})、图(\ref{fig:sub-second})、图 (\ref{fig:sub-third})、图(\ref{fig:sub-fourth})、图 (\ref{fig:sub-fifth})和图(\ref{fig:sub-sixth})
 ```
 
-<img src="https://imgkr.cn-bj.ufileos.com/bb4971a5-0097-4425-8080-e33a28c4a39d.png" width="85%" />
+<img src="https://imgkr.cn-bj.ufileos.com/bb4971a5-0097-4425-8080-e33a28c4a39d.png" alt="LaTeX 多行多列子图示例" width="85%" />
+
+<hr />
+
+## 常见问题 (FAQ)
+
+**Q: 为什么我的图片到处乱跑，不待在插入的位置？**
+> **A**: 这是 LaTeX 的“浮动”特性。如果你非要图片固定在当前位置，可以使用 `float` 宏包，并将位置参数设为 `[H]` (大写)。但通常建议让 LaTeX 自动决定最佳位置，或者使用 `[htbp]` 给它更多选择空间。
+
+**Q: 如何让图片跨栏显示（双栏排版中）？**
+> **A**: 使用 `\begin{figure*} ... \end{figure*}` 环境（带星号）。注意：跨栏图片通常只能出现在页面顶部或底部，无法使用 `[h]` 参数。
+
+**Q: 图片标题 (Caption) 怎么改字体或字号？**
+> **A**: 推荐使用 `caption` 宏包进行全局设置。例如：`\usepackage[font=small,labelfont=bf]{caption}` 可以将标题字体设为小号，且标签（如 "Figure 1"）加粗。
 
 [^1]: 仔细观察下代码就可以发现，诸如`{figures/}{figure/}{pictures/}{picture/}{pic/}{pics/}{image/}{images/}` 这些目录都会被支持
 [^2]: 只保留其中一个参数，另一个则会等比例放大或缩小

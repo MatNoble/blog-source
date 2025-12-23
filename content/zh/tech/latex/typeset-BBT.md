@@ -1,7 +1,8 @@
 +++
-title = "科技文档排版漫谈"
+title = "从 Word 到 LaTeX：我的科技文档排版进阶之路"
 date = "2020-03-12T00:15:30+08:00"
-description = "从 Word 写到 LaTeX"
+lastmod = "2025-12-23T00:00:00+08:00"
+description = "回顾从 Word 排版到入门 LaTeX 的学习历程，分享毕设论文排版经验、常用工具（AxMath, Mathpix, Emacs）推荐以及开源模板制作心得。"
 categories = ["TECH","LaTeX 科技排版"]
 tags = ["字体设置", "数学公式"]
 keywords = ["文档排版漫谈", "Office Word", "LaTeX", "AxMath", "Beamer", "Document", "mathpix snip", "分享知识", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
@@ -12,6 +13,8 @@ katex = true
 ## Word 排版技能提升
 
 在之前很长时间内排版 Word 文档都是：..局部调整..，即看着哪儿不顺眼就调哪儿。直到大三时遇见数据分析老师。当时在机房写完课程报告初稿，兴冲冲地找来老师寻求修改意见，老师首先从排版方面对我进行指导，老师的操作让我改变了多年来对于 Word 排版的认知，大致总结如下：
+
+<!--more-->
 
 > 1. 首先利..样式..生成层级式的 headline 并开启导航栏，以在行文过程中，增加对全局的掌握。更快捷地定位想跳转的位置。
 > 2. 选中一段文字，首先选择中文字体$\to${{< mark text="宋体" >}}，保持选中文字不动，再次选择英文字体$\to${{< mark text="Times New Roman" >}}，完成中英文分别选字体。

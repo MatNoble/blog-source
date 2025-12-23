@@ -1,18 +1,21 @@
 +++
-title = "在 LaTeX 里更改字体大小"
+title = "LaTeX 字体大小设置指南"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2020-03-10T00:18:32+08:00"
+lastmod = "2025-12-23T00:00:00+08:00"
 keywords = ["在 LaTeX 里更改字体大小", "Changing the font size in LaTeX", "font size", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 tags = ["排版微调", "字体设置"]
 katex = true
 series = ["latex"]
 toc = true
-description = "在 LaTeX 里改变字体大小分为两个层级, 一是整个文档统一调整, 一是设置文档中某个部分的字体大小." 
+description = "详解 LaTeX 中修改字体大小的两种方式：使用文档类选项进行全局调整，以及利用 \\Large、\\footnotesize 等命令进行局部微调。" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
 
 在 $\LaTeX$ 里改变字体大小分为两个层级, 一是整个文档统一调整, 一是设置文档中某个部分的字体大小. 
+
+<!--more-->
 
 - 全局调整:<br>
 会..影响..所有字体的大小, 注意并不是将所有字都设置成一样大, 正文部分, 标题, 注脚相应地变大或缩小.

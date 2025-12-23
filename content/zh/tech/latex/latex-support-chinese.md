@@ -1,9 +1,10 @@
 +++
-title = "如何在 LaTeX 中「排版中文」?"
+title = "LaTeX 中文排版指南：CTeX 与 xeCJK"
 subtitle = "附赠一份中英文混排配置"
-description = "本文介绍三种方法让 LaTeX 说「中国话」"
+description = "解决 LaTeX 不支持中文的问题，详细对比 CTeX 宏集与 xeCJK 宏包的优缺点，并提供一份完美的中英文混排配置代码。"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2020-03-01T00:13:54+08:00"
+lastmod = "2025-12-23T00:00:00+08:00"
 keywords = ["如何在 LaTeX 中「排版中文」", "附赠一份中英文混排配置", "CTeX", "ctexart", "xeCJk", "在 LaTeX 中使用中文字体", "设置中文字体", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 tags = ["中文支持", "字体设置"]
 katex = true
@@ -98,6 +99,18 @@ If you don't use \usepackage[T1]{fontenc},
 以上两种方法效果类似
 
 {{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/20251217223851999.png" title=" ctexart 文档类 / ctex 宏包" width="55%" >}}
+
+### CTeX vs xeCJK：如何选择？
+
+| 特性 | CTeX 宏集 | xeCJK 宏包 |
+| :--- | :--- | :--- |
+| **定位** | 一站式解决方案 (Framework) | 底层字体支持宏包 (Package) |
+| **易用性** | 开箱即用，默认配置好中文习惯 | 需手动配置字体和选项 |
+| **灵活性** | 较低，预设较多 | 极高，完全自定义 |
+| **主要用途** | 纯中文文档 (如毕业论文、报告) | 中英混排，或不仅限于中文的多语言文档 |
+| **依赖** | 底层可能调用 xeCJK (在 XeTeX 下) | 独立宏包 |
+
+**结论**：如果你只是想快速写一篇中文文章，**首选 CTeX**。如果你需要精细控制字体，或者是在英文文档中偶尔插入中文，**推荐 xeCJK**。
 
 <hr />
 

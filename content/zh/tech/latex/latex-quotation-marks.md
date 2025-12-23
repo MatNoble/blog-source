@@ -1,12 +1,13 @@
 +++
-title = "LaTeX 引号你用对了吗？"
+title = "LaTeX 引号输入指南"
 categories = ["TECH","LaTeX 科技排版"]
 date = "2019-12-30T00:23:25+08:00"
+lastmod = "2025-12-23T00:00:00+08:00"
 keywords = ["引号", "经验分享", "技术总结", "LaTeX", "matnoble", "数系家园", "数学小兵儿", "LaTeX排版", "LaTeX Typesetting", "数学公式编辑", "科技论文写作", "MatNoble", "LaTeX Tutorial"]
 tags = ["排版微调", "标点符号"]
 katex = true
 series = ["latex"]
-description = "LaTeX 排版时, 如果使用键盘上的引号, 会得到顺撇的引号:" 
+description = "详解 LaTeX 中单引号和双引号的正确输入方式，解决直接使用键盘引号导致的格式错误问题。" 
 +++
 
 {{< imgcap src="/images/latex-banner.svg" title="LaTeX 排版教程系列图片横幅">}}
