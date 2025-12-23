@@ -1,16 +1,18 @@
 +++
 title = "Ubuntu 透明代理：Clash Verge 开启 TUN 模式解决 AI 访问难题"
 date = "2020-02-26T00:21:00+08:00"
-lastmod = "2025-12-23T00:21:00+08:00"
+lastmod = "2025-12-23T18:21:00+08:00"
 description = "深入解析 Linux 下基于 Clash Verge Rev 的透明代理方案。从安装配置到开启 TUN 模式（虚拟网卡），彻底解决终端、Docker 及 Python 代码访问 Google Gemini、OpenAI API 的网络连接问题。"
 tags = ["科学上网","Ubuntu 装机与优化"]
-keywords = ["Ubuntu", "Clash Verge", "TUN模式", "虚拟网卡", "Gemini API", "OpenAI", "Linux代理", "Clash Verge Rev", "Service Mode"]
+keywords = ["Ubuntu", "翻墙", "科学上网", "Clash Verge", "TUN模式", "虚拟网卡", "Gemini API", "OpenAI", "Linux代理", "Clash Verge Rev", "Service Mode"]
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132525.png"]
 +++
 
 在进行深度学习开发或学术研究时，访问 Hugging Face、GitHub、以及调用 Gemini 或 OpenAI 的 API 是日常刚需。然而，传统的“设置系统代理”或“终端 export 环境变量”的方式，在面对现代 AI 基础设施时往往力不从心。
 
 本文将介绍如何在 Ubuntu 上部署 **Clash Verge (Rev)** 并启用 **TUN 模式**，通过虚拟网卡接管系统所有流量，实现真正的“透明代理”。
+
+关于科学上网的协议选择、GEO 优化以及更广泛的技术方案对比，请参考我的另一篇综述文章：[全球互联与 AI 开发网络指南：协议解析与 Ubuntu 透明代理实战](/tech/tofreeworld/)。
 
 <!--more-->
 
