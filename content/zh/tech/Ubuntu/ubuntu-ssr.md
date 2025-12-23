@@ -1,5 +1,5 @@
 +++
-title = "Ubuntu 科学上网终极指南：Clash Verge 与 TUN 模式配置 (解决 Gemini/OpenAI 访问难题)"
+title = "Ubuntu 透明代理：Clash Verge 开启 TUN 模式解决 AI 访问难题"
 date = "2020-02-26T00:21:00+08:00"
 lastmod = "2025-12-23T00:21:00+08:00"
 description = "深入解析 Linux 下基于 Clash Verge Rev 的透明代理方案。从安装配置到开启 TUN 模式（虚拟网卡），彻底解决终端、Docker 及 Python 代码访问 Google Gemini、OpenAI API 的网络连接问题。"
