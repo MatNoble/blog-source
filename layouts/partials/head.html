@@ -100,6 +100,10 @@
         {{ partial "utils/open-graph.html" (dict "$" $ "description" $description) }}
     {{- end }}
 
+    {{- with .Params.robots -}}
+        <meta name="robots" content="{{ . }}" />
+    {{- end -}}
+
     {{- with .Site.Params.googleSiteVerification }}
         <meta name="google-site-verification" content="{{ . }}" />
     {{- end }}

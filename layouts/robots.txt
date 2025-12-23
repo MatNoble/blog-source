@@ -3,6 +3,7 @@ Disallow: /search/
 Disallow: /tags/
 Disallow: /categories/
 Disallow: /404.html
+Disallow: /dsa/
 
 # Allow AI Bots specifically (Explicitly welcoming them)
 User-agent: GPTBot

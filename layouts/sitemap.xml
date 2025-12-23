@@ -4,7 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   {{- range .Data.Pages -}}
-    {{- if and .Permalink (not .Params.private) (not .Params.hidden) (ne .Params.sitemap.disable true) -}}
+    {{- if and .Permalink (not .Params.private) (not .Params.hidden) (ne .Params.sitemap_exclude true) -}}
       <url>
         <loc>{{ .Permalink }}</loc>
         {{- if not .Lastmod.IsZero }}
