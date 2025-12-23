@@ -1,0 +1,36 @@
+<nav aria-label="breadcrumb" class="breadcrumb-container">
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        {{- $url := replace .Permalink (printf "%s" .Site.BaseURL) "" -}}
+        {{- $.Scratch.Add "path" .Site.BaseURL -}}
+        
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="{{ .Site.BaseURL }}" itemprop="item">
+                <span itemprop="name">{{ i18n "home" | default "首页" }}</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+
+        {{- $hierarchy := slice -}}
+        {{- $current := . -}}
+        {{- if $current.Parent -}}
+            {{- range seq 10 -}} 
+                {{- if $current.Parent -}}
+                    {{- if not $current.Parent.IsHome -}}
+                        {{- $hierarchy = $hierarchy | append $current.Parent -}}
+                        {{- $current = $current.Parent -}}
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+
+        {{- range $index, $element := sort $hierarchy "RelPermalink" "asc" -}}
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span class="breadcrumb-separator">/</span>
+                <a href="{{ $element.Permalink }}" itemprop="item">
+                    <span itemprop="name">{{ $element.Title }}</span>
+                </a>
+                <meta itemprop="position" content="{{ add $index 2 }}" />
+            </li>
+        {{- end -}}
+    </ol>
+</nav>

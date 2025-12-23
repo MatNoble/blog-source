@@ -12,6 +12,10 @@
         {{- if $attrs.indent }} data-indent="true"{{ end }}
         {{- if $attrs.tocNum }} data-toc-num="true"{{ end }}>
 
+            {{ if not (in (slice "about" "friends") .Section) }}
+                {{ partial "components/breadcrumbs.html" . }}
+            {{ end }}
+
             <h1 class="post-title p-name">{{ (partial "utils/title.html" (dict "$" $ "title" $.Title)).htmlTitle }}</h1>
 
             {{ with .Params.subtitle }}

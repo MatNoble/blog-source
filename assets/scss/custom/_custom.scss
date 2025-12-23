@@ -362,7 +362,7 @@ article.content.post.home {
     padding: 2px 0;
     transition: all 0.3s ease;
     &::after {
-      content: " ⟶"; // 使用更优雅的长箭头
+      content: " ➝"; // 使用更优雅的长箭头
       transition: all 0.3s ease;
     }
     &:hover {
@@ -407,7 +407,7 @@ article.content.post.home {
 
 /* Plus/Minus Indicator */
 .toc-summary::after {
-    content: '+'; 
+    content: '+';
     font-weight: bold;
     font-size: 1.2em;
     color: var(--color-contrast-high);
@@ -424,7 +424,7 @@ details[open] .toc-summary::after {
     font-size: 0.95em;
 }
 
-/* Hide the default theme TOC styling if it interferes */
+/* Remove the default theme TOC styling if it interferes */
 .toc-content nav {
     margin: 0;
     padding: 0;
@@ -434,15 +434,15 @@ details[open] .toc-summary::after {
 @media (min-width: 1500px) {
     .toc-wrapper {
         position: fixed;
-        top: 8rem; 
-        left: calc(50% + 24em); 
+        top: 8rem;
+        left: calc(50% + 24em);
         width: 24em; /* Maximum width for comfort */
-        
+
         background: none;
         border: none;
         margin: 0;
         z-index: 90;
-        
+
         opacity: 0.4;
         transition: opacity 0.3s ease;
     }
@@ -454,8 +454,8 @@ details[open] .toc-summary::after {
     .toc-summary {
         display: none;
     }
-    
-    details[open] .toc-content {
+
+details[open] .toc-content {
         display: block;
     }
 
@@ -464,12 +464,12 @@ details[open] .toc-summary::after {
         max-height: 80vh;
         overflow-y: auto;
         overflow-x: hidden;
-        
+
         padding-left: 0;
-        font-size: 0.85em; 
+        font-size: 0.85em;
         font-family: var(--font-family-body);
     }
-    
+
     .toc-content ul, .toc-content ol {
         list-style: none;
         padding-left: 1.5em; /* Increased indent for hierarchy */
@@ -479,37 +479,85 @@ details[open] .toc-summary::after {
     .toc-content > nav > ul {
         padding-left: 0;
     }
-    
+
     .toc-content a {
         display: block;
         line-height: 1.6;
         padding: 0.4em 0;
-        
+
         color: var(--color-contrast-medium);
         text-decoration: none;
         transition: all 0.2s;
-        
+
         /* Simple clean text wrapping */
         white-space: normal;
         overflow-wrap: break-word;
         word-break: break-word;
     }
-    
+
     .toc-content a:hover {
         color: var(--color-primary);
         padding-left: 4px;
     }
-    
+
     .toc-content a:hover {
         color: var(--color-primary);
         /* Subtle visual cue */
         text-shadow: 0 0 1px var(--color-primary);
     }
-    
+
     .toc-content::-webkit-scrollbar {
         width: 3px;
     }
     .toc-content::-webkit-scrollbar-thumb {
         background: var(--color-contrast-low);
+    }
+}
+
+// Breadcrumbs
+.breadcrumb-container {
+    font-size: 0.85em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--color-contrast-medium);
+    opacity: 0.8;
+
+    ol.breadcrumb {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li.breadcrumb-item {
+        display: inline-block;
+        white-space: nowrap;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dashed transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: var(--color-primary);
+                border-bottom-color: var(--color-primary);
+            }
+        }
+    }
+
+    .breadcrumb-separator {
+        margin: 0 0.5em;
+        opacity: 0.6;
+        font-size: 0.9em;
+    }
+}
+
+// Mobile optimization for breadcrumbs
+@media (max-width: 768px) {
+    .breadcrumb-container {
+        font-size: 0.8em;
     }
 }
