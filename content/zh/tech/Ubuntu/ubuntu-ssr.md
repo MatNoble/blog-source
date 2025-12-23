@@ -1,57 +1,116 @@
 +++
-title = "Ubuntu 上使用 ssr 实现科学上网 "
+title = "Ubuntu 科学上网终极指南：Clash Verge 与 TUN 模式配置 (解决 Gemini/OpenAI 访问难题)"
 date = "2020-02-26T00:21:00+08:00"
-description = "Ubuntu 系统科学上网完整教程：electron-ssr 安装配置、终端代理设置、机场选择建议。帮助 Linux 用户轻松实现稳定翻墙，访问 Google Scholar 等学术资源。"
+lastmod = "2025-12-23T00:21:00+08:00"
+description = "深入解析 Linux 下基于 Clash Verge Rev 的透明代理方案。从安装配置到开启 TUN 模式（虚拟网卡），彻底解决终端、Docker 及 Python 代码访问 Google Gemini、OpenAI API 的网络连接问题。"
 tags = ["科学上网","Ubuntu 装机与优化"]
-keywords = ["科学上网","Ubuntu"]
+keywords = ["Ubuntu", "Clash Verge", "TUN模式", "虚拟网卡", "Gemini API", "OpenAI", "Linux代理", "Clash Verge Rev", "Service Mode"]
 images = ["https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132525.png"]
 +++
 
-作为研究生, 很多时候都需要看一些英语文献, 在 Google 上找明显比在百度上靠谱一些．此外, 许多知名大学都有大量的 MOOC 学习资源．所以, 学习并合理运用科学上网, 至关重要.
+在进行深度学习开发或学术研究时，访问 Hugging Face、GitHub、以及调用 Gemini 或 OpenAI 的 API 是日常刚需。然而，传统的“设置系统代理”或“终端 export 环境变量”的方式，在面对现代 AI 基础设施时往往力不从心。
+
+本文将介绍如何在 Ubuntu 上部署 **Clash Verge (Rev)** 并启用 **TUN 模式**，通过虚拟网卡接管系统所有流量，实现真正的“透明代理”。
 
 <!--more-->
 
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132525.png" title="我是一只小小鸟" >}}
+{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132525.png" title="突破网络边界，释放生产力" >}}
 
-### electron-ssr
+## 核心痛点：为什么你需要 **TUN 模式**？
 
-在 Windows 和 Android 设备上都可以相对轻松地找到 ssr 管理器(ShadowsocksR 之类的), 但是, 在 Linux 系统上, 该类软件并不多见. [erguotou](https://github.com/erguotou520) 曾开发了一个图形用户界面 `electron-ssr`, 后来不知什么原因, 该项目被他遗弃. 还好当时保存了安装包, 
-[GitHub 仓库](https://github.com/MatNoble/electron-ssr-backup#%E4%B8%8B%E8%BD%BD)
+许多开发者会遇到这种灵异现象：明明浏览器能访问 Google，但终端里的 `git clone` 速度极慢；或者明明设置了 `http_proxy`，但 Python 代码请求 Gemini API 时依然报错 `Connection Timeout`。
 
+这是因为：
+1.  **应用层限制** ：`http_proxy` 环境变量仅对遵循 HTTP 协议且主动读取该变量的程序有效。
+2.  **非 HTTP 流量** ：大量的流量（如 `ping`、部分 Git 操作、QUIC 协议、DNS 查询）并不走 HTTP 代理。
+3.  **Go/Python 库特性** ：某些新版的 AI SDK（如 Google Generative AI SDK）底层可能直接发起 socket 连接，绕过了系统代理设置。
 
-下载后, 调出 Terminal 安装
+**解决方案是 TUN 模式** 。它会在系统中创建一个虚拟网卡（通常叫 `clash0` 或 `utun`），并在网络层（Layer 3）接管所有流量。对于操作系统而言，Clash 就像一根网线，所有数据包必须经过它，从而实现无死角的接管。
 
-```shell
-sudo dpkg -i electron-ssr.deb
+## 1. 安装 Clash Verge Rev
+
+[Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) 是目前最活跃的 Clash GUI 客户端分支，完美支持 Linux。
+
+### 下载与安装
+
+前往 [GitHub Releases](https://github.com/clash-verge-rev/clash-verge-rev/releases) 页面下载最新的 `.deb` 包（架构通常为 `amd64`）。
+
+```bash
+# 假设下载的文件名为 clash-verge-rev_*.deb
+sudo dpkg -i clash-verge-rev_*.deb
+
+# 如果提示依赖缺失，执行以下命令自动修复
+sudo apt-get install -f
 ```
 
-安装之后, 就可以像在其他平台一样操作了
+## 2. 关键步骤：配置 TUN 模式
 
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132618.png" title="添加订阅地址" >}}
+安装完成后，普通的代理功能已经可用，但为了彻底解决环境问题，我们需要开启 TUN。
 
-系统代理模式、更新 PAC、添加服务器、扫描二维码和开机自启等都有，如果想要在终端中使用代理，那么在配置中选中 http 代理:
+### 第一步：安装 **Service Mode (服务模式)**
 
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132649.png" title="http 代理" >}}
+TUN 模式需要创建虚拟网卡和修改路由表，这需要 root 权限。Clash Verge 使用 Service Mode 来以高权限在后台运行核心。
 
-然后在终端中执行下面命令即可，其中的端口就是上图中的端口：
+1. 打开 Clash Verge。
+2. 点击左侧侧边栏的 **Settings (设置)** 。
+3. 找到 **Service Mode** 选项，点击 **Install (安装)** 盾牌图标。
+4. 系统会弹出授权框，输入 sudo 密码确认。
+5. 安装成功后，图标状态应变为 `Active` (通常显示为绿色或带有对勾)。
 
-```shell
-export http_proxy="http://127.0.0.1:12333"
+### 第二步：开启 **Tun Mode**
+
+1. 同样在 **Settings** 界面。
+2. 找到 **Tun Mode** 开关，将其打开。
+3. 建议同时开启 **System Proxy (系统代理)** ，作为双重保障。
+
+### 第三步：验证 TUN 是否生效
+
+打开终端，输入以下命令查看网络接口：
+
+```bash
+ip addr
 ```
 
-然后可以使用 `curl www.google.com` 来测试是否成功使用代理.
+如果你看到一个名为 `clash0` 或 `Meta` 的网络接口，且状态为 `UNKNOWN` 或 `UP`，说明虚拟网卡已创建成功。
+
+此时，你可以尝试 ping 一下 Google（注意：ICMP 流量通常也会被接管，但取决于规则设置，最准确的测试是直接运行代码）：
+
+```bash
+# 测试访问 Gemini API 的连通性 (无需设置 export http_proxy)
+curl -I https://generativelanguage.googleapis.com
+```
+
+如果返回 `HTTP/2 200` 或 `404` (说明连通了服务器)，而不是 `Connection refused` 或超时，恭喜你，TUN 模式已生效。
+
+## 3. 进阶配置：分流与规则
+
+开启 TUN 后，所有流量都会经过 Clash。为了避免访问国内服务（如百度、淘宝）变慢，合理的 **规则（Rules）** 至关重要。
+
+### 推荐配置
+
+建议订阅包含完整规则集的机场服务。在 **Profiles (配置)** 界面导入订阅链接后，右键选择 **Edit Info**，确保 `Update Interval`（更新间隔）设置合理（如 1440 分钟）。
+
+### 针对 AI 服务的特殊优化
+
+在 **Proxies (代理)** 界面，你通常会看到针对不同服务的策略组。确保：
+*   **OpenAI / ChatGPT** 策略组：选择美国或支持 OpenAI 的节点。
+*   **Google / YouTube** 策略组：选择延迟最低的节点（Gemini API 通常走 Google 线路）。
+
+## 4. 常见问题 (FAQ)
+
+### Q: 开启 TUN 模式后，Docker 容器内的网络通吗？
+**A:** 通。这是 TUN 模式最大的优势之一。因为它是网络层代理，Docker 容器默认使用的桥接网络（bridge）最终也是通过宿主机的 NAT 转发，流量会被 TUN 网卡捕获。你不再需要为 Docker 容器单独配置环境变量。
+
+### Q: 为什么有时候 `git clone` 还是慢？
+**A:** 检查 Clash 的连接日志。Git 协议有时使用 SSH (端口 22)，某些机场默认规则可能会拦截或直连 22 端口。建议配置 Git 使用 HTTPS 协议，或在 Clash 规则中强制 GitHub 流量走代理。
+
+### Q: 必须卸载之前的 electron-ssr 吗？
+**A:** 建议卸载或停止运行。多个代理软件同时修改系统代理设置或监听端口（通常都是 7890/1080），会导致端口冲突，引起不可预知的网络错误。
+
+## 总结
+
+对于 Linux 用户，特别是 AI 开发者， **Clash Verge Rev + TUN 模式** 是目前的终极解决方案。它消除了配置各种环境变量的繁琐，让你的 Ubuntu 开发环境拥有像在硅谷一样的网络体验。
 
 <hr />
 
-### 下面介绍一下我用的机场
-
-- 最开始使用过 `搬瓦工 VPS` 自己搭建 ssr, 用了多半年, 被强了, 就再没试过搬瓦工了.
-- 后来, 薅 Google 羊毛, 利用 GCP 自建 ssr, 但**稳定性**不够好．改搭建 V2ray, **速度**又得不到保障.
-
-~~绝望之际, 在 YouTube 上看到了 [阿狸云](http://a.foxss.me/), 提供免费节点, 适用之后, 感觉还可以, 于是去年双十一搞活动买了半年的.~~
-
-如果不想花钱, 其实有很多电报群里有免费的公共节点, 不嫌麻烦或者对翻墙需求不大时, 可以去找一找.
-
-**但是**, 「天下没有免费的午餐」, 大多数免费的 ssr 并不稳定, 若想长期稳定使用, 花点儿银子还是必须的, 不妨去我写的[**这篇文章**](https://blog.matnoble.top/tech/tofreeworld/#%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90)去找一找适合自己的. 
-
-{{< imgcap src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210405132725.png" title="科学上网 不作恶" >}}
+*注：科学上网请遵守当地法律法规，仅用于学术研究和技术交流。*

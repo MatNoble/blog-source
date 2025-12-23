@@ -45,6 +45,14 @@
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images@master/uPic/uXiJsM.jpg"
 </p>
 
+### 本地开发
+
+克隆本仓库后，请运行以下命令以初始化并更新子模块（如 `hugo-notice` 主题），否则可能会遇到 `template for shortcode "notice" not found` 的编译错误：
+
+```bash
+git submodule update --init --recursive
+```
+
 ### 授权情况
 
 本模板代码按 [CC 4.0 BY-SA](https://github.com/MatNoble/blog-source/blob/master/CC-BY-SA-4.0) 授权, 转载请附上原文出处链接和本声明.
