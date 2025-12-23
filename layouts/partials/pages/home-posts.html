@@ -1,5 +1,11 @@
 <main class="main single" id="main">
     <div class="main-inner">
+        {{/* SEO Optimization: Visually hidden but crawler accessible */}}
+        <div style="display: none;">
+            <h1>{{ .Title | default .Site.Title }}</h1>
+            <p>{{ .Description | default .Site.Params.homeDescription }}</p>
+        </div>
+
         {{/* Minimalist Home Header */}}
         <header class="home-header">
             <div class="home-poetry">

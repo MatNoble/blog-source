@@ -91,8 +91,8 @@
         {{ partial "utils/json-ld.html" (dict "$" $ "description" $description) }}
     {{- end }}
 
-    <!-- Twitter Cards -->
-    {{- with .Site.Params.twitterCards -}}
+    <!-- X Cards -->
+    {{- with .Site.Params.xCards -}}
         {{ partial "utils/twitter-cards.html" (dict "$" $) }}
     {{- end }}
     <!-- Open Graph -->

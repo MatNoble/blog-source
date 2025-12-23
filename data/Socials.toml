@@ -34,13 +34,6 @@
     weight = 4
 
 [[socials]]
-    id = "twitter"
-    url = "https://twitter.com/freematnoble"
-    icon = "twitter"
-    title = "Twitter"
-    weight = 5
-
-[[socials]]
     id = "telegram"
     url = "https://t.me/HUSTMatNoble"
     icon = "telegram"
