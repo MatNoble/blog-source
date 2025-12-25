@@ -121,7 +121,6 @@
             {{ with $.Params.tags -}}
             "keywords": "{{ delimit . ", " }}",
             {{ end -}}
-            "breadcrumb": { "@id": "{{ $.Permalink }}#breadcrumb" },
             {{ with $images -}}
             "image": {{ . }},
             {{ else -}}
@@ -140,7 +139,8 @@
             "publisher": { "@id": "{{ $baseURLWithLangFix }}#organization" },
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "{{ $.Permalink }}"
+                "@id": "{{ $.Permalink }}",
+                "breadcrumb": { "@id": "{{ $.Permalink }}#breadcrumb" }
             }
         }
         {{- end -}}
