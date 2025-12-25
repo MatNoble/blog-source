@@ -27,7 +27,7 @@
                 MathJax.startup.defaultReady();
                 MathJax.startup.promise.then(() => {
                     // Only typeset stable content containers
-                    const containers = document.querySelectorAll('.post-body, .summary, .home-header, .post-title');
+                    const containers = document.querySelectorAll('.post-body, .summary, .home-header, .post-title, .contents');
                     if (containers.length > 0) {
                         MathJax.typesetPromise(Array.from(containers)).catch(e => console.debug("MathJax error:", e));
                     } else {

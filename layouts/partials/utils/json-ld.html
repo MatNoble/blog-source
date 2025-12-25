@@ -1,0 +1,149 @@
+{{- $ := index . "$" -}}
+{{- $description := .description -}}
+{{- $baseURLWithLangFix := "" | absLangURL -}}
+<!-- Title -->
+{{- $rawTitle := (partial "utils/title.html" (dict "$" $ "title" $.Title)).rawTitle -}}
+<!-- Date -->
+{{- $dates := partial "utils/date.html" $ -}}
+<!-- Author -->
+{{- $author := partial "utils/author.html" $ -}}
+<!-- Images -->
+{{- $images := partial "utils/images.html" $ -}}
+
+<!-- Determine Article Type based on Section -->
+{{- $articleType := "BlogPosting" -}}
+{{- if eq $.Section "math" -}}
+    {{- $articleType = "ScholarlyArticle" -}}
+{{- else if eq $.Section "tech" -}}
+    {{- $articleType = "TechArticle" -}}
+{{- end -}}
+
+<!-- Social Links for Person -->
+{{- $socialLinks := slice -}}
+{{- with $.Site.Params.menu.socials -}}
+    {{- range . -}}
+        {{- $socialLinks = $socialLinks | append .url -}}
+    {{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "{{ $baseURLWithLangFix }}#website",
+            "url": "{{ $baseURLWithLangFix }}",
+            "name": "{{ $.Site.Title }}",
+            "description": "{{ $.Site.Params.siteDescription }}",
+            "publisher": { "@id": "{{ $baseURLWithLangFix }}#organization" },
+            "inLanguage": "{{ $.Site.LanguageCode }}",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{{ $baseURLWithLangFix }}search/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "SoftwareApplication",
+            "@id": "{{ $baseURLWithLangFix }}#application",
+            "name": "{{ $.Site.Title }}",
+            "operatingSystem": "Any",
+            "applicationCategory": "EducationalApplication",
+            "url": "{{ $baseURLWithLangFix }}",
+            {{ with $.Site.Params.siteLogo -}}
+            "image": {{ . | absURL }},
+            {{ end -}}
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            }
+        },
+        {
+            "@type": "Organization",
+            "@id": "{{ $baseURLWithLangFix }}#organization",
+            "name": "{{ $.Site.Title }}",
+            "url": "{{ $baseURLWithLangFix }}",
+            {{ with $.Site.Params.siteLogo -}}
+            "logo": {
+                "@type": "ImageObject",
+                "url": {{ . | absURL }}
+            },
+            {{ end -}}
+            "sameAs": {{ $socialLinks | jsonify }}
+        }
+        {{- if $.IsPage -}}
+        ,
+        {
+            "@type": "BreadcrumbList",
+            "@id": "{{ $.Permalink }}#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "首页",
+                    "item": "{{ $baseURLWithLangFix }}"
+                }
+                {{- $hierarchy := slice -}}
+                {{- $current := . -}}
+                {{- if $current.Parent -}}
+                    {{- range seq 10 -}} 
+                        {{- if $current.Parent -}}
+                            {{- if not $current.Parent.IsHome -}}
+                                {{- $hierarchy = $hierarchy | append $current.Parent -}}
+                                {{- $current = $current.Parent -}}
+                            {{- end -}}
+                        {{- end -}}
+                    {{- end -}}
+                {{- end -}}
+                {{- range $index, $element := sort $hierarchy "RelPermalink" "asc" -}}
+                ,
+                {
+                    "@type": "ListItem",
+                    "position": {{ add $index 2 }},
+                    "name": "{{ $element.Title }}",
+                    "item": "{{ $element.Permalink }}"
+                }
+                {{- end -}}
+            ]
+        },
+        {
+            "@type": ["CreativeWork", "{{ $articleType }}"],
+            "@id": "{{ $.Permalink }}#creativework",
+            "isPartOf": { "@id": "{{ $baseURLWithLangFix }}#website" },
+            "headline": {{ $rawTitle }},
+            "description": {{ $description }},
+            "datePublished": {{ $dates.pubDate }},
+            "dateModified": {{ $dates.modDate }},
+            "wordCount": {{ $.WordCount }},
+            "inLanguage": "{{ $.Site.LanguageCode }}",
+            {{ with $.Params.tags -}}
+            "keywords": "{{ delimit . ", " }}",
+            {{ end -}}
+            "breadcrumb": { "@id": "{{ $.Permalink }}#breadcrumb" },
+            {{ with $images -}}
+            "image": {{ . }},
+            {{ else -}}
+            {{ with $.Site.Params.siteLogo -}}
+            "image": {{ . | absURL }},
+            {{ end -}}
+            {{ end -}}
+            {{ with $author -}}
+            "author": {
+                "@type": "Person",
+                "name": {{ .name }},
+                {{ with .website -}}"url": {{ . }},{{ end }}
+                "sameAs": {{ $socialLinks | jsonify }}
+            },
+            {{ end -}}
+            "publisher": { "@id": "{{ $baseURLWithLangFix }}#organization" },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{ $.Permalink }}"
+            }
+        }
+        {{- end -}}
+    ]
+}
+</script>
